@@ -11,11 +11,12 @@ class FootballController extends Controller
 {
 	public function index()
 	{
-        FrontController::autenthication();
+        FrontController::autenthication();  
 		$dataLeagues = $this->getDataLeagues();
-
         $dataLiveMatchs = $this->getliveMatch();
-
+        // echo "<pre>";
+        // print_r($dataLiveMatchs);
+        // die();
         return view('frontend/football/index', [ 'leagues' => $dataLeagues, 'matchs' => $dataLiveMatchs]);
 	}
 
@@ -29,7 +30,7 @@ class FootballController extends Controller
 
     public function league($league_name)
     {
-        
+
         FrontController::autenthication();
         $dataLeagues = $this->getDataLeagues();
         /* Cargamos los datos */
@@ -41,10 +42,10 @@ class FootballController extends Controller
         }
 
         /* -------------------------- PARTIDOS --------------------------*/
-        $dataMatchs = $this->getDataMatchs($id_league);   
+        $dataMatchs = $this->getDataMatchs($id_league);
         /* ------------------------ FIN PARTIDOS ------------------------*/
 
-        return view('frontend/football/league', [ 
+        return view('frontend/football/league', [
                                         'actual_league' => $actual_league_name,
                                         'leagues'       => $dataLeagues,
                                         'matchs'        => $dataMatchs,
@@ -71,7 +72,7 @@ class FootballController extends Controller
         /* ------------------------ FIN PARTIDOS ------------------------*/
 
 
-        return view('frontend/football/league', [ 
+        return view('frontend/football/league', [
                                         'actual_league' => $actual_league_name,
                                         'leagues'       => $dataLeagues,
                                         'matchs'        => $dataMatchs,
@@ -98,14 +99,14 @@ class FootballController extends Controller
         /* ------------------------ FIN PARTIDO ------------------------*/
 
         /* ------------------------ ORDENAMOS EVENTOS DEL PATIDO ------------------------*/
-        
+
         $events = $this->getEventByDate($matchs);
-        
+
 
         /* ---------------------- FIN ORDENAMOS EVENTOS DEL PATIDO ----------------------*/
 
 
-        return view('frontend/football/match', [ 
+        return view('frontend/football/match', [
                                         'match' => $matchs,
                                         'leagues' => $dataLeagues,
                                         'events' => $events,
@@ -148,7 +149,7 @@ class FootballController extends Controller
         // echo "<pre>";
         // print_r($squad);
         // die();
-        return view('frontend/football/team', [ 
+        return view('frontend/football/team', [
                                         'leagues' => $dataLeagues,
                                         'team'    => $squad->team,
                                     ]);
@@ -311,8 +312,14 @@ class FootballController extends Controller
                ->get();
         /* Parseamos el resultado de las distintas ligas */
         $response = json_decode($response);
+        $data = array();
+        foreach ($response->matches as $key => $match) {
+            if (!empty($match->live_minute)) {
+                $data[] = $match;
+            }
+        }
 
-        return $response;
+        return $data;
     }
 
 
@@ -324,8 +331,8 @@ class FootballController extends Controller
                 $dataEvent[] = $event;
             }
         }
-        
-        if (isset($matchs->events->changes)) {       
+
+        if (isset($matchs->events->changes)) {
             foreach ($matchs->events->changes as $change) {
                 $dataEvent[] = $change;
             }
@@ -348,10 +355,10 @@ class FootballController extends Controller
                 $dataEvent[] = $goal;
             }
         }
-       
+
         usort($dataEvent, function($a, $b){
             return strtotime($a->date) - strtotime($b->date);
-        } ); 
+        } );
 
         return $dataEvent;
     }

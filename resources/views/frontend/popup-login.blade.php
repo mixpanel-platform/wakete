@@ -7,7 +7,7 @@
                     <h4 class="modal-title" id="loginModal">Entra y disfruta</h4>
                 </div>
                 <div class="modal-body">
-                   @include('canvas.form-login')
+                   @include('frontend.form-login')
             </div>
         </div>
     </div>

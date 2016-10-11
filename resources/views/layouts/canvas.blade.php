@@ -95,7 +95,7 @@
 
             @yield('content')
             
-            @include('canvas.footer')
+            @include('frontend.footer')
         </div><!-- #wrapper end -->
 
         <!-- Go To Top
