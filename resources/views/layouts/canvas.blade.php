@@ -54,7 +54,9 @@
                         <nav id="primary-menu">
 
                             <ul>
-                                <li {{{ (Request::is('/catalog') ? 'class=current' : '') }}}><a href="{{url('/catalog')}}"><div>Home</div></a></li>
+                                <li {{{ (Request::is('/catalog') ? 'class=current' : '') }}}>
+                                    <a href="{{url('/catalog')}}"><div>Home</div></a>
+                                </li>
                                 <li {{{ (Request::is('/catalog/football') ? 'class=current' : '') }}}><a href="{{url('/catalog/football')}}"><div>Fútbol</div></a>
                                     <ul>
                                         <li {{{ (Request::is('/catalog/leagues') ? 'class=current' : '') }}}>
@@ -70,6 +72,25 @@
                                             </ul>
                                         </li>
                                     </ul>
+                                </li>
+                                <li>
+                                    <?php foreach ($newsCategories as $newCat): ?>
+                                        <a href="#"><div><?php echo $newCat['name'] ?></div></a>
+                                        <?php if (count($newCat['subCategories']) > 0 ): ?>
+                                            <ul>
+                                            <?php foreach ($newCat['subCategories'] as $subCat): ?>
+                                                <li {{{ (Request::is('/catalog/'.$subCat['uri']) ? 'class=current' : '') }}}>
+                                                    <a href="{{ url('/catalog/news') }}/<?php echo $subCat['uri'] ?>">
+                                                        <div><?php echo $subCat['name'] ?></div>
+                                                        <div class="circle-count">
+                                                            <?php echo $subCat['count_posts'] ?>    
+                                                        </div>
+                                                    </a> 
+                                                </li>
+                                            <?php endforeach ?>
+                                            </ul>
+                                        <?php endif ?>
+                                    <?php endforeach ?>
                                 </li>
                                 @if (Auth::guest())
                                     <li class="log-in"><button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#loginModal">

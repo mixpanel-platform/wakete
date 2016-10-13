@@ -8,7 +8,6 @@ use App\Http\Requests;
 use App\Http\Controllers\Controller;
 use DB;
 use Mongoquent;
-
 use Carbon\Carbon;
 class CategoryController extends Controller
 {
@@ -23,6 +22,7 @@ class CategoryController extends Controller
         $dataNewCategory = [];
         $dataNewCategory['id'] = $request->input('id');
         $dataNewCategory['name'] = $request->input('name');
+        $dataNewCategory['uri'] = str_replace(' ', '-', strtolower($request->input('name')));
         if ($request->input('id_parent') == 'none') {
             $dataNewCategory['type'] = 'parent';
             $dataNewCategory['id_parent'] = strval($request->input('id'));
@@ -49,5 +49,29 @@ class CategoryController extends Controller
         if ($deleted) {
              return redirect()->action('AdminController\CategoryController@index');
         }
+    }
+
+
+    static function getCategories()
+    {
+        $dataCategories = array();
+
+        $categories = DB::connection('dbo')->collection('category_posts')->whereRaw(['type' => 'parent'])->get();
+        foreach ($categories as $category) {
+            
+            $subCategories = DB::connection('dbo')->collection('category_posts')->whereRaw([
+                                                                                            'type'      => 'subcat',
+                                                                                            'id_parent' => $category['id'],
+                                                                                            ])->get();
+            $dataSub = array();
+            foreach ($subCategories as $subCat) {
+                $subCat['count_posts'] = count(PostsController::getPostsByCategory($subCat['id']));
+                $dataSub[] = $subCat;
+                $category['subCategories'] = $dataSub;
+            }
+            $dataCategories[] = $category;
+        }
+
+        return $dataCategories;
     }
 }

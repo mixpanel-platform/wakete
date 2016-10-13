@@ -28,36 +28,59 @@ Route::get('/dbo/login', 'FrontController@login');
 Route::get('/dbo/register', 'FrontController@register');
 
 // Football routes
-// Route::group(['middleware' => 'mongoSession'], function () {
-	Route::get('/catalog/football', 'FootballController@index');
-	Route::get('/catalog/leagues', 'FootballController@leagues');
-	Route::get('/catalog/league/{league_name}', 'FootballController@league');
-	Route::get('/catalog/league/{league_name}/round/{round}', 'FootballController@round');
-	Route::get('/catalog/match/{match_id}', 'FootballController@match');
-	Route::get('/catalog/team/{league_name}/{alias_team}', 'FootballController@team');
-// });
+Route::get('/catalog/football', 'FootballController@index');
+Route::get('/catalog/leagues', 'FootballController@leagues');
+Route::get('/catalog/league/{league_name}', 'FootballController@league');
+Route::get('/catalog/league/{league_name}/round/{round}', 'FootballController@round');
+Route::get('/catalog/match/{match_id}', 'FootballController@match');
+Route::get('/catalog/team/{league_name}/{alias_team}', 'FootballController@team');
 
-
+// News routes
+Route::get('/catalog/news/{uri_category}', 'NewsController@category');
+Route::get('/catalog/article/{uri_post}', 'NewsController@post');
 
 // Another Routes
 Route::get('/phpconfig', 'FrontController@phpconfig');
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // ADMIN routes
+Route::get('/admin', 'AdminController\BackendController@login');
 Route::get('/admin/login', 'AdminController\BackendController@login');
 Route::get('/admin/register', 'AdminController\BackendController@register');
 
-Route::get('/admin', 'AdminController\BackendController@dashboard');
-Route::get('/admin/dashboard', 'AdminController\BackendController@dashboard');
-// Admin posts routes
-Route::get('/admin/post', 'AdminController\PostsController@index');
-Route::post('/admin/post/new', 'AdminController\PostsController@newPost');
-Route::post('/admin/post/create', 'AdminController\PostsController@create');
-Route::get('/admin/post/update/{id}', 'AdminController\PostsController@update');
-Route::get('/admin/post/delete/{id}', 'AdminController\PostsController@delete');
+
+
+Route::get('/admin/dashboard', ['middleware' => 'auth','uses'=> 'AdminController\BackendController@dashboard']);
 
 // Admin posts routes
-Route::get('/admin/category', 'AdminController\CategoryController@index');
-Route::post('/admin/category/create', 'AdminController\CategoryController@create');
-Route::get('/admin/category/delete/{id}', 'AdminController\CategoryController@delete');
+Route::get('/admin/posts', ['middleware' => 'auth','uses'=> 'AdminController\PostsController@index']);
+Route::get('/admin/posts/new', ['middleware' => 'auth','uses'=> 'AdminController\PostsController@newPost']);
+Route::post('/admin/posts/create', ['middleware' => 'auth','uses'=> 'AdminController\PostsController@create']);
+Route::post('/admin/posts/update', ['middleware' => 'auth','uses'=> 'AdminController\PostsController@updatePost']);
+Route::get('/admin/posts/update/{id}', ['middleware' => 'auth','uses'=> 'AdminController\PostsController@update']);
+Route::get('/admin/posts/delete/{id}', ['middleware' => 'auth','uses'=> 'AdminController\PostsController@delete']);
+
+// Admin posts routes
+Route::get('/admin/category', ['middleware' => 'auth','uses'=> 'AdminController\CategoryController@index']);
+Route::post('/admin/category/create', ['middleware' => 'auth','uses'=> 'AdminController\CategoryController@create']);
+Route::get('/admin/category/delete/{id}', ['middleware' => 'auth','uses'=> 'AdminController\CategoryController@delete']);

@@ -13155,7 +13155,15 @@ a.bordered div.col-md-3:hover {
 .draw{
 	border-bottom: 3px solid #54C1FF;
 }
-
+.circle-count{
+	position: absolute;
+	top: 0;
+	right: 5px;
+	border-radius: 30px;
+	background-color: #e8e8e8;
+	color: black;
+	padding: 0 5px;
+}
 .live-match {
 	background-color: red;
 	color: white;
@@ -13191,6 +13199,16 @@ a.bordered div.col-md-3:hover {
    50% { opacity: 0.0; }
   100% { opacity: 1.0; }
 }
+
+.text-content *{
+	font-size: 18px;
+	color: black;
+	text-align: justify!important;
+	text-indent: 0!important;
+}
+
+
+
 @media screen and (max-width: 767px){
 	.not-padding-mobile{
 		padding-left: 0;

@@ -236,7 +236,11 @@ class FrontController extends Controller
         if ($autenthicated  === true) {
             /* Cargamos la vista principal del catalogo */
             $dataLeagues = FootballController::getDataLeagues();
-            return view('dbo/catalog', [ 'leagues' => $dataLeagues]);
+
+            return view('dbo/catalog', [ 
+                                        'leagues' => $dataLeagues,
+                                        'newsCategories' => AdminController\CategoryController::getCategories(),
+                                        ]);
             //return redirect('/catalog/football');
         }else{
             return redirect('/dbo/login');

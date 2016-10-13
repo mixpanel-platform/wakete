@@ -11,20 +11,28 @@ class FootballController extends Controller
 {
 	public function index()
 	{
-        FrontController::autenthication();  
+        FrontController::autenthication();
 		$dataLeagues = $this->getDataLeagues();
         $dataLiveMatchs = $this->getliveMatch();
+
         // echo "<pre>";
-        // print_r($dataLiveMatchs);
+        // print_r($categories);
         // die();
-        return view('frontend/football/index', [ 'leagues' => $dataLeagues, 'matchs' => $dataLiveMatchs]);
+        return view('frontend/football/index', [ 
+                                                'leagues' => $dataLeagues, 
+                                                'matchs' => $dataLiveMatchs,
+                                                'newsCategories' =>AdminController\CategoryController::getCategories()
+                                                ]);
 	}
 
     public function leagues()
     {
         FrontController::autenthication();
         $dataLeagues = $this->getDataLeagues();
-        return view('frontend/football/leagues', [ 'leagues' => $dataLeagues ]);
+        return view('frontend/football/leagues', [ 
+                                                    'leagues' => $dataLeagues,
+                                                    'newsCategories' =>AdminController\CategoryController::getCategories()
+                                                ]);
     }
 
 
@@ -49,7 +57,8 @@ class FootballController extends Controller
                                         'actual_league' => $actual_league_name,
                                         'leagues'       => $dataLeagues,
                                         'matchs'        => $dataMatchs,
-                                        'round'         => $dataMatchs[0]->round
+                                        'round'         => $dataMatchs[0]->round,
+                                        'newsCategories' =>AdminController\CategoryController::getCategories()
                                     ]);
 
     }
@@ -76,7 +85,8 @@ class FootballController extends Controller
                                         'actual_league' => $actual_league_name,
                                         'leagues'       => $dataLeagues,
                                         'matchs'        => $dataMatchs,
-                                        'round'         => $dataMatchs[0]->round
+                                        'round'         => $dataMatchs[0]->round,
+                                        'newsCategories' =>AdminController\CategoryController::getCategories()
                                     ]);
 
     }
@@ -111,6 +121,7 @@ class FootballController extends Controller
                                         'leagues' => $dataLeagues,
                                         'events' => $events,
                                         'dateMatch' => $diff,
+                                        'newsCategories' =>AdminController\CategoryController::getCategories()
                                     ]);
     }
 
@@ -152,6 +163,7 @@ class FootballController extends Controller
         return view('frontend/football/team', [
                                         'leagues' => $dataLeagues,
                                         'team'    => $squad->team,
+                                        'newsCategories' =>AdminController\CategoryController::getCategories()
                                     ]);
     }
 

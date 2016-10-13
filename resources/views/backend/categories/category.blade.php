@@ -1,5 +1,16 @@
 @extends('layouts.admin-master')
 
+
+@section('externalScripts')
+<link rel="stylesheet" href="{{asset('oneui/assets/js/plugins/summernote/summernote.min.css')}}">
+<link rel="stylesheet" href="{{asset('oneui/assets/js/plugins/summernote/summernote-bs3.min.css')}}">
+<link rel="stylesheet" href="{{ asset('/oneui/assets/js/plugins/bootstrap-datepicker/bootstrap-datepicker3.min.css') }}">
+<link rel="stylesheet" href="{{ asset('/oneui/assets/js/plugins/bootstrap-datetimepicker/bootstrap-datetimepicker.min.css') }}">
+<link rel="stylesheet" href="{{ asset('/oneui/assets/js/plugins/select2/select2.min.css') }}">
+<link rel="stylesheet" href="{{ asset('/oneui/assets/js/plugins/select2/select2-bootstrap.min.css') }}">
+<link rel="stylesheet" href="{{ asset('/oneui/assets/js/plugins/datatables/jquery.dataTables.min.css') }}">
+@endsection
+
 @section('content')
 <div class="content bg-gray-lighter">
     <div class="row items-push">
@@ -141,20 +152,9 @@
 	<link rel="stylesheet" href="{{ asset('/oneui/assets/js/plugins/select2/select2-bootstrap.min.css') }}">
 	<link rel="stylesheet" href="{{ asset('/oneui/assets/js/plugins/datatables/jquery.dataTables.min.css') }}">
 
-	<script src="{{ asset('/oneui/assets/js/core/jquery.min.js')}}"></script>
-	<script src="{{ asset('/oneui/assets/js/core/bootstrap.min.js')}}"></script>
-	<script src="{{ asset('/oneui/assets/js/core/jquery.slimscroll.min.js')}}"></script>
-	<script src="{{ asset('/oneui/assets/js/core/jquery.scrollLock.min.js')}}"></script>
-	<script src="{{ asset('/oneui/assets/js/core/jquery.appear.min.js')}}"></script>
-	<script src="{{ asset('/oneui/assets/js/core/jquery.countTo.min.js')}}"></script>
-	<script src="{{ asset('/oneui/assets/js/core/jquery.placeholder.min.js')}}"></script>
-	<script src="{{ asset('/oneui/assets/js/core/js.cookie.min.js')}}"></script>
-	<script src="{{ asset('/oneui/assets/js/app.js')}}"></script>
-
 	<script src="{{ asset('/oneui/assets/js/plugins/bootstrap-datepicker/bootstrap-datepicker.min.js')}}"></script>
 	<script src="{{ asset('/oneui/assets/js/plugins/bootstrap-datetimepicker/moment.min.js')}}"></script>
 	<script src="{{ asset('/oneui/assets/js/plugins/bootstrap-datetimepicker/bootstrap-datetimepicker.min.js')}}"></script>
-	<script src="{{ asset('/oneui/assets/js/plugins/jquery-auto-complete/jquery.auto-complete.min.js')}}"></script>
 	<script src="{{ asset('/oneui/assets/js/plugins/select2/select2.full.min.js')}}"></script>
 
 
@@ -166,6 +166,22 @@
         jQuery(function () {
             // Init page helpers (BS Datepicker + BS Datetimepicker + BS Colorpicker + BS Maxlength + Select2 + Masked Input + Range Sliders + Tags Inputs plugins)
             App.initHelpers(['datepicker', 'datetimepicker', 'colorpicker', 'maxlength', 'select2', 'masked-inputs', 'rangeslider', 'tags-inputs']);
+        });
+    </script>
+@endsection
+@section('scripts')
+
+    <script src="{{asset('oneui/assets/js/plugins/bootstrap-datepicker/bootstrap-datepicker.min.js')}}"></script>
+    <script src="{{asset('oneui/assets/js/plugins/select2/select2.full.min.js')}}"></script>
+    <script src="{{asset('oneui/assets/js/plugins/summernote/summernote.min.js')}}"></script>
+    <script src="{{asset('oneui/assets/js/plugins/ckeditor/ckeditor.js')}}"></script>
+
+    <script src="{{ asset('/oneui/assets/js/plugins/bootstrap-datetimepicker/bootstrap-datetimepicker.min.js')}}"></script>
+    <script src="{{ asset('/oneui/assets/js/plugins/datatables/jquery.dataTables.min.js')}}"></script>
+    <script src="{{ asset('/oneui/assets/js/pages/base_tables_datatables.js')}}"></script>
+    <script>
+        jQuery(function () {
+            App.initHelpers(['datepicker', 'select2','summernote','ckeditor']);
         });
     </script>
 @endsection

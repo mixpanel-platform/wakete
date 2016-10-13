@@ -17,7 +17,7 @@
 
 					<div class="panel panel-default divcenter noradius noborder" style="max-width: 400px; background-color: rgba(255,255,255,0.93);">
 						<div class="panel-body" style="padding: 40px;">
-							@include('canvas.form-login')
+							@include('frontend.form-login')
 						</div>
 					</div>
 

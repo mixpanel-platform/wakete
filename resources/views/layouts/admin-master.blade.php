@@ -54,18 +54,34 @@
                         <div class="side-content">
                             <ul class="nav-main">
                                 <li>
-                                    <a href="{{ url('/admin/dashboard') }}" {{{ (Request::is('/admin/dashboard') ? 'class=active' : '') }}}>
+                                    <a href="{{ url('/admin/dashboard') }}">
                                         <i class="si si-speedometer"></i><span class="sidebar-mini-hide">Dashboard</span>
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="{{ url('/admin/post') }}" {{{ (Request::is('/admin/post') ? 'class=active' : '') }}}>
-                                        <i class="fa fa-newspaper-o"></i><span class="sidebar-mini-hide">Artículos</span>
+                                    <a href="{{ url('/admin/category') }}" >
+                                        <i class="si si-rocket"></i><span class="sidebar-mini-hide">Categorías</span>
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="{{ url('/admin/category') }}" {{{ (Request::is('/admin/category') ? 'class=active' : '') }}}>
-                                        <i class="si si-rocket"></i><span class="sidebar-mini-hide">Categorías</span>
+                                    <a class="nav-submenu" data-toggle="nav-submenu" href="#"><i class="si si-bag"></i><span class="sidebar-mini-hide">Noticias</span></a>
+                                    <ul>
+                                        <li>
+                                            <a href="{{ url('/admin/posts') }}" >
+                                                <span class="sidebar-mini-hide">Listado artículos</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="{{ url('/admin/posts/new') }}" >
+                                                <span class="sidebar-mini-hide">Nuevo artículos</span>
+                                            </a>
+                                        </li>
+                                        
+                                    </ul>
+                                </li>
+                                <li  class="text-danger">
+                                    <a tabindex="-1" href="{{ url('/logout') }}" alt="Salir" class="text-danger" style="color: #d26a5c;">
+                                        <i class="fa fa-btn fa-sign-out"></i>  Salir ({{ Auth::user()->name }})<!-- -->
                                     </a>
                                 </li>
                             </ul>

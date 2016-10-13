@@ -79,7 +79,7 @@ return [
         ],
         'dbo' => [
             'driver'   => 'mongodb',
-            'host'     => 'fr01.vitbian.com',
+            'host'     => '94.23.199.82',
             'port'     => 27017,
             'database' => 'dboMultiApps',
             // 'username' => 'admin',
