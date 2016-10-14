@@ -33,7 +33,7 @@
         		<div class="col-md-12  push-20" style="padding:0">
 	                <h3 class="block-title font-s20 font-w700">Nuevo post</h3>
 	            </div>
-	            <form class="form-horizontal push-20-t" action="{{ url('/admin/posts/update')}}" method="post" enctype="multipart/form-data">
+	            <form class="form-horizontal push-20-t" action="{{ url('/admin/posts/update')}}" method="post" >
 	                <div class="form-group">
 	                    <div class="col-sm-12">
 	                        <div class="form-material">
@@ -68,16 +68,15 @@
 	                </div>
 	               <div class="form-group">
 		               	<div class="col-xs-12">
-		               		<div class="col-xs-12">
-		               			<textarea  id="content" class="js-summernote" name="content">
-		               				
-		               				<?php echo $post['content'] ?>
-		               			</textarea>
-		               		</div>
+	               			<textarea  id="content" class="js-summernote" name="content">
+	               				
+	               				<?php echo $post['content'] ?>
+	               			</textarea>
 		               	</div>
 	               </div>
 	                <div class="form-group">
 	                    <div class="col-sm-12 ">
+	                    	<input type="hidden" name="id_post" value="<?php echo $post['id'] ?>">
 	                        <button class="btn btn-md btn-success" type="submit">Guardar</button>
 	                    </div>
 	                </div>

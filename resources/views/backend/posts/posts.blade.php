@@ -50,7 +50,7 @@
 			                    <?php foreach ($posts as $key => $post): ?>
 			                       <tr>
 			                       		<td class="text-center"> 
-			                       			<?php echo $key+1; ?>
+			                       			<?php echo $post['id']; ?>
 			                       		</td>
 			                       		<td class="text-center">
 			                       			<img src="<?php echo asset($post['img_post']); ?>" class="img-responsive" style="width: 60px;" aling="middle">

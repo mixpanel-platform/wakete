@@ -110,7 +110,7 @@
 				</div>
 			</div>
 		</div>
-		@include('canvas.popup-login')
+		@include('frontend.popup-login')
 	</section>
 @endsection
 	

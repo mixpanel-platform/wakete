@@ -39,38 +39,22 @@ Route::get('/catalog/team/{league_name}/{alias_team}', 'FootballController@team'
 Route::get('/catalog/news/{uri_category}', 'NewsController@category');
 Route::get('/catalog/article/{uri_post}', 'NewsController@post');
 
+
+//Music routes
+Route::get('/catalog/music', 'MusicController@index');
+
+
 // Another Routes
-Route::get('/phpconfig', 'FrontController@phpconfig');
+Route::get('/phpconfig', 'FrontController@phpconfig'); 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// ADMIN routes
+// ADMIN GROUP  routes
 Route::get('/admin', 'AdminController\BackendController@login');
 Route::get('/admin/login', 'AdminController\BackendController@login');
 Route::get('/admin/register', 'AdminController\BackendController@register');
 
-
-
 Route::get('/admin/dashboard', ['middleware' => 'auth','uses'=> 'AdminController\BackendController@dashboard']);
+
 
 // Admin posts routes
 Route::get('/admin/posts', ['middleware' => 'auth','uses'=> 'AdminController\PostsController@index']);
@@ -79,7 +63,7 @@ Route::post('/admin/posts/create', ['middleware' => 'auth','uses'=> 'AdminContro
 Route::post('/admin/posts/update', ['middleware' => 'auth','uses'=> 'AdminController\PostsController@updatePost']);
 Route::get('/admin/posts/update/{id}', ['middleware' => 'auth','uses'=> 'AdminController\PostsController@update']);
 Route::get('/admin/posts/delete/{id}', ['middleware' => 'auth','uses'=> 'AdminController\PostsController@delete']);
-
+Route::get('/admin/posts/importData', ['middleware' => 'auth','uses'=> 'AdminController\PostsController@importDataPosts']);
 // Admin posts routes
 Route::get('/admin/category', ['middleware' => 'auth','uses'=> 'AdminController\CategoryController@index']);
 Route::post('/admin/category/create', ['middleware' => 'auth','uses'=> 'AdminController\CategoryController@create']);

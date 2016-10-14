@@ -62,7 +62,7 @@
 			</div>
 
 		</div>
-
+		@include('frontend.popup-login')
 	</section>
 @endsection
 	
