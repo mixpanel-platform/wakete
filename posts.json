@@ -1,0 +1,414 @@
+
+{
+	'id': '28',
+	'title': 'Las mejores zonas',
+	'uri': 'las-mejores-zonas',
+	'id_category': '4',
+	'content': '<p class=\"MsoListParagraphCxSpMiddle\" style=\"text-align:justify\">Con este juego
+te patearás la ciudad como nunca antes. Podrás ir por carreteras y aceras pero
+ten en cuenta que ahí encontrarás Zubats y Golbat básicamente. Si quieres encontrarlos
+en grandes cantidades, ve a un parque. Si además tiene estatuas, plazas, museos
+o centros sociales estás de suerte ya que el juego identifica estos lugares
+como Pokeparadas. Al tocarlas, obtendrás Pokéballs y objetos como pociones o
+inciensos.<o:p></o:p></p><p class=\"MsoListParagraphCxSpMiddle\" style=\"text-align:justify\"><o:p>&nbsp;</o:p></p><p>
+</p><p class=\"MsoListParagraphCxSpLast\" style=\"text-align:justify\">Las pokeparadas se
+regeneran cada 15 o 20 minutos, lo que significa que puedes conseguir numerosos
+Pokémon y objetos sin caminar demasiado.<o:p></o:p></p>',
+	'created': '2016-10-13 16:14:46',
+	'updated': '2016-10-13 16:14:46',
+	'img_post': '/posts/uploads/2016-10-13_las-mejores-zonas',
+	'_id': ObjectId("57ffb2f69a1393595a14bb96")
+}
+{
+	'id': '29',
+	'title': 'Luchar en los Gimnasios',
+	'uri': 'luchar-en-los-gimnasios',
+	'id_category': '4',
+	'content': '<p class=\"MsoListParagraphCxSpMiddle\" style=\"text-align:justify\">Una vez
+lleguemos al nivel 5 podremos combatir en los Gimnasios. Antes tendremos que
+elegir equipo, instinto (amarillo), misticismo (azul) y valor (rojo). Después
+de elegir equipo podremos acceder a las luchas en los Gimnasios. Si son de
+nuestro equipo podremos entrar en el Gimnasio y podremos ser Líderes y dejar a
+nuestro Pokémon tras ganar a nuestros compañeros, cuantos más compañeros de
+equipo haya en el Gimnasio más difícil será que los de otro equipo os ganen.
+Por el contrario en los Gimnasios de otros colores tendremos que intentar
+arrebatárselos a los otros equipos.<o:p></o:p></p><p class=\"MsoListParagraphCxSpMiddle\" style=\"text-align:justify\"><o:p>&nbsp;</o:p></p><p>
+</p><p class=\"MsoListParagraphCxSpLast\" style=\"text-align:justify\">Las luchas no son
+nada parecidas a las que conocemos. Básicamente hay que esquivar y atacar. Lo
+principal es esquivar los ataques hasta que veamos la posibilidad y entonces
+pulsaremos para atacar. También aparece una barra que cuando esté cargada
+podremos realizar un ataque más fuerte. Como siempre, elegir bien al tipo de
+Pokémon es esencial, el agua vence al fuego.<o:p></o:p></p>',
+	'created': '2016-10-13 16:16:50',
+	'updated': '2016-10-13 16:16:50',
+	'img_post': '/posts/uploads/2016-10-13_luchar-en-los-gimnasios',
+	'_id': ObjectId("57ffb3729a1393595a14bb97")
+}
+{
+	'id': '30',
+	'title': 'Objetos Pokémon GO',
+	'uri': 'objetos-pokémon-go',
+	'id_category': '4',
+	'content': '<p class=\"MsoListParagraphCxSpMiddle\" style=\"margin-left:72.0pt;mso-add-space:
+auto;text-align:justify;text-indent:-18.0pt;mso-list:l1 level1 lfo2\">-<span style=\"font-variant-numeric: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: &quot;Times New Roman&quot;;\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span><!--[endif]--><b>Pokéballs</b>
+Gracias a las pokéballs se capturan los pokémons, si careces de ellas no podrás
+ni capturar pokémons ni subir de nivel a los pokémons que ya tienes. Éstas se
+encuentran en las pokeparadas de tu ciudad.<o:p></o:p></p><p class=\"MsoListParagraphCxSpMiddle\" style=\"text-align:justify\"><o:p>&nbsp;</o:p></p><p class=\"MsoListParagraphCxSpMiddle\" style=\"margin-left:72.0pt;mso-add-space:
+auto;text-align:justify;text-indent:-18.0pt;mso-list:l1 level1 lfo2\"><!--[if !supportLists]-->-<span style=\"font-variant-numeric: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: &quot;Times New Roman&quot;;\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span><!--[endif]--><b>Superballs</b>
+Se trata del siguiente nivel de las pokéballs, tienen mayor potencia para
+capturar. Si te encuentras con un pokémon raro de los que suele ser difícil
+encontrar o capturar utiliza una superball.<o:p></o:p></p><p class=\"MsoListParagraphCxSpMiddle\" style=\"text-align:justify\"><o:p>&nbsp;</o:p></p><p class=\"MsoListParagraphCxSpMiddle\" style=\"margin-left:72.0pt;mso-add-space:
+auto;text-align:justify;text-indent:-18.0pt;mso-list:l1 level1 lfo2\"><!--[if !supportLists]-->-<span style=\"font-variant-numeric: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: &quot;Times New Roman&quot;;\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span><!--[endif]--><b>Ultraballs</b>
+Son un nivel más alto aún que las superballs. Se pueden conseguir en la tienda
+(al igual que el resto de objetos) o encontrarse en pokeparadas siendo muy
+afortunado.<o:p></o:p></p><p class=\"MsoListParagraphCxSpMiddle\" style=\"text-align:justify\"><o:p>&nbsp;</o:p></p><p class=\"MsoListParagraphCxSpMiddle\" style=\"margin-left:72.0pt;mso-add-space:
+auto;text-align:justify;text-indent:-18.0pt;mso-list:l1 level1 lfo2\"><!--[if !supportLists]-->-<span style=\"font-variant-numeric: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: &quot;Times New Roman&quot;;\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span><!--[endif]--><b>Masterballs</b>
+Este tipo aún no está disponible, solamente en la versión beta del juego. Las
+masterballs no tienen mayor potencia para capturar, sino que directamente te
+aseguran que vas a capturar al pokémon sí o sí. Con ellas puedes nada más y
+nada menos que para poder capturar a Mewtwo. Así que si ves un pokémon
+legendario no dudes en tu sacar tu masterball.<o:p></o:p></p><p class=\"MsoListParagraphCxSpMiddle\" style=\"text-align:justify\"><o:p>&nbsp;</o:p></p><p class=\"MsoListParagraphCxSpMiddle\" style=\"margin-left:72.0pt;mso-add-space:
+auto;text-align:justify;text-indent:-18.0pt;mso-list:l1 level1 lfo2\"><!--[if !supportLists]-->-<span style=\"font-variant-numeric: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: &quot;Times New Roman&quot;;\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span><!--[endif]--><b>Módulo
+cebo</b> Sirve para ponerlo en una pokeparada y durante 30 minutos está ahí
+haciendo de cebo para atraer pokémons. Los pokémons atraídos en esa parada los
+verá tanto la persona que usó el módulo cebo como las demás personas que pasen
+por allí.<o:p></o:p></p><p class=\"MsoListParagraphCxSpMiddle\" style=\"text-align:justify\"><o:p>&nbsp;</o:p></p><p class=\"MsoListParagraphCxSpMiddle\" style=\"margin-left:72.0pt;mso-add-space:
+auto;text-align:justify;text-indent:-18.0pt;mso-list:l1 level1 lfo2\"><!--[if !supportLists]-->-<span style=\"font-variant-numeric: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: &quot;Times New Roman&quot;;\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span><!--[endif]--><b>Incienso</b>
+Sirve para capturar pokémons poco comunes o fuertes. Empiezas el juego con dos
+inciensos, luego se pueden comprar en la tienda, encontrar en pokeparadas u
+obtener como recompensa en las subidas de nivel.<o:p></o:p></p><p class=\"MsoListParagraphCxSpMiddle\" style=\"text-align:justify\"><o:p>&nbsp;</o:p></p><p class=\"MsoListParagraphCxSpMiddle\" style=\"margin-left:72.0pt;mso-add-space:
+auto;text-align:justify;text-indent:-18.0pt;mso-list:l1 level1 lfo2\"><!--[if !supportLists]-->-<span style=\"font-variant-numeric: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: &quot;Times New Roman&quot;;\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span><!--[endif]--><b>Baya
+Frambu</b> Si das de estas bayas a los pokémons serán más fáciles de capturar.
+Cuando empieces el nivel 8 las encontrarás en las pokeparadas y las obtendrás
+como recompensa al subir de nivel.<o:p></o:p></p><p class=\"MsoListParagraphCxSpMiddle\" style=\"text-align:justify\"><o:p>&nbsp;</o:p></p><p class=\"MsoListParagraphCxSpMiddle\" style=\"margin-left:72.0pt;mso-add-space:
+auto;text-align:justify;text-indent:-18.0pt;mso-list:l1 level1 lfo2\"><!--[if !supportLists]-->-<span style=\"font-variant-numeric: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: &quot;Times New Roman&quot;;\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span><!--[endif]--><b>Incubadoras</b>
+Se utilizan para incubar los huevos pokémon, pueden tener 3 usos o de uso
+infinito.<o:p></o:p></p><p class=\"MsoListParagraphCxSpMiddle\" style=\"text-align:justify\"><o:p>&nbsp;</o:p></p><p class=\"MsoListParagraphCxSpMiddle\" style=\"margin-left:72.0pt;mso-add-space:
+auto;text-align:justify;text-indent:-18.0pt;mso-list:l1 level1 lfo2\"><!--[if !supportLists]-->-<span style=\"font-variant-numeric: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: &quot;Times New Roman&quot;;\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span><!--[endif]--><b>Cámara</b>
+La adquieres al iniciar el juego, con ella puedes hacer fotos a los pokémons
+que vayas encontrándote.<o:p></o:p></p><p class=\"MsoListParagraphCxSpMiddle\" style=\"text-align:justify\"><o:p>&nbsp;</o:p></p><p class=\"MsoListParagraphCxSpMiddle\" style=\"margin-left:72.0pt;mso-add-space:
+auto;text-align:justify;text-indent:-18.0pt;mso-list:l1 level1 lfo2\"><!--[if !supportLists]-->-<span style=\"font-variant-numeric: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: &quot;Times New Roman&quot;;\">&nbsp; &nbsp; &nbsp; &nbsp; </span><b>Pociones</b>
+Se usan para curar pokémons en batallas en los gimnasios. La poción básica
+restaura 20 puntos de vida. Se pueden comprar en la tienda, encontrar en
+pokeparadas u obtener como recompensa al subir de nivel, pero hay que tener el
+nivel 5 para ello, que es cuando se puede acceder a los gimnasios.<o:p></o:p></p><p class=\"MsoListParagraphCxSpMiddle\" style=\"text-align:justify\"><o:p>&nbsp;</o:p></p><p class=\"MsoListParagraphCxSpMiddle\" style=\"margin-left:72.0pt;mso-add-space:
+auto;text-align:justify;text-indent:-18.0pt;mso-list:l1 level1 lfo2\"><!--[if !supportLists]-->-<span style=\"font-variant-numeric: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: &quot;Times New Roman&quot;;\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span><!--[endif]--><b>Super
+poción</b> Las super pociones te curan 50 puntos de vida. Puedes encontrarlas o
+conseguirlas en tienda o como recompensa a partir del nivel 10.<o:p></o:p></p><p class=\"MsoListParagraphCxSpMiddle\" style=\"text-align:justify\"><o:p>&nbsp;</o:p></p><p class=\"MsoListParagraphCxSpMiddle\" style=\"margin-left:72.0pt;mso-add-space:
+auto;text-align:justify;text-indent:-18.0pt;mso-list:l1 level1 lfo2\"><!--[if !supportLists]-->-<span style=\"font-variant-numeric: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: &quot;Times New Roman&quot;;\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span><!--[endif]--><b>Hiper
+poción</b> Restaura 200 puntos de vida, y pueden conseguirse a partir del nivel
+15.<o:p></o:p></p><p class=\"MsoListParagraphCxSpMiddle\" style=\"text-align:justify\"><o:p>&nbsp;</o:p></p><p class=\"MsoListParagraphCxSpMiddle\" style=\"margin-left:72.0pt;mso-add-space:
+auto;text-align:justify;text-indent:-18.0pt;mso-list:l1 level1 lfo2\"><!--[if !supportLists]-->-<span style=\"font-variant-numeric: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: &quot;Times New Roman&quot;;\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span><!--[endif]--><b>Revivir </b>Restaura
+la mitad de puntos de vida a tu pokémon. Sólo tiene resultado en una batalla
+pokémon en gimnasio.<o:p></o:p></p><p class=\"MsoListParagraphCxSpMiddle\" style=\"text-align:justify\"><o:p>&nbsp;</o:p></p><p class=\"MsoListParagraphCxSpMiddle\" style=\"margin-left:72.0pt;mso-add-space:
+auto;text-align:justify;text-indent:-18.0pt;mso-list:l1 level1 lfo2\"><!--[if !supportLists]-->-<span style=\"font-variant-numeric: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: &quot;Times New Roman&quot;;\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span><!--[endif]--><b>Max
+revivir</b> Restaura todos los puntos de vida del pokémon en caso de que haya
+tenido un desmayo.<o:p></o:p></p><p class=\"MsoListParagraphCxSpMiddle\" style=\"text-align:justify\"><o:p>&nbsp;</o:p></p><p class=\"MsoListParagraphCxSpMiddle\" style=\"margin-left:72.0pt;mso-add-space:
+auto;text-align:justify;text-indent:-18.0pt;mso-list:l1 level1 lfo2\"><!--[if !supportLists]-->-<span style=\"font-variant-numeric: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: &quot;Times New Roman&quot;;\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span><!--[endif]--><b>Mochila</b>
+Aquí es donde guardas todos tus objetos, como las pokéballs. Tiene una
+capacidad inicial para 350 cosas, puedes aumentar la capacidad de 50 en 50 en
+la tienda.<o:p></o:p></p><p class=\"MsoListParagraphCxSpMiddle\" style=\"text-align:justify\"><o:p>&nbsp;</o:p></p><p class=\"MsoListParagraphCxSpMiddle\" style=\"margin-left:72.0pt;mso-add-space:
+auto;text-align:justify;text-indent:-18.0pt;mso-list:l1 level1 lfo2\"><!--[if !supportLists]-->-<span style=\"font-variant-numeric: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: &quot;Times New Roman&quot;;\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span><!--[endif]--><b>Huevos
+pokémon</b> Huevos en los que nace un pokémon según la distancia que recorres.
+Algunos pokémons requieren más pasos que otros para ancer. Se puedne encontrar
+en las pokeparadas o comprar en la tienda.<o:p></o:p></p><p class=\"MsoListParagraphCxSpMiddle\" style=\"text-align:justify\"><o:p>&nbsp;</o:p></p><p class=\"MsoListParagraphCxSpMiddle\" style=\"margin-left:72.0pt;mso-add-space:
+auto;text-align:justify;text-indent:-18.0pt;mso-list:l1 level1 lfo2\"><!--[if !supportLists]-->-<span style=\"font-variant-numeric: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: &quot;Times New Roman&quot;;\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span><!--[endif]--><b>Huevos de
+la suerte</b> Éstos no contienen pokémons pero sí objetos comprables en la
+tienda y aumentan tu experiencia el doble durante 30 minutos.<o:p></o:p></p><p class=\"MsoListParagraphCxSpMiddle\" style=\"text-align:justify\"><o:p>&nbsp;</o:p></p><p>
+</p><p class=\"MsoListParagraphCxSpLast\" style=\"margin-left:72.0pt;mso-add-space:auto;
+text-align:justify;text-indent:-18.0pt;mso-list:l1 level1 lfo2\"><!--[if !supportLists]-->-<span style=\"font-variant-numeric: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: &quot;Times New Roman&quot;;\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span><!--[endif]--><b>Pokemonedas</b>
+Con ellas se compran las cosas de la tienda, pero para conseguirlas hay que
+comprarlas con dinero real, o en batallas en gimnasios. Ya sea tomando el poder
+de ellos o defendiendo gimnasios tuyos.<o:p></o:p></p>',
+	'created': '2016-10-13 16:18:24',
+	'updated': '2016-10-13 16:18:24',
+	'img_post': '/posts/uploads/2016-10-13_objetos-pokémon-go',
+	'_id': ObjectId("57ffb3d09a1393595a14bb98")
+}
+{
+	'id': '31',
+	'title': 'Polvo de estrellas',
+	'uri': 'polvo-de-estrellas',
+	'id_category': '4',
+	'content': '<p class=\"MsoListParagraphCxSpLast\" style=\"text-align:justify\">Obtienes Stardust
+(o polvo de estrellas) al romper los cascarones de huevos y obtener pokémons
+salvajes. Usarlos para mejorar el CP de tu pokémon es por mucho el recurso más
+importante del juego. Si bien puedes tomar un pokémon con una barra CP muy baja
+y nivelarlo hasta arriba, es mejor guardarlo para pokémons cuya barra de CP
+falte poco para llenarse. De lo contrario, estarás desperdiciando mucho de tu
+preciado polvo de estrellas.<o:p></o:p></p>',
+	'created': '2016-10-13 16:26:05',
+	'updated': '2016-10-13 16:26:05',
+	'img_post': '/posts/uploads/2016-10-13_polvo-de-estrellas',
+	'_id': ObjectId("57ffb59d9a1393595a14bb99")
+}
+{
+	'id': '32',
+	'title': 'Recompensas y objetos desbloqueables',
+	'uri': 'recompensas-y-objetos-desbloqueables',
+	'id_category': '4',
+	'content': '<p class=\"MsoListParagraphCxSpMiddle\" style=\"text-align:justify\">Cada nivel que
+se sube en el juego se obtiene alguna recompensa distinta, hasta el nivel 18:</p><p class=\"MsoListParagraphCxSpMiddle\" style=\"text-align:justify\"><br></p><p class=\"MsoListParagraphCxSpMiddle\" style=\"margin-left:90.0pt;mso-add-space:
+auto;text-align:justify;text-indent:-18.0pt;mso-list:l0 level1 lfo2\"><!--[if !supportLists]--><span style=\"font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+Symbol\">·<span style=\"font-variant-numeric: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: &quot;Times New Roman&quot;;\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><!--[endif]-->Nivel 1: 1000 XP no recompensa nada que
+desbloquear<o:p></o:p></p><p class=\"MsoListParagraphCxSpMiddle\" style=\"text-align:justify\"><o:p>&nbsp;</o:p></p><p class=\"MsoListParagraphCxSpMiddle\" style=\"margin-left:90.0pt;mso-add-space:
+auto;text-align:justify;text-indent:-18.0pt;mso-list:l0 level1 lfo2\"><!--[if !supportLists]--><span style=\"font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+Symbol\">·<span style=\"font-variant-numeric: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: &quot;Times New Roman&quot;;\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><!--[endif]-->Nivel 2: 2000 XP 15 pokéballs nada que
+desbloquear<o:p></o:p></p><p class=\"MsoListParagraphCxSpMiddle\" style=\"text-align:justify\"><o:p>&nbsp;</o:p></p><p class=\"MsoListParagraphCxSpMiddle\" style=\"margin-left:90.0pt;mso-add-space:
+auto;text-align:justify;text-indent:-18.0pt;mso-list:l0 level1 lfo2\"><!--[if !supportLists]--><span style=\"font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+Symbol\">·<span style=\"font-variant-numeric: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: &quot;Times New Roman&quot;;\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><!--[endif]-->Nivel 3: 3000 XP 15 pokéballs nada que
+desbloquear<o:p></o:p></p><p class=\"MsoListParagraphCxSpMiddle\" style=\"text-align:justify\"><o:p>&nbsp;</o:p></p><p class=\"MsoListParagraphCxSpMiddle\" style=\"margin-left:90.0pt;mso-add-space:
+auto;text-align:justify;text-indent:-18.0pt;mso-list:l0 level1 lfo2\"><!--[if !supportLists]--><span style=\"font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+Symbol\">·<span style=\"font-variant-numeric: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: &quot;Times New Roman&quot;;\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><!--[endif]-->Nivel 4: 4000 XP 15 pokéballs nada que
+desbloquear<o:p></o:p></p><p class=\"MsoListParagraphCxSpMiddle\" style=\"text-align:justify\"><o:p>&nbsp;</o:p></p><p class=\"MsoListParagraphCxSpMiddle\" style=\"margin-left:90.0pt;mso-add-space:
+auto;text-align:justify;text-indent:-18.0pt;mso-list:l0 level1 lfo2\"><!--[if !supportLists]--><span style=\"font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+Symbol\">·<span style=\"font-variant-numeric: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: &quot;Times New Roman&quot;;\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><!--[endif]-->Nivel 5: 5000 XP 1 incienso, 10 pociones, 10
+revivir gimnasios, pociones, revivir<o:p></o:p></p><p class=\"MsoListParagraphCxSpMiddle\" style=\"text-align:justify\"><o:p>&nbsp;</o:p></p><p class=\"MsoListParagraphCxSpMiddle\" style=\"margin-left:90.0pt;mso-add-space:
+auto;text-align:justify;text-indent:-18.0pt;mso-list:l0 level1 lfo2\"><!--[if !supportLists]--><span style=\"font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+Symbol\">·<span style=\"font-variant-numeric: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: &quot;Times New Roman&quot;;\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><!--[endif]-->Nivel 6: 6000 XP 15 pokéballs, 10 pociones, 10
+revivir, 1 incubadora nada que desbloquear<o:p></o:p></p><p class=\"MsoListParagraphCxSpMiddle\" style=\"text-align:justify\"><o:p>&nbsp;</o:p></p><p class=\"MsoListParagraphCxSpMiddle\" style=\"margin-left:90.0pt;mso-add-space:
+auto;text-align:justify;text-indent:-18.0pt;mso-list:l0 level1 lfo2\"><!--[if !supportLists]--><span style=\"font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+Symbol\">·<span style=\"font-variant-numeric: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: &quot;Times New Roman&quot;;\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><!--[endif]-->Nivel 7: 7000 XP 1 incienso, 10 pociones, 10
+revivir, 15 pokéballs nada que desbloquear<o:p></o:p></p><p class=\"MsoListParagraphCxSpMiddle\" style=\"text-align:justify\"><o:p>&nbsp;</o:p></p><p class=\"MsoListParagraphCxSpMiddle\" style=\"margin-left:90.0pt;mso-add-space:
+auto;text-align:justify;text-indent:-18.0pt;mso-list:l0 level1 lfo2\"><!--[if !supportLists]--><span style=\"font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+Symbol\">·<span style=\"font-variant-numeric: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: &quot;Times New Roman&quot;;\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><!--[endif]-->Nivel 8: 8000 XP 10 pociones, 15 pokéballs, 5
+revivir, 10 bayas frambu, 1 módulo cebo baya frambu<o:p></o:p></p><p class=\"MsoListParagraphCxSpMiddle\" style=\"text-align:justify\"><o:p>&nbsp;</o:p></p><p class=\"MsoListParagraphCxSpMiddle\" style=\"margin-left:90.0pt;mso-add-space:
+auto;text-align:justify;text-indent:-18.0pt;mso-list:l0 level1 lfo2\"><!--[if !supportLists]--><span style=\"font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+Symbol\">·<span style=\"font-variant-numeric: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: &quot;Times New Roman&quot;;\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><!--[endif]-->Nivel 9: 9000 XP 15 pokéballs, 10 pociones, 3
+bayas frambu, 5 revivir, 1 huevo de la suerte nada que desbloquear<o:p></o:p></p><p class=\"MsoListParagraphCxSpMiddle\" style=\"text-align:justify\"><o:p>&nbsp;</o:p></p><p class=\"MsoListParagraphCxSpMiddle\" style=\"margin-left:90.0pt;mso-add-space:
+auto;text-align:justify;text-indent:-18.0pt;mso-list:l0 level1 lfo2\"><!--[if !supportLists]--><span style=\"font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+Symbol\">·<span style=\"font-variant-numeric: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: &quot;Times New Roman&quot;;\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></span>Nivel 10: 10.000 XP 15 pokéballs, 10 super
+pociones, 10 bayas frambu, 10 revivir, 1 huevo de la suerte, 1 incienso, 1
+módulo cebo, 1 incubadora super poción<o:p></o:p></p><p class=\"MsoListParagraphCxSpMiddle\" style=\"text-align:justify\"><o:p>&nbsp;</o:p></p><p class=\"MsoListParagraphCxSpMiddle\" style=\"margin-left:90.0pt;mso-add-space:
+auto;text-align:justify;text-indent:-18.0pt;mso-list:l0 level1 lfo2\"><!--[if !supportLists]--><span style=\"font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+Symbol\">·<span style=\"font-variant-numeric: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: &quot;Times New Roman&quot;;\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><!--[endif]-->Nivel 11: 10.000 XP 10 super pociones, 15
+pokéballs, 3 revivir, 3 bayas frambu nada que desbloquear<o:p></o:p></p><p class=\"MsoListParagraphCxSpMiddle\" style=\"text-align:justify\"><o:p>&nbsp;</o:p></p><p class=\"MsoListParagraphCxSpMiddle\" style=\"margin-left:90.0pt;mso-add-space:
+auto;text-align:justify;text-indent:-18.0pt;mso-list:l0 level1 lfo2\"><!--[if !supportLists]--><span style=\"font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+Symbol\">·<span style=\"font-variant-numeric: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: &quot;Times New Roman&quot;;\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><!--[endif]-->Nivel 12: 10.000 XP 20 superballs, 3 revivir, 10
+super pociones, 3 bayas frambu superballs<o:p></o:p></p><p class=\"MsoListParagraphCxSpMiddle\" style=\"text-align:justify\"><o:p>&nbsp;</o:p></p><p class=\"MsoListParagraphCxSpMiddle\" style=\"margin-left:90.0pt;mso-add-space:
+auto;text-align:justify;text-indent:-18.0pt;mso-list:l0 level1 lfo2\"><!--[if !supportLists]--><span style=\"font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+Symbol\">·<span style=\"font-variant-numeric: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: &quot;Times New Roman&quot;;\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><!--[endif]-->Nivel 13: 10.000 XP 15 superballs, 10 super
+pociones, 3 revivir, 3 bayas frambu nada que desbloquear<o:p></o:p></p><p class=\"MsoListParagraphCxSpMiddle\" style=\"text-align:justify\"><o:p>&nbsp;</o:p></p><p class=\"MsoListParagraphCxSpMiddle\" style=\"margin-left:90.0pt;mso-add-space:
+auto;text-align:justify;text-indent:-18.0pt;mso-list:l0 level1 lfo2\"><!--[if !supportLists]--><span style=\"font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+Symbol\">·<span style=\"font-variant-numeric: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: &quot;Times New Roman&quot;;\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><!--[endif]-->Nivel 14: 15.000 XP 15 superballs, 10 super
+pociones, 3 revivir, 3 bayas frambu nada que desbloquear<o:p></o:p></p><p class=\"MsoListParagraphCxSpMiddle\" style=\"text-align:justify\"><o:p>&nbsp;</o:p></p><p class=\"MsoListParagraphCxSpMiddle\" style=\"margin-left:90.0pt;mso-add-space:
+auto;text-align:justify;text-indent:-18.0pt;mso-list:l0 level1 lfo2\"><!--[if !supportLists]--><span style=\"font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+Symbol\">·<span style=\"font-variant-numeric: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: &quot;Times New Roman&quot;;\">&nbsp; &nbsp; &nbsp;&nbsp;</span></span>Nivel 15: 20.000 XP 15 superballs, 20 hiper
+pociones, 10 bayas frambu, 10 revivir, 1 incienso, 1 incubadora, 1 módulo cebo,
+1 huevo de la suerte hiper poción<o:p></o:p></p><p class=\"MsoListParagraphCxSpMiddle\" style=\"text-align:justify\"><o:p>&nbsp;</o:p></p><p class=\"MsoListParagraphCxSpMiddle\" style=\"margin-left:90.0pt;mso-add-space:
+auto;text-align:justify;text-indent:-18.0pt;mso-list:l0 level1 lfo2\"><!--[if !supportLists]--><span style=\"font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+Symbol\">·<span style=\"font-variant-numeric: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: &quot;Times New Roman&quot;;\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><!--[endif]-->Nivel 16: 20.000 XP 10 hiper pociones, 10
+superballs, 5 revivir, 5 bayas frambu nada que desbloquear<o:p></o:p></p><p class=\"MsoListParagraphCxSpMiddle\" style=\"text-align:justify\"><o:p>&nbsp;</o:p></p><p class=\"MsoListParagraphCxSpMiddle\" style=\"margin-left:90.0pt;mso-add-space:
+auto;text-align:justify;text-indent:-18.0pt;mso-list:l0 level1 lfo2\"><!--[if !supportLists]--><span style=\"font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+Symbol\">·<span style=\"font-variant-numeric: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: &quot;Times New Roman&quot;;\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><!--[endif]-->Nivel 17: 10 hiper pociones, 10 superballs, 5
+revivir, 5 bayas frambu nada que desbloquear<o:p></o:p></p><p class=\"MsoListParagraphCxSpMiddle\" style=\"text-align:justify\"><o:p>&nbsp;</o:p></p><p class=\"MsoListParagraphCxSpMiddle\" style=\"margin-left:90.0pt;mso-add-space:
+auto;text-align:justify;text-indent:-18.0pt;mso-list:l0 level1 lfo2\"><!--[if !supportLists]--><span style=\"font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+Symbol\">·<span style=\"font-variant-numeric: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: &quot;Times New Roman&quot;;\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><!--[endif]-->Nivel 18: 20.000 XP 10 hiper pociones, 10
+superballs, 5 revivir, 5 bayas frambu nada que desbloquear<o:p></o:p></p><p class=\"MsoListParagraphCxSpMiddle\" style=\"text-align:justify\"><o:p>&nbsp;</o:p></p><p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</p><p class=\"MsoListParagraphCxSpLast\" style=\"text-align:justify\">Hasta el nivel 18
+esto es todo lo que hay en Pokémon GO por ahora. Ya estáis preparados para
+saber qué vais a encontraros según vayáis avanzando de nivel. Si alguien ha
+llegado más lejos del nivel 18 podéis aportar lo que queráis en los
+comentarios.<o:p></o:p></p>',
+	'created': '2016-10-14 08:13:16',
+	'updated': '2016-10-14 08:13:16',
+	'img_post': '/posts/uploads/2016-10-14_recompensas-y-objetos-desbloqueables',
+	'_id': ObjectId("5800939d9a1393430c3f2f41")
+}
+{
+	'id': '33',
+	'title': 'Subir de nivel rápidamente',
+	'uri': 'subir-de-nivel-rápidamente',
+	'id_category': '4',
+	'content': '<p class=\"MsoListParagraphCxSpFirst\" style=\"text-align:justify;text-indent:-18.0pt;
+mso-list:l0 level1 lfo1\"><b>&nbsp; &nbsp; &nbsp;</b>Si quieres retar
+a gimnasios, tendrás que llegar al nivel 5 del juego. Así que lee con atención:
+cuando estés en el parque, usa el ítem ‘incienso’ ya que así multiplicarás las
+posibilidades de que aparezcan más pokémon.</p><p class=\"MsoListParagraphCxSpMiddle\" style=\"text-align:justify\"><o:p></o:p></p><p class=\"MsoListParagraphCxSpMiddle\" style=\"text-align:justify\"><o:p>&nbsp;</o:p>Y sí, los
+necesitas nuevos, ya que por cada uno de ellos conseguirás 600 px, mientras que
+si encuentras siempre el mismo, sólo conseguirás 100 px.</p><p class=\"MsoListParagraphCxSpLast\" style=\"text-align:justify\"><o:p></o:p></p>',
+	'created': '2016-10-14 08:20:20',
+	'updated': '2016-10-14 08:20:20',
+	'img_post': '/posts/uploads/2016-10-14_subir-de-nivel-rápidamente',
+	'_id': ObjectId("580095449a1393430c3f2f42")
+}
+{
+	'id': '34',
+	'title': 'Todos los elementos Pokemon go',
+	'uri': 'todos-los-elementos-pokemon-go',
+	'id_category': '4',
+	'content': '<p class=\"MsoListParagraphCxSpFirst\" style=\"text-align:justify;text-indent:-18.0pt;
+mso-list:l0 level1 lfo1\"><!--[if !supportLists]--><b>1.<span style=\"font-variant-numeric: normal; font-weight: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: &quot;Times New Roman&quot;;\">&nbsp; &nbsp; &nbsp; &nbsp;</span></b>Existen
+diferentes elementos en la pantalla del juego. A continuación os explicamos cada
+uno:</p><p class=\"MsoListParagraphCxSpMiddle\" style=\"text-align:justify\"><o:p></o:p></p><p class=\"MsoListParagraphCxSpMiddle\" style=\"text-align:justify\">Foto y nombre de
+jugador (imagen 2): En este apartado podremos ver a nuestro personaje, su
+nivel, los PX que llevamos y cuantos nos quedan para subir de nivel, nuestro
+diario, las monedas que llevamos (pokémonedas) y el equipo al que pertenecemos:
+Valor, Sabiduría e Instinto. Y deslizando esto mismo hacía abajo, vemos todos
+nuestros logros.</p><p class=\"MsoListParagraphCxSpMiddle\" style=\"text-align:justify\"><o:p></o:p></p><p class=\"MsoListParagraphCxSpMiddle\" style=\"text-align:justify\">La Poké Ball del
+medio (imagen 3): Podemos definirla como el menú principal. En él podremos ver
+los Pokémon capturados, los objetos que tenemos, la pokédex y la tienda, donde
+podremos comprar objetos. Más adelante os explicaré qué es y para qué sirve
+cada objeto.</p><p class=\"MsoListParagraphCxSpMiddle\" style=\"text-align:justify\"><o:p></o:p></p><p class=\"MsoListParagraphCxSpMiddle\" style=\"text-align:justify\">Pokémon que nos
+rodean (imagen 4): En este último apartado podemos ver los Pokémon que tenemos
+a nuestro alrededor y lo lejos o cerca que están en función a la cantidad de
+huellas que le acompañen. Cuantas más huellas, más lejos está ese Pokémon de
+nosotros.</p><p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</p><p class=\"MsoListParagraphCxSpLast\" style=\"text-align:justify\">Poképaradas y
+gimnasios: Las poképaradas son lugares de la ciudad, generalmente lugar
+importantes o con alguna historia detrás (aunque hay de todo, incluso quienes
+aprovechan para llamar la atención sabiendo que su establecimiento es una
+poképarada) que nos darán objetos, como PokéBalls o Huevos. Los gimnasios son
+lugares aún con mayor importancia donde un entrenador Pokémon, tras luchar con
+el dueño del gimnasio y ganarle puede dejar ahí a sus Pokémon y entrenarlos
+para que sean más fuertes.<o:p></o:p></p>',
+	'created': '2016-10-14 08:26:38',
+	'updated': '2016-10-14 08:26:38',
+	'img_post': '/posts/uploads/2016-10-14_todos-los-elementos-pokemon-go',
+	'_id': ObjectId("580096be9a1393430c3f2f43")
+}
+{
+	'id': '35',
+	'title': '¡Super Balls!',
+	'uri': '¡super-balls!',
+	'id_category': '4',
+	'content': '<p class=\"MsoListParagraphCxSpFirst\" style=\"text-align:justify;text-indent:-18.0pt;
+mso-list:l0 level1 lfo1\"><!--[if !supportLists]--><b>1.<span style=\"font-variant-numeric: normal; font-weight: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: &quot;Times New Roman&quot;;\">&nbsp; &nbsp; &nbsp;</span></b>Cuando ya llevamos
+un tiempo jugando, nos damos cuenta que algunos Pokémon son más difíciles de
+capturar que otros, pero para eso nos empiezan a dar Super Balls e incluso
+Ultra Balls. Estas pokéballs tienen la peculiaridad de tener un ratio de
+captura mayor.</p><p class=\"MsoListParagraphCxSpLast\" style=\"text-align:justify\"><o:p></o:p></p>',
+	'created': '2016-10-14 08:31:39',
+	'updated': '2016-10-14 08:31:39',
+	'img_post': '/posts/uploads/2016-10-14_--¡super-balls!',
+	'_id': ObjectId("580097eb9a1393430c3f2f44")
+}

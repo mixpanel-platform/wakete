@@ -95,6 +95,16 @@
                                         <?php endif ?>
                                     <?php endforeach ?>
                                 </li>
+                                <li {{{ (Request::is('/catalog/wallpapers') ? 'class=current' : '') }}}>
+                                    <a href="{{url('/catalog/wallpapers')}}"><div>Wallpapers</div></a>
+                                    <ul>
+                                        <li {{{ (Request::is('/catalog/wallpapers/pokemon') ? 'class=current' : '') }}}>
+                                            <a href="{{ url('/catalog/wallpapers/pokemon') }}">
+                                                <div>pokemon</div>
+                                            </a> 
+                                        </li>
+                                    </ul>
+                                </li>
                                 <li class="log-out">
                                     <a href="{{ url('/exit') }}"><i class="fa fa-sign-out" aria-hidden="true"></i> Salir</a></ul>
                                 </li>

@@ -13,8 +13,8 @@ class MusicController extends Controller
 {
     public function index()
     {
-    	$this->getDataTracks(1000);
-    	die();
+    	// $this->getDataTracks(1000);
+    	// die();
 
         FrontController::autenthication();
         $songs = DB::connection('dbo')->collection('music')->get();
