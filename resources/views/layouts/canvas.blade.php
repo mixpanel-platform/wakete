@@ -73,6 +73,9 @@
                                         </li>
                                     </ul>
                                 </li>
+                                <li {{{ (Request::is('/catalog/music') ? 'class=current' : '') }}}>
+                                    <a href="{{url('/catalog/music')}}"><div>Música</div></a>
+                                </li>
                                 <li>
                                     <?php foreach ($newsCategories as $newCat): ?>
                                         <a href="#"><div><?php echo $newCat['name'] ?></div></a>

@@ -9,7 +9,7 @@
 				@foreach ($matchs as $match)
 					<a href="{{ url('/catalog/match') }}/{{ $match->id }}" class="bordered">
 						
-						<div class="col-md-3 col-xs-12" style="min-height: 280px;padding-top: 40px;">
+						<div class="col-md-3 col-xs-12" style="min-height: 280px;padding-top: 40px; margin-bottom: 20px;">
 							<div class="row">
 								<div class="col-xs-6 text-center">
 									<p class="text-black text-center push-10">Local</p>
