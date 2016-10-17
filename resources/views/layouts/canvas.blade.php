@@ -92,15 +92,9 @@
                                         <?php endif ?>
                                     <?php endforeach ?>
                                 </li>
-                                @if (Auth::guest())
-                                    <li class="log-in"><button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#loginModal">
-                                        <i class="fa fa-user" aria-hidden="true"></i> Entrar</button >
-                                    </li>
-                                @else
-                                    <li class="log-out">
-                                        <a href="{{ url('/logout') }}"><i class="fa fa-sign-out" aria-hidden="true"></i> Salir</a></ul>
-                                    </li>
-                                @endif
+                                <li class="log-out">
+                                    <a href="{{ url('/exit') }}"><i class="fa fa-sign-out" aria-hidden="true"></i> Salir</a></ul>
+                                </li>
                             </ul>
 
                         </nav><!-- #primary-menu end -->

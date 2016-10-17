@@ -44,7 +44,18 @@ class PostsController extends Controller
         $file = $request->file('img_post');
         if ( $file ) {
             $image = Image::make($file->getRealPath());
-            $fullName = date('Y-m-d').'_'.str_replace(' ', '-', strtolower($dataNewPost['title']));
+            $mime = $image->mime();  //edited due to updated to 2.x
+            // echo $mime;
+            // die();
+            if ($mime == 'image/jpeg')
+                $extension = '.jpg';
+            elseif ($mime == 'image/png')
+                $extension = '.png';
+            elseif ($mime == 'image/gif')
+                $extension = '.gif';
+            else
+                $extension = '';
+            $fullName = date('Y-m-d').'_'.str_replace(' ', '-', strtolower($dataNewPost['title'])).$extension;
 
             $pathToCreate = public_path()."/posts/uploads/";
             $pathDatabase = "/posts/uploads/";
