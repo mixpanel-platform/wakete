@@ -18,7 +18,6 @@ class MusicController extends Controller
 
         FrontController::autenthication();
         $songs = DB::connection('dbo')->collection('music')->get();
-        
         $categoriesSongs = $this->getDataTracksCategories($songs);
 
     	return view('frontend/music/index', [ 
@@ -32,16 +31,16 @@ class MusicController extends Controller
     static function getDataTracksCategories($songs)
     {
         $dataCategoriesSongs = array();
-        foreach ($songs as $key => $song) {
-            foreach ($song['track_genres'] as $key => $cat) {
-                if (!in_array($cat, $dataCategoriesSongs)) {
-                    $catetory = strtolower(str_replace(' ', '_', $cat['genre_title']));
-                    $dataCategoriesSongs[$catetory] = $cat['genre_title'];
+        foreach ($songs as $song) {
+            if (isset($song['track_genres'])) {
+                foreach ($song['track_genres'] as $cat) {
+                    if (!in_array($cat['genre_title'], $dataCategoriesSongs)) {
+                        $catetory = strtolower(str_replace(' ', '_', $cat['genre_title']));
+                        $dataCategoriesSongs[$catetory] = $cat['genre_title'];
+                    }
                 }
-            }
-           
+            }           
         }
-
         return $dataCategoriesSongs;
     }
 
@@ -57,6 +56,7 @@ class MusicController extends Controller
 
             foreach ($response['dataset'] as $singleSong) {
                 if ( preg_match('/Attribution-NoDerivatives/i', $singleSong['license_title']) ||
+                    preg_match('/Attribution-ShareAlike/i', $singleSong['license_title']) ||
                     preg_match('/Public Domain Dedication/i', $singleSong['license_title'])
                     ) {
 

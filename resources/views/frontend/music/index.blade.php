@@ -31,32 +31,34 @@
 					============================================= -->
 					<div id="portfolio" class="portfolio grid-container clearfix">
 						<?php foreach ($songs as $key => $song): ?>
-							<?php 
-								$cats = '';
-								$tags = array(); 
-								foreach ($song['track_genres'] as $key => $cat){
-									$cats .= " ".strtolower(str_replace(' ', '_', $cat['genre_title'])); 
-									$tags[] = $cat;
-								} 
-							?>
-							<article class="portfolio-item pf-graphics pf-media <?php echo $cats ?>">
-								<div class="portfolio-image">
-									<a href="{{url('/catalog/music')}}/<?php echo str_replace(' ', '-', $song['track_title']) ?>">
-										<img src="<?php echo $song['track_image_file'] ?>" alt="$song['track_title']">
-									</a>
-									<div class="portfolio-overlay">
-										<a href="{{url('/catalog/music')}}/<?php echo str_replace(' ', '-', $song['track_title']) ?>" class="left-icon"><i class="icon-line-play"></i></a>
-									</div>
-								</div>
-								<div class="portfolio-desc">
-									<h3>
+							<?php if (isset($song['track_genres'])): ?>
+								<?php 
+									$cats = '';
+									$tags = array(); 
+									foreach ($song['track_genres'] as $key => $cat){
+										$cats .= " ".strtolower(str_replace(' ', '_', $cat['genre_title'])); 
+										$tags[] = $cat;
+									} 
+								?>
+								<article class="portfolio-item pf-graphics pf-media <?php echo $cats ?>">
+									<div class="portfolio-image">
 										<a href="{{url('/catalog/music')}}/<?php echo str_replace(' ', '-', $song['track_title']) ?>">
-											<?php echo $song['track_title'] ?>	
+											<img src="<?php echo $song['track_image_file'] ?>" alt="$song['track_title']">
 										</a>
-									</h3>
-									
-								</div>
-							</article>
+										<div class="portfolio-overlay">
+											<a href="{{url('/catalog/music')}}/<?php echo str_replace(' ', '-', $song['track_title']) ?>" class="left-icon"><i class="icon-line-play"></i></a>
+										</div>
+									</div>
+									<div class="portfolio-desc">
+										<h3>
+											<a href="{{url('/catalog/music')}}/<?php echo str_replace(' ', '-', $song['track_title']) ?>">
+												<?php echo $song['track_title'] ?>	
+											</a>
+										</h3>
+										
+									</div>
+								</article>
+							<?php endif ?>
 						<?php endforeach ?>
 					</div>
 
