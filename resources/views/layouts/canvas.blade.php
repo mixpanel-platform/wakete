@@ -106,6 +106,41 @@
                                                 <div>pokemon</div>
                                             </a> 
                                         </li>
+                                        <li {{{ (Request::is('/catalog/wallpapers/deportes') ? 'class=current' : '') }}}>
+                                            <a href="{{ url('/catalog/wallpapers/deportes') }}">
+                                                <div>deportes</div>
+                                            </a> 
+                                        </li>
+                                        <li {{{ (Request::is('/catalog/wallpapers/fondos') ? 'class=current' : '') }}}>
+                                            <a href="{{ url('/catalog/wallpapers/fondos') }}">
+                                                <div>fondos</div>
+                                            </a> 
+                                        </li>
+                                        <li {{{ (Request::is('/catalog/wallpapers/naturaleza') ? 'class=current' : '') }}}>
+                                            <a href="{{ url('/catalog/wallpapers/naturaleza') }}">
+                                                <div>naturaleza</div>
+                                            </a> 
+                                        </li>
+                                        <li {{{ (Request::is('/catalog/wallpapers/navidad') ? 'class=current' : '') }}}>
+                                            <a href="{{ url('/catalog/wallpapers/navidad') }}">
+                                                <div>navidad</div>
+                                            </a> 
+                                        </li>
+                                        <li {{{ (Request::is('/catalog/wallpapers/playa') ? 'class=current' : '') }}}>
+                                            <a href="{{ url('/catalog/wallpapers/playa') }}">
+                                                <div>playa</div>
+                                            </a> 
+                                        </li>
+                                        <li {{{ (Request::is('/catalog/wallpapers/superheroes') ? 'class=current' : '') }}}>
+                                            <a href="{{ url('/catalog/wallpapers/super heroes') }}">
+                                                <div>super heroes</div>
+                                            </a> 
+                                        </li>
+                                        <li {{{ (Request::is('/catalog/wallpapers/viajes') ? 'class=current' : '') }}}>
+                                            <a href="{{ url('/catalog/wallpapers/viajes') }}">
+                                                <div>viajes</div>
+                                            </a> 
+                                        </li>
                                     </ul>
                                 </li>
                                 <li class="log-out">

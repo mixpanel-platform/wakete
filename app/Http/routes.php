@@ -21,9 +21,9 @@ Route::get('/catalog', 'FrontController@catalog');
 Route::get('/help', 'FrontController@help');
 Route::get('/terminos-condiciones', 'FrontController@legal');
 Route::get('/compatibilidad', 'FrontController@compatibilidad');
+Route::get('/privacidad', 'FrontController@privacidad');
 
 Route::post('/log', 'FrontController@log');
-
 Route::get('/dbo/login', 'FrontController@login');
 Route::get('/dbo/register', 'FrontController@register');
 

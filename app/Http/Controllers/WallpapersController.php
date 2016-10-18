@@ -12,7 +12,7 @@ class WallpapersController extends Controller
     {
     	FrontController::autenthication();
     	$url = public_path()."/wallpapers";
-    	$folders = $directories = array_map('basename', File::directories($url)); ;
+    	$folders = $directories = array_map('basename', File::directories($url));
 
 		return view('frontend/wallpapers/index', [ 
                                                 'leagues' => FootballController::getDataLeagues(), 
