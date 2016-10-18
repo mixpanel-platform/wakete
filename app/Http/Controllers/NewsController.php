@@ -13,15 +13,32 @@ class NewsController extends Controller
 {
     public function category(Request $request, $uri_category)
     {
-    	$category = DB::connection('dbo')->collection('category_posts')->where('uri','=', $uri_category)->get();
-    	$posts = AdminController\PostsController::getPostsByCategory($category[0]['id']);
+        if ($uri_category == 'pokemon-go') {
+            $category = DB::connection('dbo')->collection('category_posts')->where('uri','=', $uri_category)->get();
+            $categories = DB::connection('dbo')->collection('category_posts')->where('id_parent','=', $category[0]['id'])->get();
+            foreach ($categories as $key => $cat) {
+                if ($cat['name'] == 'Pokemon GO') {
+                    unset($categories[$key]);
+                }
+            }
 
-		return view('frontend/news/category', [ 
-													'category' => $category[0]['name'],
-													'posts' => $posts,
-													'leagues' => FootballController::getDataLeagues(),
-													'newsCategories' => AdminController\CategoryController::getCategories()
-													]);
+            return view('frontend/news/index', [ 
+                                                        'categories' => $categories,
+                                                        'leagues' => FootballController::getDataLeagues(),
+                                                        'newsCategories' => AdminController\CategoryController::getCategories()
+                                                        ]);
+        }else{
+            $category = DB::connection('dbo')->collection('category_posts')->where('uri','=', $uri_category)->get();
+            $posts = AdminController\PostsController::getPostsByCategory($category[0]['id']);
+
+            return view('frontend/news/category', [ 
+                                                        'category' => $category[0]['name'],
+                                                        'posts' => $posts,
+                                                        'leagues' => FootballController::getDataLeagues(),
+                                                        'newsCategories' => AdminController\CategoryController::getCategories()
+                                                        ]);
+        }
+    	
     }
 
     public function post(Request $request, $uri_post)

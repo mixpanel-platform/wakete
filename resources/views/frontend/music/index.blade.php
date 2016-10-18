@@ -46,7 +46,7 @@
 											<img src="<?php echo $song['track_image_file'] ?>" alt="$song['track_title']">
 										</a>
 										<div class="portfolio-overlay">
-											<a href="{{url('/catalog/music')}}/<?php echo str_replace(' ', '-', $song['track_title']) ?>" class="left-icon"><i class="icon-line-play"></i></a>
+											<a href="{{url('/catalog/music')}}/<?php echo str_replace(' ', '-', $song['track_title']) ?>" class="center-icon"><i class="icon-line-play i-xlarge"></i></a>
 										</div>
 									</div>
 									<div class="portfolio-desc">

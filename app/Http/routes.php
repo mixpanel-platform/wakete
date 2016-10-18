@@ -39,6 +39,7 @@ Route::get('/catalog/team/{league_name}/{alias_team}', 'FootballController@team'
 Route::get('/catalog/news/{uri_category}', 'NewsController@category');
 Route::get('/catalog/article/{uri_post}', 'NewsController@post');
 
+
 //Wallpapers
 Route::get('/catalog/wallpapers/', 'WallpapersController@index');
 Route::get('/catalog/wallpapers/{wallpaper}', 'WallpapersController@wallpapers');

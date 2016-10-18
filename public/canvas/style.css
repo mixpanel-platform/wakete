@@ -3442,7 +3442,7 @@ body.stretched .container-fullwidth .breadcrumb { right: 60px !important; }
 	position: relative;
 	margin: 0 0 40px 0;
 	list-style: none;
-	border: 1px solid rgba(0,0,0,0.07);
+	border: 0px solid rgba(0,0,0,0.07);
 	float: left;
 	border-radius: 4px;
 }
@@ -3450,6 +3450,7 @@ body.stretched .container-fullwidth .breadcrumb { right: 60px !important; }
 .portfolio-filter li {
 	float: left;
 	position: relative;
+	margin-bottom: 5px;
 }
 
 .portfolio-filter li a {
@@ -3459,7 +3460,8 @@ body.stretched .container-fullwidth .breadcrumb { right: 60px !important; }
 	font-size: 13px;
 	line-height: 15px;
 	color: #666;
-	border-left: 1px solid rgba(0,0,0,0.07);
+	border: 1px solid rgba(0,0,0,0.07);
+	border-radius: 20px!important;
 }
 
 .portfolio-filter li:first-child a {

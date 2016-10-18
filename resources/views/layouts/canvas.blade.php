@@ -78,7 +78,7 @@
                                 </li>
                                 <li>
                                     <?php foreach ($newsCategories as $newCat): ?>
-                                        <a href="#"><div><?php echo $newCat['name'] ?></div></a>
+                                        <a href="{{ url('/catalog/news') }}/<?php echo str_replace(' ', '-', strtolower($newCat['name'])) ?>"><div><?php echo $newCat['name'] ?></div></a>
                                         <?php if (count($newCat['subCategories']) > 0 ): ?>
                                             <ul>
                                             <?php foreach ($newCat['subCategories'] as $subCat): ?>
