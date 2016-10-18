@@ -264,7 +264,7 @@ class FrontController extends Controller
         $clientRequest = $clients[0];
         unset($clientRequest['_id']);
 
-        if ( count($clientRequest) > 0) {
+        if ( isset($clients[0]) ) {
             $key = md5($_SERVER['SERVER_NAME']."-".$_SERVER['REMOTE_ADDR']);
             $expiresAt = Carbon::now()->addDays(7);
             $cachedData = Cache::put($key, $clientRequest, $expiresAt);
