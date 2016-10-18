@@ -257,7 +257,7 @@ class FrontController extends Controller
                                                                         ])->get();
 
         echo "<pre>";
-        echo $phones;
+        echo $phone;
         print_r($clients);
         die();
 
