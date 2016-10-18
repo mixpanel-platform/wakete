@@ -256,10 +256,10 @@ class FrontController extends Controller
                                                                         'phone' => intval($phone)
                                                                         ])->get();
 
-        echo "<pre>";
-        echo $phone;
-        print_r($clients);
-        die();
+        // echo "<pre>";
+        // echo $phone;
+        // print_r($clients);
+        // die();
 
         $clientRequest = $clients[0];
         unset($clientRequest['_id']);
