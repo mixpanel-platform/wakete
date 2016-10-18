@@ -13,9 +13,6 @@ class MusicController extends Controller
 {
     public function index()
     {
-    	// $this->getDataTracks(1000);
-    	// die();
-
         FrontController::autenthication();
         $songs = DB::connection('dbo')->collection('music')->get();
         $categoriesSongs = $this->getDataTracksCategories($songs);
@@ -26,6 +23,11 @@ class MusicController extends Controller
                                                 'categories' => $categoriesSongs,
                                                 'newsCategories' =>AdminController\CategoryController::getCategories()
                                                 ]);
+    }
+
+    public function track($name_track)
+    {
+        
     }
 
     static function getDataTracksCategories($songs)

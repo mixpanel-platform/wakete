@@ -76,6 +76,9 @@
                                 <li {{{ (Request::is('/catalog/music') ? 'class=current' : '') }}}>
                                     <a href="{{url('/catalog/music')}}"><div>Música</div></a>
                                 </li>
+                                <li {{{ (Request::is('/catalog/games') ? 'class=current' : '') }}}>
+                                    <a href="{{url('/catalog/games')}}"><div>Juegos HTML5</div></a>
+                                </li>
                                 <li>
                                     <?php foreach ($newsCategories as $newCat): ?>
                                         <a href="{{ url('/catalog/news') }}/<?php echo str_replace(' ', '-', strtolower($newCat['name'])) ?>"><div><?php echo $newCat['name'] ?></div></a>

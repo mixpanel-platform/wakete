@@ -47,11 +47,12 @@ Route::get('/catalog/wallpapers/{wallpaper}', 'WallpapersController@wallpapers')
 
 //Music routes
 Route::get('/catalog/music', 'MusicController@index');
+Route::get('/catalog/music/{name_track}', 'MusicController@track');
 
 
-// Another Routes
-Route::get('/phpconfig', 'FrontController@phpconfig'); 
-
+//Games routes
+Route::get('/catalog/games', 'GamesController@index');
+Route::get('/catalog/games/{uri_game}', 'GamesController@game');
 
 // ADMIN GROUP  routes
 Route::get('/admin', 'AdminController\BackendController@login');
@@ -69,7 +70,8 @@ Route::post('/admin/posts/update', ['middleware' => 'auth','uses'=> 'AdminContro
 Route::get('/admin/posts/update/{id}', ['middleware' => 'auth','uses'=> 'AdminController\PostsController@update']);
 Route::get('/admin/posts/delete/{id}', ['middleware' => 'auth','uses'=> 'AdminController\PostsController@delete']);
 Route::get('/admin/posts/importData', ['middleware' => 'auth','uses'=> 'AdminController\PostsController@importDataPosts']);
-// Admin posts routes
+
+// Admin categories routes
 Route::get('/admin/category', ['middleware' => 'auth','uses'=> 'AdminController\CategoryController@index']);
 Route::post('/admin/category/create', ['middleware' => 'auth','uses'=> 'AdminController\CategoryController@create']);
 Route::get('/admin/category/delete/{id}', ['middleware' => 'auth','uses'=> 'AdminController\CategoryController@delete']);

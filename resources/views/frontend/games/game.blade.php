@@ -1,0 +1,1 @@
+<?php include($path_to_game) ?>
