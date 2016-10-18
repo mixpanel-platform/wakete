@@ -16,7 +16,7 @@
 					<?php foreach ($games as $key => $game): ?>
 						<div class="col-md-3 col-xs-12" class="bordered" style="margin-bottom: 30px; min-height: 300px;">
 							<a href="{{ url('/catalog/games') }}/{{ $game['ruta'] }}" class="bordered" target="_blank">
-								<div class="col-xs-12" style="background-image: url('<?php echo asset("games/".$game['ruta']."/".$game['ruta'].".PNG") ?>'); background-size: cover; height: 200px; background-position: center;">
+								<div class="col-xs-12" style="background-image: url('<?php echo asset("games/".$game['ruta']."/".$game['ruta'].".png") ?>'); background-size: cover; height: 200px; background-position: center;">
 								</div>
 							</a>	
 							<div class="col-xs-12 common-height" style="padding: 0">
