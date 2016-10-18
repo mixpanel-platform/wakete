@@ -257,9 +257,10 @@ class FrontController extends Controller
                                                                         ])->get();
 
         echo "<pre>";
+        echo $phones;
         print_r($clients);
         die();
-        
+
         $clientRequest = $clients[0];
         unset($clientRequest['_id']);
 
