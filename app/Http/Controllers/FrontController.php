@@ -216,7 +216,7 @@ class FrontController extends Controller
             /* Comprobamos que el cliente existe y esta dado de alta o esta en periodo de gracia*/
             $client = DB::connection('dbo')->collection('clientes')->whereRaw([
                                                                         //'phone' => $clientRequest['phone']
-                                                                        'phone' => 622411066
+                                                                        'phone' => intval('622411066')
                                                                         ])->get();
             $client = $client[0];
 
@@ -256,14 +256,15 @@ class FrontController extends Controller
                                                                         'phone' => intval($phone)
                                                                         ])->get();
 
-
+        echo "<pre>";
+        print_r($clients);
+        die();
+        
         $clientRequest = $clients[0];
         unset($clientRequest['_id']);
 
         if ( count($clientRequest) > 0) {
             $key = md5($_SERVER['SERVER_NAME']."-".$_SERVER['REMOTE_ADDR']);
-            
-
             $expiresAt = Carbon::now()->addDays(7);
             $cachedData = Cache::put($key, $clientRequest, $expiresAt);
 
