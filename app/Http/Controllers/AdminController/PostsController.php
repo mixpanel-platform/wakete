@@ -130,7 +130,28 @@ class PostsController extends Controller
         $posts[0]['id_category'] = $request->input('id_category');
         $posts[0]['content']     = $request->input('content');
         $posts[0]['updated']     = date('Y-m-d H:i:s');
+        $file = $request->file('img_post');
+        if ( $file ) {
+            $image = Image::make($file->getRealPath());
+            $mime = $image->mime(); 
 
+            if ($mime == 'image/jpeg')
+                $extension = '.jpg';
+            elseif ($mime == 'image/png')
+                $extension = '.png';
+            elseif ($mime == 'image/gif')
+                $extension = '.gif';
+            else
+                $extension = '';
+            $fullName = date('Y-m-d').'_'.str_replace(' ', '-', strtolower($posts[0]['title'])).$extension;
+
+            $pathToCreate = public_path()."/posts/uploads/";
+            $pathDatabase = "/posts/uploads/";
+            $image->save($pathToCreate.$fullName);
+
+            $posts[0]['img_post'] = $pathDatabase.$fullName;
+
+        }
 
         $updated = DB::connection('dbo')->collection('posts')
                                         ->where('id', $request->input('id_post') )

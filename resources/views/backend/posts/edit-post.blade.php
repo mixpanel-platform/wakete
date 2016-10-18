@@ -33,7 +33,7 @@
         		<div class="col-md-12  push-20" style="padding:0">
 	                <h3 class="block-title font-s20 font-w700">Nuevo post</h3>
 	            </div>
-	            <form class="form-horizontal push-20-t" action="{{ url('/admin/posts/update')}}" method="post" >
+	            <form class="form-horizontal push-20-t" action="{{ url('/admin/posts/update')}}" method="post" enctype="multipart/form-data" >
 	                <div class="form-group">
 	                    <div class="col-sm-12">
 	                        <div class="form-material">
@@ -66,6 +66,14 @@
 	                        <div class="help-block text-right">Seleccione una categoría</div>
 	                    </div>
 	                </div>
+                   <div class="form-group">
+    	               	<div class="col-xs-12">
+    	               		<div class="form-material form-material-success">
+    	               			<label for="img_post">Imagen destacada</label>
+    	               			<input type="file" name="img_post" id="img_post"/>
+    	               		</div>
+    	               	</div>
+                   </div>
 	               <div class="form-group">
 		               	<div class="col-xs-12">
 	               			<textarea  id="content" class="js-summernote" name="content">
