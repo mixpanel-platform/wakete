@@ -256,11 +256,6 @@ class FrontController extends Controller
                                                                         'phone' => intval($phone)
                                                                         ])->get();
 
-        // echo "<pre>";
-        // echo $phone;
-        // print_r($clients);
-        // die();
-
         $clientRequest = $clients[0];
         unset($clientRequest['_id']);
 
@@ -340,6 +335,81 @@ class FrontController extends Controller
         }
 
         return view('dbo/terms', [ 
+                                    'dataRequest' => $clientRequest,
+                                    'view'        => $view[0],
+                                    'config'      => $config,
+                                    'domain'      => $clientRequest['vista']
+                                ]);
+    }
+
+
+
+    public function privacidad()
+    {
+        /* Cargamos la configuración del sitio */
+        $config = new ConfigClass($_SERVER['SERVER_NAME']);
+        /* Clave para guardar datos en Memcached */
+        $key = md5($_SERVER['SERVER_NAME']."-".$_SERVER['REMOTE_ADDR']);
+        
+        $clientRequest =  Cache::get($key); //$request->session()->get($key);
+
+        /* Comprobacion por cookies */
+        /**/
+        /**/
+        /**/
+        /* Fin Comprobacion por cookies */
+
+        $view = DB::connection('dbo')->collection('vistas')->whereRaw([
+                                                                        'operador' => $clientRequest['operador'],
+                                                                        'landing' => 1,
+                                                                        //'landing' => $clientRequest['landing'],
+                                                                        ])->get();
+
+        if (!isset($view[0]['button_text_color'])) {
+            $view[0]['button_text_color'] = 'inherit';
+        }
+        if (!isset($view[0]['color_button_confirm'])) {
+            $view[0]['color_button_confirm'] = 'inherit';
+        }
+
+        return view('dbo/privacy', [ 
+                                    'dataRequest' => $clientRequest,
+                                    'view'        => $view[0],
+                                    'config'      => $config,
+                                    'domain'      => $clientRequest['vista']
+                                ]);
+    }
+
+
+    public function cookies()
+    {
+        /* Cargamos la configuración del sitio */
+        $config = new ConfigClass($_SERVER['SERVER_NAME']);
+        /* Clave para guardar datos en Memcached */
+        $key = md5($_SERVER['SERVER_NAME']."-".$_SERVER['REMOTE_ADDR']);
+        
+        $clientRequest =  Cache::get($key); //$request->session()->get($key);
+
+        /* Comprobacion por cookies */
+        /**/
+        /**/
+        /**/
+        /* Fin Comprobacion por cookies */
+
+        $view = DB::connection('dbo')->collection('vistas')->whereRaw([
+                                                                        'operador' => $clientRequest['operador'],
+                                                                        'landing' => 1,
+                                                                        //'landing' => $clientRequest['landing'],
+                                                                        ])->get();
+
+        if (!isset($view[0]['button_text_color'])) {
+            $view[0]['button_text_color'] = 'inherit';
+        }
+        if (!isset($view[0]['color_button_confirm'])) {
+            $view[0]['color_button_confirm'] = 'inherit';
+        }
+
+        return view('dbo/cookies', [ 
                                     'dataRequest' => $clientRequest,
                                     'view'        => $view[0],
                                     'config'      => $config,

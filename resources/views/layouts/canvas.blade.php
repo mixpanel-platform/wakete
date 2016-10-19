@@ -73,6 +73,9 @@
                                         </li>
                                     </ul>
                                 </li>
+                                <li {{{ (Request::is('/catalog/film') ? 'class=current' : 'class=') }}}>
+                                    <a href="{{url('/catalog/film')}}"><div>Peliculas</div></a>
+                                </li>
                                 <li {{{ (Request::is('/catalog/music') ? 'class=current' : '') }}}>
                                     <a href="{{url('/catalog/music')}}"><div>Música</div></a>
                                 </li>

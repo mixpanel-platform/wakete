@@ -13209,7 +13209,11 @@ a.bordered div.col-md-3:hover {
 	text-indent: 0!important;
 }
 
-
+@media screen and (min-width: 768px) {
+	.display-mobile{
+		display: none!important;
+	}
+}
 
 @media screen and (max-width: 767px){
 	.not-padding-mobile{
@@ -13220,5 +13224,8 @@ a.bordered div.col-md-3:hover {
 		width: 90px!important; 
 		left:35%!important; 
 		top:5%!important;
+	}
+	.display-mobile{
+		display: initial;
 	}
 }

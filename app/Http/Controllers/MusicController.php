@@ -27,6 +27,14 @@ class MusicController extends Controller
 
     public function track($name_track)
     {
+        $name = str_replace('-', ' ', $name_track);
+        $song = DB::connection('dbo')->collection('music')->whereRaw(['track_title' => $name])->get();
+
+        return view('frontend/music/track', [ 
+                                                'leagues' => FootballController::getDataLeagues(), 
+                                                'song' => $song[0],
+                                                'newsCategories' =>AdminController\CategoryController::getCategories()
+                                                ]);
         
     }
 

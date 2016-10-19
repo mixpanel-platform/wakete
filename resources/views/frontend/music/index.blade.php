@@ -13,7 +13,12 @@
 			</div>
 			<div class="col-xs-12">
 				<div class="container clearfix">
-
+					<div class="col-xs-12">
+						<div id="player" class="col-xs-12"></div>
+					</div>
+				</div>
+				<div class="container clearfix">
+		
 					<!-- Portfolio Filter
 					============================================= -->
 					<ul class="portfolio-filter clearfix" data-container="#portfolio">
@@ -42,16 +47,16 @@
 								?>
 								<article class="portfolio-item pf-graphics pf-media <?php echo $cats ?>">
 									<div class="portfolio-image">
-										<a href="{{url('/catalog/music')}}/<?php echo str_replace(' ', '-', $song['track_title']) ?>">
+										<a href="#" class="play-single-song center-icon" data-name="<?php echo str_replace(' ', '-', $song['track_title']) ?>" >
 											<img src="<?php echo $song['track_image_file'] ?>" alt="$song['track_title']">
 										</a>
 										<div class="portfolio-overlay">
-											<a href="{{url('/catalog/music')}}/<?php echo str_replace(' ', '-', $song['track_title']) ?>" class="center-icon"><i class="icon-line-play i-xlarge"></i></a>
+											<a href="#" class="play-single-song center-icon" data-name="<?php echo str_replace(' ', '-', $song['track_title']) ?>" ><i class="icon-line-play i-xlarge"></i></a>
 										</div>
 									</div>
 									<div class="portfolio-desc">
 										<h3>
-											<a href="{{url('/catalog/music')}}/<?php echo str_replace(' ', '-', $song['track_title']) ?>">
+											<a href="#" class="play-single-song" data-name="<?php echo str_replace(' ', '-', $song['track_title']) ?>">
 												<?php echo $song['track_title'] ?>	
 											</a>
 										</h3>
@@ -78,4 +83,20 @@
 	<!-- Footer Scripts
 	============================================= -->
 	<script type="text/javascript" src="{{ asset('canvas/js/functions.js') }}"></script>
+
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$('.play-single-song').click(function(event) {
+				event.preventDefault();
+				var name_song = $(this).attr('data-name');
+
+				var url = "<?php echo url('/catalog/music/'); ?>/" + name_song;
+
+				$.get( url, { name_track: name_song} ).done(function( data ) {
+    				$('#player').empty().append(data);
+    				$('#player object').trigger('click');
+  				});
+			});	
+		});
+	</script>
 @endsection

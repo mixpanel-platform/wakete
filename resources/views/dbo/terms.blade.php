@@ -170,7 +170,7 @@
 <h3>UNDÉCIMA.- PROTECCIÓN DE DATOS DE CARÁCTER PERSONAL. </h3>
 
 <p class="text-justify">
-    Senior garantiza que el tratamiento de los datos personales de los Usuarios que se registren en la Web se realizará de conformidad con lo dispuesto en la Ley Orgánica 15/1999 de 13 de diciembre sobre Protección de Datos de Carácter Personal, y en la <a href="{{url(privacidad)}}">Política de Privacidad</a><br><br>
+    Senior garantiza que el tratamiento de los datos personales de los Usuarios que se registren en la Web se realizará de conformidad con lo dispuesto en la Ley Orgánica 15/1999 de 13 de diciembre sobre Protección de Datos de Carácter Personal, y en la <a href="{{url('/privacidad')}}">Política de Privacidad</a><br><br>
 
     Es posible que el Usuario encuentres links, enlaces o banners en la Web que redireccionen al Usuario a otra página web, se consciente que, en este caso, te será de aplicación una política de privacidad distinta a la de Senior, por lo que recomendamos al Usuario que lea detenidamente dicha política de privacidad. Además, en estas webs es posible que se utilicen cookies u otras tecnologías con la finalidad de recabar tus datos. Senior no se hace responsable de los contenidos de las webs a las que el Usuario pueda ser redireccionado
 </p>
