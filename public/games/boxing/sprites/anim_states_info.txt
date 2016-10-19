@@ -1,0 +1,46 @@
+ANIM_STATES
+
+employee:
+normal(0-4) duration:117frames
+stupid (5-7) duration:70 frames
+get_sock (8-10) duration: 43 frames
+get_up (11-14) duration: 39 frames
+shake (15-16) duration: 14 frames
+fail (17-18) duration: 29 frames
+win (19-23) duration: 40 frames
+ugly (24-53) duration: 50 frames 
+
+
+
+header
+
+talk (0-15) duration: 67 frames
+smoke (16-42) duration: 103 frames
+talk_to_lady (43-50) duration 150 frames
+crazy (51-52) duration: 72 frames
+dance (53-54) duration: 48 frames
+turn_back (55-56) duration: 11 frames
+drink (57-69) duration: 74 frames
+pull_back (70-76) duration: 40 frames
+shout (77-79) duration: 36 frames
+drink_D (80-92) duration: 23 frames
+ugly (93-94) duration: 33 frames
+wz (95-96) duration: 56 frames
+go_to_employee (97) duration: 34 frames
+amaze (98) duration: 23 frames
+midd_state (99-100) duration: 27 frames
+
+
+
+secretay
+shine (0-3) duration: 70 frames
+talk (4-16) duration: 183 frames
+laugh (17-19) duration: 42 frames
+check_copy (20-27) duration: 76 frames
+stand (28) duration: 34 frames
+afraid (29-31) duration: 70 frames
+
+
+
+
+

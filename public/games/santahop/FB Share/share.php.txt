@@ -1,0 +1,19 @@
+<?php
+	$score = $_GET["score"];
+	$scorex = explode(":", $score);
+	$highscore = $scorex[0];
+
+?>
+
+<html>
+<head>
+	<title>Santa Hop HighScore</title>
+	<meta property="og:title" content="My Highscore on Santa Hop is <?echo $highscore;?>!"/>
+	<meta property="og:image" content="http://duquekarl.com/c2/sticksanta/share.jpg"/>
+	<meta property="og:site_name" content="Duque Karl Games"/>
+	<meta property="og:description" content="Can you beat me?"/> 
+</head>
+<body>
+	<meta http-equiv="refresh" content="0;URL=http://duquekarl.com/santa-hop/" />
+</body>
+</html>
