@@ -19,7 +19,7 @@ class FilmController extends Controller
 
         $mobile = new Mobile();
 
-        if ( !$mobile->isMobile() ) {
+        if ( $mobile->isMobile() ) {
             $films = DB::connection('dbo')->collection('films')->get();
 
             return view('frontend/film/index', [ 
@@ -41,7 +41,7 @@ class FilmController extends Controller
 		FrontController::autenthication();
         $mobile = new Mobile();
 
-        if ( !$mobile->isMobile() ) {
+        if ( $mobile->isMobile() ) {
     	    $film = DB::connection('dbo')->collection('films')->whereRaw(['nombre' => str_replace('-', ' ', $name_film)])->get();
 
     		return view('frontend/film/film', [ 

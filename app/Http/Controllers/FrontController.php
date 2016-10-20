@@ -15,16 +15,13 @@ use Cache;
 use App\Classes\IPAPI;
 use App\Classes\ConfigClass;
 use App\Classes\Mobile;
-
+use Illuminate\Support\Facades\Cookie;
 class FrontController extends Controller
 {
 
 
     public function index(Request $request)
     {
-        return view('frontend/mantenimiento');
-        die();
-
         
         /* Clave para guardar datos en Memcached */
         $key = md5($_SERVER['SERVER_NAME']."-".$_SERVER['REMOTE_ADDR']);
@@ -78,15 +75,10 @@ class FrontController extends Controller
         /* Guardamos los datos en cache/session*/
         $expiresAt = Carbon::now()->addDays(7);
         $cachedData = Cache::put($key, $clientRequest, $expiresAt);
-        //$request->session()->put($key, $clientRequest);
 
-        echo "<pre>";
-        echo $key."<br>";
-        print_r($dataIp);
-        print_r($config);
-        print_r($clientRequest);
+        return view('frontend/mantenimiento');
         die();
-
+        
         /* Redirigimos a Monsan para cargar la carta de pago */
         return redirect()->away('http://pagos.avp.monsan.net/api/Mozart/LoadingLandingPage/'.$config->key_Unified_Mozart.'/airtel='.$landing.';ms='.$landing.';orange='.$landing.'/12345');
 
@@ -105,7 +97,7 @@ class FrontController extends Controller
         $clientRequest['key']         = md5($_SERVER['REMOTE_ADDR']);
         $clientRequest['id_peticion'] = $request->requestId;
         $clientRequest['callId']      = $request->callId;
-        $clientRequest['phone']      = $request->phone;
+        $clientRequest['phone']       = $request->phone;
 
         switch ($request->action) {
             case 2:
@@ -118,9 +110,18 @@ class FrontController extends Controller
                     $clientRequest['suscription_time'] = date("H:i:s"); 
 
                     /* Cookies en caso de necesitarlas */
+
+                    $now = Carbon::now();
+                    $expiresAt = Carbon::now()->addDays(7);
+                    $diff = $now->diffInSeconds($expiresAt);
                     /**/
-                    /**/
-                    /**/
+                    $response = new \Illuminate\Http\Response();
+                    $response->withCookie('client', $clientRequest['client'], $diff);
+                    //$phone = $request->cookie('client');
+                    // echo "<pre>";
+                    // print_r( $phone );
+                    // die();
+
                     /* Fin de las Cookies*/
 
 
@@ -166,12 +167,12 @@ class FrontController extends Controller
                                         'view'        => $view[0],
                                         'config'      => $config,
                                         'action'      => $request->action,
-                                        'state'      => $request->state,
+                                        'state'       => $request->state,
                                     ]);
 
     }
 
-    public function thankyou()
+    public function thankyou(Request $request)
     {
         /* Cargamos la configuración del sitio */
         $config = new ConfigClass($_SERVER['SERVER_NAME']);
@@ -180,7 +181,7 @@ class FrontController extends Controller
         $key = md5($_SERVER['SERVER_NAME']."-".$_SERVER['REMOTE_ADDR']);
         
         /* Cargamos los datos del cliente desde la cache */
-        $clientRequest =  Cache::get($key); //$request->session()->get($key);
+        $clientRequest = (Cache::get($key))?Cache::get($key):$request->cookie('client'); //$request->session()->get($key);
 
         /* Cargamos la los css de la vista por la que el cliente ha entrado */
         $view = DB::connection('dbo')->collection('vistas')->whereRaw([
@@ -203,11 +204,11 @@ class FrontController extends Controller
                                     ]);
     }
 
-    public function catalog()
+    public function catalog(Request $request)
     {
         $key = md5($_SERVER['SERVER_NAME']."-".$_SERVER['REMOTE_ADDR']);
         
-        $clientRequest =  Cache::get($key); //$request->session()->get($key);
+        $clientRequest = (Cache::get($key))?Cache::get($key):$request->cookie('client'); //$request->session()->get($key);
 
         /* Si no esta en la cache lo enviamos a logearse */
         if ( empty($clientRequest) ) {
@@ -237,7 +238,7 @@ class FrontController extends Controller
             /* Cargamos la vista principal del catalogo */
             $dataLeagues = FootballController::getDataLeagues();
 
-            return view('dbo/catalog', [ 
+            return view('frontend/catalog', [ 
                                         'leagues' => $dataLeagues,
                                         'newsCategories' => AdminController\CategoryController::getCategories(),
                                         ]);
@@ -271,14 +272,14 @@ class FrontController extends Controller
         
     }
 
-    public function help()
+    public function help(Request $request)
     {
         /* Cargamos la configuración del sitio */
         $config = new ConfigClass($_SERVER['SERVER_NAME']);
         /* Clave para guardar datos en Memcached */
         $key = md5($_SERVER['SERVER_NAME']."-".$_SERVER['REMOTE_ADDR']);
         
-        $clientRequest =  Cache::get($key); //$request->session()->get($key);
+        $clientRequest =  $clientRequest = (Cache::get($key))?Cache::get($key):$request->cookie('client'); //$request->session()->get($key);
 
         /* Comprobacion por cookies */
         /**/
@@ -306,14 +307,14 @@ class FrontController extends Controller
                                 ]);
     }
 
-    public function legal()
+    public function legal(Request $request)
     {
         /* Cargamos la configuración del sitio */
         $config = new ConfigClass($_SERVER['SERVER_NAME']);
         /* Clave para guardar datos en Memcached */
         $key = md5($_SERVER['SERVER_NAME']."-".$_SERVER['REMOTE_ADDR']);
         
-        $clientRequest =  Cache::get($key); //$request->session()->get($key);
+        $clientRequest =  $clientRequest = (Cache::get($key))?Cache::get($key):$request->cookie('client'); //$request->session()->get($key);
 
         /* Comprobacion por cookies */
         /**/
@@ -344,14 +345,14 @@ class FrontController extends Controller
 
 
 
-    public function privacidad()
+    public function privacidad(Request $request)
     {
         /* Cargamos la configuración del sitio */
         $config = new ConfigClass($_SERVER['SERVER_NAME']);
         /* Clave para guardar datos en Memcached */
         $key = md5($_SERVER['SERVER_NAME']."-".$_SERVER['REMOTE_ADDR']);
         
-        $clientRequest =  Cache::get($key); //$request->session()->get($key);
+        $clientRequest = $clientRequest = (Cache::get($key))?Cache::get($key):$request->cookie('client'); //$request->session()->get($key);
 
         /* Comprobacion por cookies */
         /**/
@@ -381,14 +382,14 @@ class FrontController extends Controller
     }
 
 
-    public function cookies()
+    public function cookies(Request $request)
     {
         /* Cargamos la configuración del sitio */
         $config = new ConfigClass($_SERVER['SERVER_NAME']);
         /* Clave para guardar datos en Memcached */
         $key = md5($_SERVER['SERVER_NAME']."-".$_SERVER['REMOTE_ADDR']);
         
-        $clientRequest =  Cache::get($key); //$request->session()->get($key);
+        $clientRequest = $clientRequest = (Cache::get($key))?Cache::get($key):$request->cookie('client');; //$request->session()->get($key);
 
         /* Comprobacion por cookies */
         /**/
@@ -417,14 +418,14 @@ class FrontController extends Controller
                                 ]);
     }
 
-    public function compatibilidad()
+    public function compatibilidad(Request $request)
     {
         /* Cargamos la configuración del sitio */
         $config = new ConfigClass($_SERVER['SERVER_NAME']);
         /* Clave para guardar datos en Memcached */
         $key = md5($_SERVER['SERVER_NAME']."-".$_SERVER['REMOTE_ADDR']);
         
-        $clientRequest =  Cache::get($key); //$request->session()->get($key);
+        $clientRequest = $clientRequest = (Cache::get($key))?Cache::get($key):$request->cookie('client'); //$request->session()->get($key);
 
         /* Comprobacion por cookies */
         /**/
@@ -453,11 +454,11 @@ class FrontController extends Controller
     }
 
 
-    static function autenthication()
+    static function autenthication(Request $request)
     {
         $key = md5($_SERVER['SERVER_NAME']."-".$_SERVER['REMOTE_ADDR']);
         
-        $clientRequest =  Cache::get($key); //$request->session()->get($key);
+        $clientRequest = $clientRequest = (Cache::get($key))?Cache::get($key):$request->cookie('client'); //$request->session()->get($key);
 
         /* Si no esta en la cache lo enviamos a logearse */
         if ( empty($clientRequest) ) {

@@ -14,13 +14,15 @@ class FootballController extends Controller
         FrontController::autenthication();
 		$dataLeagues = $this->getDataLeagues();
         $dataLiveMatchs = $this->getliveMatch();
+        $dataMatchsDay = $this->getMatchByDay();
 
         // echo "<pre>";
-        // print_r($categories);
+        // print_r($dataMatchsDay);
         // die();
         return view('frontend/football/index', [ 
                                                 'leagues' => $dataLeagues, 
                                                 'matchs' => $dataLiveMatchs,
+                                                'matchsDay' => $dataMatchsDay,
                                                 'newsCategories' =>AdminController\CategoryController::getCategories()
                                                 ]);
 	}
@@ -180,7 +182,7 @@ class FootballController extends Controller
                                 'tz'     => 'Europe/Madrid',
                                 'format' => 'json',
                                 'req'    => 'leagues',
-                                'key'    => 'b215819c45e4b7dcc116ccc2351eb1c3',
+                                'key'    => '50ffc2140c6e8e7b82740390060f4895',
                                 'top' => 1
                                 ] )
                 ->get();
@@ -204,7 +206,7 @@ class FootballController extends Controller
                                 'tz'        => 'Europe/Madrid',
                                 'format'    => 'json',
                                 'req'       => 'matchs',
-                                'key'       => 'b215819c45e4b7dcc116ccc2351eb1c3',
+                                'key'       => '50ffc2140c6e8e7b82740390060f4895',
                                 'league'    => $id_league,
                                 'twolegged' => 1
                                 ] )
@@ -234,7 +236,7 @@ class FootballController extends Controller
                                'tz'        => 'Europe/Madrid',
                                'format'    => 'json',
                                'req'       => 'matchs',
-                               'key'       => 'b215819c45e4b7dcc116ccc2351eb1c3',
+                               'key'       => '50ffc2140c6e8e7b82740390060f4895',
                                'league'    => $id_league,
                                'round'    =>  $round,
                                'twolegged' => 1
@@ -259,7 +261,7 @@ class FootballController extends Controller
                                 'tz'     => 'Europe/Madrid',
                                 'format' => 'json',
                                 'req'    => 'match',
-                                'key'    => 'b215819c45e4b7dcc116ccc2351eb1c3',
+                                'key'    => '50ffc2140c6e8e7b82740390060f4895',
                                 'id'     => $match_id,
                                 'language' => 'es'
                                 ] )
@@ -278,7 +280,7 @@ class FootballController extends Controller
                                'tz'     => 'Europe/Madrid',
                                'format' => 'json',
                                'req'    => 'teams',
-                               'key'    => 'b215819c45e4b7dcc116ccc2351eb1c3',
+                               'key'    => '50ffc2140c6e8e7b82740390060f4895',
                                'league' => $id_league,
                                ] )
                ->get();
@@ -301,7 +303,7 @@ class FootballController extends Controller
                                'tz'     => 'Europe/Madrid',
                                'format' => 'json',
                                'req'    => 'team',
-                               'key'    => 'b215819c45e4b7dcc116ccc2351eb1c3',
+                               'key'    => '50ffc2140c6e8e7b82740390060f4895',
                                'id' => $id_team,
                                ] )
                ->get();
@@ -319,22 +321,47 @@ class FootballController extends Controller
                                'tz'     => 'Europe/Madrid',
                                'format' => 'json',
                                'req'    => 'livescore',
-                               'key'    => 'b215819c45e4b7dcc116ccc2351eb1c3'
+                               'key'    => '50ffc2140c6e8e7b82740390060f4895'
                                ] )
                ->get();
         /* Parseamos el resultado de las distintas ligas */
         $response = json_decode($response);
         $data = array();
-        foreach ($response->matches as $key => $match) {
-            if (!empty($match->live_minute)) {
-                $data[] = $match;
-            }
+
+        if (!empty($response->matches)) {
+        	foreach ($response->matches as $key => $match) {
+	    	    if (!empty($match->live_minute)) {
+	    	        $data[] = $match;
+	    	    }
+	    	}
+        }else{
+        	$data[0] = '';
         }
+    	
+
+        
 
         return $data;
     }
 
-
+    static function getMatchByDay($date = "")
+    {
+    	if ($date == "") {
+    		$date = date('Y-m-d');
+    	}
+        $response = Curl::to('http://apiclient.resultados-futbol.com/scripts/api/api.php')
+        	               ->withData( [
+        	                               'tz'     => 'Europe/Madrid',
+        	                               'format' => 'json',
+        	                               'req'    => 'matchsday',
+        	                               'key'    => '50ffc2140c6e8e7b82740390060f4895',
+        	                               'date'	=> $date,
+        	                               'top'	=> 1,
+        	                               ] )
+        	               ->get();
+        $response = json_decode($response);
+        return $response;
+    }
     static function getEventByDate($matchs)
     {
         $dataEvent = array();
