@@ -468,7 +468,7 @@ class FrontController extends Controller
     }
 
 
-    static function autenthication(Request $request)
+    static function autenthication()
     {
         $key = md5($_SERVER['SERVER_NAME']."-".$_SERVER['REMOTE_ADDR']);
         
