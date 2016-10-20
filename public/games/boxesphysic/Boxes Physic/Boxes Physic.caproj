@@ -1,0 +1,1941 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2project>
+    <name>Boxes Physic</name>
+    <description></description>
+    <version>1.0.0.0</version>
+    <author></author>
+    <author-email></author-email>
+    <author-website>http://</author-website>
+    <app-id>com.mycompany.myapp</app-id>
+    <unique-id>2m2oqhlgof90t</unique-id>
+    <saved-with-version>20000</saved-with-version>
+    <used-plugins>
+        <plugin author="Scirra" id="Audio" version="1">Audio</plugin>
+        <plugin author="Scirra" id="Browser" version="1">Browser</plugin>
+        <plugin author="Scirra" id="Function" version="1">Function</plugin>
+        <plugin author="Scirra" id="Mouse" version="1">Mouse</plugin>
+        <plugin author="Scirra" id="Particles" version="1">Particles</plugin>
+        <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
+        <plugin author="Scirra" id="Spritefont2" version="1">Sprite font</plugin>
+        <plugin author="Scirra" id="Touch" version="1">Touch</plugin>
+        <plugin author="Zack0Wack0/Scirra" id="WebStorage" version="1">WebStorage</plugin>
+        <plugin author="Scirra" id="admob" version="1">Admob Ads</plugin>
+        <plugin author="Funstorm Ltd" id="chromeconsole" version="0.100000001">Chrome Console</plugin>
+    </used-plugins>
+    <used-behaviors>
+        <behavior author="Scirra" id="Fade" version="1">Fade</behavior>
+        <behavior author="Scirra" id="Physics" version="1">Physics</behavior>
+        <behavior author="Scirra" id="Pin" version="1">Pin</behavior>
+        <behavior author="Scirra" id="Rotate" version="1">Rotate</behavior>
+        <behavior author="Scirra" id="Sin" version="1">Sine</behavior>
+        <behavior author="Scirra" id="destroy" version="1">Destroy outside layout</behavior>
+        <behavior author="lunarray" id="lunarray_LiteTween" version="1.100000024">LiteTween</behavior>
+        <behavior author="Scirra" id="solid" version="1">Solid</behavior>
+    </used-behaviors>
+    <used-effects />
+    <configurations>
+        <configuration exporter-descname="HTML5" exporter-id="html5" name="HTML5" />
+    </configurations>
+    <window-size>
+        <width>854</width>
+        <height>480</height>
+    </window-size>
+    <pixel-rounding>0</pixel-rounding>
+    <preview-effects>1</preview-effects>
+    <first-layout>Menu</first-layout>
+    <use-loader-layout>0</use-loader-layout>
+    <configuration-settings>
+        <prop name="Clear background">Yes</prop>
+        <prop name="Downscaling">Low quality</prop>
+        <prop name="Enable WebGL">On</prop>
+        <prop name="Fullscreen in browser">Letterbox integer scale</prop>
+        <prop name="Fullscreen scaling">High quality</prop>
+        <prop name="Loader style">Progress bar &amp; logo</prop>
+        <prop name="Orientations">Landscape</prop>
+        <prop name="Pause on unfocus">No</prop>
+        <prop name="Physics engine">Box2D asm.js</prop>
+        <prop name="Preview browser">(default)</prop>
+        <prop name="Sampling">Linear</prop>
+        <prop name="Use high-DPI display">Yes</prop>
+    </configuration-settings>
+    <object-folder>
+        <object-folder name="Geen">
+            <object-type name="green128" sid="4433568923219362">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="3897328657153267" speed="5">
+                        <frame duration="1" hotspotX="0" hotspotY="0" original-source="C:\Users\HT\Desktop\Game Assets\Split The Box\images\green128.png">
+                            <image-point name="Imagepoint 1" x="0.5" y="0" />
+                            <image-point name="Imagepoint 2" x="0" y="0.5" />
+                            <image-point name="Imagepoint 3" x="0.5" y="0.5" />
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="green16" sid="4278540420927145">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="8034102394232441" speed="5">
+                        <frame duration="1" hotspotX="0" hotspotY="0" original-source="C:\Users\HT\Desktop\Game Assets\Split The Box\images\green16.png" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="green160" sid="2944536715533278">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="9131733927886169" speed="5">
+                        <frame duration="1" hotspotX="-0" hotspotY="0" original-source="C:\Users\HT\Desktop\Game Assets\Split The Box\images\green160.png">
+                            <image-point name="Imagepoint 1" x="0.5" y="0" />
+                            <image-point name="Imagepoint 2" x="0" y="0.5" />
+                            <image-point name="Imagepoint 3" x="0.5" y="0.5" />
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="green40" sid="3818610539580738">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="1400139667157815" speed="5">
+                        <frame duration="1" hotspotX="0" hotspotY="0" original-source="C:\Users\HT\Desktop\Game Assets\Split The Box\images\green40.png">
+                            <image-point name="Imagepoint 1" x="0.5" y="0" />
+                            <image-point name="Imagepoint 2" x="0" y="0.5" />
+                            <image-point name="Imagepoint 3" x="0.5" y="0.5" />
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="green64" sid="9411157029938554">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="2011288294497531" speed="5">
+                        <frame duration="1" hotspotX="0" hotspotY="0" original-source="C:\Users\HT\Desktop\Game Assets\Split The Box\images\green64.png">
+                            <image-point name="Imagepoint 1" x="0.5" y="0" />
+                            <image-point name="Imagepoint 2" x="0" y="0.5" />
+                            <image-point name="Imagepoint 3" x="0.5" y="0.5" />
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="green32" sid="6340754093431113">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="6649419330670008" speed="5">
+                        <frame duration="1" hotspotX="0" hotspotY="0" original-source="C:\Users\HT\Desktop\Game Assets\Split The Box\images\green32.png">
+                            <image-point name="Imagepoint 1" x="0.5" y="0" />
+                            <image-point name="Imagepoint 2" x="0" y="0.5" />
+                            <image-point name="Imagepoint 3" x="0.5" y="0.5" />
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="green20" sid="1629805692502069">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="4375563642473967" speed="5">
+                        <frame duration="1" hotspotX="0" hotspotY="0" original-source="C:\Users\HT\Desktop\Game Assets\Split The Box\images\green20.png" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="green80" sid="9562394196259574">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="5115161962685934" speed="5">
+                        <frame duration="1" hotspotX="0" hotspotY="0" original-source="C:\Users\HT\Desktop\Game Assets\Split The Box\images\green80.png">
+                            <image-point name="Imagepoint 1" x="0.5" y="0" />
+                            <image-point name="Imagepoint 2" x="0" y="0.5" />
+                            <image-point name="Imagepoint 3" x="0.5" y="0.5" />
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+        </object-folder>
+        <object-folder name="Blue">
+            <object-type name="blue160" sid="2026378784401175">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="1707441284822938" speed="5">
+                        <frame duration="1" hotspotX="0" hotspotY="0" original-source="C:\Users\HT\Desktop\Game Assets\Split The Box\images\blue160.png">
+                            <image-point name="Imagepoint 1" x="0.5" y="0" />
+                            <image-point name="Imagepoint 2" x="0" y="0.5" />
+                            <image-point name="Imagepoint 3" x="0.5" y="0.5" />
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="blue128" sid="9439137494167288">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="7151514508588322" speed="5">
+                        <frame duration="1" hotspotX="0" hotspotY="0" original-source="C:\Users\HT\Desktop\Game Assets\Split The Box\images\blue128.png">
+                            <image-point name="Imagepoint 1" x="0.5" y="0" />
+                            <image-point name="Imagepoint 2" x="0" y="0.5" />
+                            <image-point name="Imagepoint 3" x="0.5" y="0.5" />
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="blue20" sid="4427063904171789">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="2996507744477319" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\HT\Desktop\Game Assets\Split The Box\images\blue20.png" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="blue40" sid="6875021279008589">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="194338509327595" speed="5">
+                        <frame duration="1" hotspotX="0" hotspotY="0" original-source="C:\Users\HT\Desktop\Game Assets\Split The Box\images\blue40.png">
+                            <image-point name="Imagepoint 1" x="0.5" y="0" />
+                            <image-point name="Imagepoint 2" x="0" y="0.5" />
+                            <image-point name="Imagepoint 3" x="0.5" y="0.5" />
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="blue32" sid="337677177036007">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="855749475103283" speed="5">
+                        <frame duration="1" hotspotX="0" hotspotY="0" original-source="C:\Users\HT\Desktop\Game Assets\Split The Box\images\blue32.png">
+                            <image-point name="Imagepoint 1" x="0.5" y="0" />
+                            <image-point name="Imagepoint 2" x="0" y="0.5" />
+                            <image-point name="Imagepoint 3" x="0.5" y="0.5" />
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="blue64" sid="3155781725493777">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="2478105793996632" speed="5">
+                        <frame duration="1" hotspotX="0" hotspotY="0" original-source="C:\Users\HT\Desktop\Game Assets\Split The Box\images\blue64.png">
+                            <image-point name="Imagepoint 1" x="0.5" y="0" />
+                            <image-point name="Imagepoint 2" x="0" y="0.5" />
+                            <image-point name="Imagepoint 3" x="0.5" y="0.5" />
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="blue16" sid="3647493422426347">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="3096623661309595" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\HT\Desktop\Game Assets\Split The Box\images\blue16.png" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="blue80" sid="305641119124425">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="4624577743959314" speed="5">
+                        <frame duration="1" hotspotX="0" hotspotY="0" original-source="C:\Users\HT\Desktop\Game Assets\Split The Box\images\blue80.png">
+                            <image-point name="Imagepoint 1" x="0.5" y="0" />
+                            <image-point name="Imagepoint 2" x="0" y="0.5" />
+                            <image-point name="Imagepoint 3" x="0.5" y="0.5" />
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+        </object-folder>
+        <object-folder name="Orange">
+            <object-type name="orange128" sid="9960102971543653">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="2406149933294988" speed="5">
+                        <frame duration="1" hotspotX="0" hotspotY="0" original-source="C:\Users\HT\Desktop\Game Assets\Split The Box\images\orange128.png">
+                            <image-point name="Imagepoint 1" x="0.5" y="0" />
+                            <image-point name="Imagepoint 2" x="0" y="0.5" />
+                            <image-point name="Imagepoint 3" x="0.5" y="0.5" />
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="orange160" sid="5741176954628839">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="6105167563846842" speed="5">
+                        <frame duration="1" hotspotX="0" hotspotY="0" original-source="C:\Users\HT\Desktop\Game Assets\Split The Box\images\orange160.png">
+                            <image-point name="Imagepoint 1" x="0.5" y="0" />
+                            <image-point name="Imagepoint 2" x="0" y="0.5" />
+                            <image-point name="Imagepoint 3" x="0.5" y="0.5" />
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="orange32" sid="2876743286733869">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="5644028467767131" speed="5">
+                        <frame duration="1" hotspotX="0" hotspotY="0" original-source="C:\Users\HT\Desktop\Game Assets\Split The Box\images\orange32.png">
+                            <image-point name="Imagepoint 1" x="0.5" y="0" />
+                            <image-point name="Imagepoint 2" x="0" y="0.5" />
+                            <image-point name="Imagepoint 3" x="0.5" y="0.5" />
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="orange80" sid="461499875312026">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="8200501997624149" speed="5">
+                        <frame duration="1" hotspotX="0" hotspotY="0" original-source="C:\Users\HT\Desktop\Game Assets\Split The Box\images\orange80.png">
+                            <image-point name="Imagepoint 1" x="0.5" y="0" />
+                            <image-point name="Imagepoint 2" x="0" y="0.5" />
+                            <image-point name="Imagepoint 3" x="0.5" y="0.5" />
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="orange16" sid="6871706890633226">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="591189602477578" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\HT\Desktop\Game Assets\Split The Box\images\orange16.png" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="orange20" sid="7010961779528361">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="1350057841161833" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\HT\Desktop\Game Assets\Split The Box\images\orange20.png" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="orange40" sid="5508073088569179">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="2688717268564466" speed="5">
+                        <frame duration="1" hotspotX="0" hotspotY="0" original-source="C:\Users\HT\Desktop\Game Assets\Split The Box\images\orange40.png">
+                            <image-point name="Imagepoint 1" x="0.5" y="0" />
+                            <image-point name="Imagepoint 2" x="0" y="0.5" />
+                            <image-point name="Imagepoint 3" x="0.5" y="0.5" />
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="orange64" sid="2195361163672785">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="4775257981634457" speed="5">
+                        <frame duration="1" hotspotX="0" hotspotY="0" original-source="C:\Users\HT\Desktop\Game Assets\Split The Box\images\orange64.png">
+                            <image-point name="Imagepoint 1" x="0.5" y="0" />
+                            <image-point name="Imagepoint 2" x="0" y="0.5" />
+                            <image-point name="Imagepoint 3" x="0.5" y="0.5" />
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+        </object-folder>
+        <object-folder name="Brown">
+            <object-type name="brown16" sid="7403095009846589">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="4712820173457201" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\HT\Desktop\Game Assets\Split The Box\images\brown16.png" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="brown128" sid="1014942325927205">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="4040308839533689" speed="5">
+                        <frame duration="1" hotspotX="0" hotspotY="0" original-source="C:\Users\HT\Desktop\Game Assets\Split The Box\images\brown128.png">
+                            <image-point name="Imagepoint 1" x="0.5" y="0" />
+                            <image-point name="Imagepoint 2" x="0" y="0.5" />
+                            <image-point name="Imagepoint 3" x="0.5" y="0.5" />
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="brown32" sid="2516736950293112">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="8409162487595943" speed="5">
+                        <frame duration="1" hotspotX="0" hotspotY="0" original-source="C:\Users\HT\Desktop\Game Assets\Split The Box\images\brown32.png">
+                            <image-point name="Imagepoint 1" x="0.5" y="0" />
+                            <image-point name="Imagepoint 2" x="0" y="0.5" />
+                            <image-point name="Imagepoint 3" x="0.5" y="0.5" />
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="brown40" sid="5332973898234892">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="3081758497863609" speed="5">
+                        <frame duration="1" hotspotX="0" hotspotY="0" original-source="C:\Users\HT\Desktop\Game Assets\Split The Box\images\brown40.png">
+                            <image-point name="Imagepoint 1" x="0.5" y="0" />
+                            <image-point name="Imagepoint 2" x="0" y="0.5" />
+                            <image-point name="Imagepoint 3" x="0.5" y="0.5" />
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="brown20" sid="1552020781616896">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="4665836669041545" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\HT\Desktop\Game Assets\Split The Box\images\brown20.png" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="brown64" sid="8394159529175231">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="7079116340381512" speed="5">
+                        <frame duration="1" hotspotX="0" hotspotY="0" original-source="C:\Users\HT\Desktop\Game Assets\Split The Box\images\brown64.png">
+                            <image-point name="Imagepoint 1" x="0.5" y="0" />
+                            <image-point name="Imagepoint 2" x="0" y="0.5" />
+                            <image-point name="Imagepoint 3" x="0.5" y="0.5" />
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="brown160" sid="2453995741793049">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="5893852928816297" speed="5">
+                        <frame duration="1" hotspotX="0" hotspotY="0" original-source="C:\Users\HT\Desktop\Game Assets\Split The Box\images\brown160.png">
+                            <image-point name="Imagepoint 1" x="0.5" y="0" />
+                            <image-point name="Imagepoint 2" x="0" y="0.5" />
+                            <image-point name="Imagepoint 3" x="0.5" y="0.5" />
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="brown80" sid="6562962973746457">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="1016323940424143" speed="5">
+                        <frame duration="1" hotspotX="0" hotspotY="0" original-source="C:\Users\HT\Desktop\Game Assets\Split The Box\images\brown80.png">
+                            <image-point name="Imagepoint 1" x="0.5" y="0" />
+                            <image-point name="Imagepoint 2" x="0" y="0.5" />
+                            <image-point name="Imagepoint 3" x="0.5" y="0.5" />
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+        </object-folder>
+        <object-folder name="Pink">
+            <object-type name="pink64" sid="4073928340298296">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="9495230583785237" speed="5">
+                        <frame duration="1" hotspotX="0" hotspotY="0" original-source="C:\Users\HT\Desktop\Game Assets\Split The Box\images\pink64.png">
+                            <image-point name="Imagepoint 1" x="0.5" y="0" />
+                            <image-point name="Imagepoint 2" x="0" y="0.5" />
+                            <image-point name="Imagepoint 3" x="0.5" y="0.5" />
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="pink160" sid="6616705296756139">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="8632404690041659" speed="5">
+                        <frame duration="1" hotspotX="0" hotspotY="0" original-source="C:\Users\HT\Desktop\Game Assets\Split The Box\images\pink160.png">
+                            <image-point name="Imagepoint 1" x="0.5" y="0" />
+                            <image-point name="Imagepoint 2" x="0" y="0.5" />
+                            <image-point name="Imagepoint 3" x="0.5" y="0.5" />
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="pink128" sid="2829367881979047">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="6002111449507214" speed="5">
+                        <frame duration="1" hotspotX="0" hotspotY="0" original-source="C:\Users\HT\Desktop\Game Assets\Split The Box\images\pink128.png">
+                            <image-point name="Imagepoint 1" x="0.5" y="0" />
+                            <image-point name="Imagepoint 2" x="0" y="0.5" />
+                            <image-point name="Imagepoint 3" x="0.5" y="0.5" />
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="pink80" sid="2781908470937066">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="9248229273119065" speed="5">
+                        <frame duration="1" hotspotX="0" hotspotY="0" original-source="C:\Users\HT\Desktop\Game Assets\Split The Box\images\pink80.png">
+                            <image-point name="Imagepoint 1" x="0.5" y="0" />
+                            <image-point name="Imagepoint 2" x="0" y="0.5" />
+                            <image-point name="Imagepoint 3" x="0.5" y="0.5" />
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="pink40" sid="1339070783977983">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="6924115932080935" speed="5">
+                        <frame duration="1" hotspotX="0" hotspotY="0" original-source="C:\Users\HT\Desktop\Game Assets\Split The Box\images\pink40.png">
+                            <image-point name="Imagepoint 1" x="0.5" y="0" />
+                            <image-point name="Imagepoint 2" x="0" y="0.5" />
+                            <image-point name="Imagepoint 3" x="0.5" y="0.5" />
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="pink32" sid="6667617507007782">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="9451499512757665" speed="5">
+                        <frame duration="1" hotspotX="0" hotspotY="0" original-source="C:\Users\HT\Desktop\Game Assets\Split The Box\images\pink32.png">
+                            <image-point name="Imagepoint 1" x="0.5" y="0" />
+                            <image-point name="Imagepoint 2" x="0" y="0.5" />
+                            <image-point name="Imagepoint 3" x="0.5" y="0.5" />
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="pink20" sid="921962006271186">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="4420649643527101" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\HT\Desktop\Game Assets\Split The Box\images\pink20.png" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="pink16" sid="6481735122976475">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="2389886560087223" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\HT\Desktop\Game Assets\Split The Box\images\pink16.png" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+        </object-folder>
+        <object-folder name="Plugins">
+            <object-type name="Mouse" sid="7862995542646739">
+                <plugin id="Mouse" />
+            </object-type>
+            <object-type name="Touch" sid="1917180012428869">
+                <plugin id="Touch" />
+            </object-type>
+            <object-type name="ChromeConsole" sid="5948481291201988">
+                <plugin id="chromeconsole" />
+            </object-type>
+            <object-type name="Function" sid="4037804885952501">
+                <plugin id="Function" />
+            </object-type>
+            <object-type name="WebStorage" sid="74720079651611">
+                <plugin id="WebStorage" />
+            </object-type>
+            <object-type name="Browser" sid="3830180728649569">
+                <plugin id="Browser" />
+            </object-type>
+            <object-type name="Audio" sid="780833329025688">
+                <plugin id="Audio" />
+            </object-type>
+            <object-type name="AdmobAds" sid="9300503700947044">
+                <plugin id="admob" />
+            </object-type>
+        </object-folder>
+        <object-folder name="Obstacle">
+            <object-folder name="Bom">
+                <object-type name="bom" sid="8596349594963562">
+                    <plugin id="Sprite" />
+                    <animation-folder>
+                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="5556813415948979" speed="5">
+                            <frame duration="1" hotspotX="0.508772" hotspotY="0.508772" original-source="C:\Users\HT\Desktop\Game Assets\Split The Box\images\bom1.png">
+                                <collision-poly>
+                                    <point x="0.157895" y="0.157895" />
+                                    <point x="0.824561" y="0.157895" />
+                                    <point x="0.824561" y="0.807018" />
+                                    <point x="0.157895" y="0.807018" />
+                                </collision-poly>
+                            </frame>
+                        </animation>
+                    </animation-folder>
+                </object-type>
+                <object-type name="bom2" sid="2783470797681769">
+                    <plugin id="Sprite" />
+                    <animation-folder>
+                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="4387738683358273" speed="5">
+                            <frame duration="1" hotspotX="0.504951" hotspotY="0.504951" original-source="C:\Users\HT\Desktop\Game Assets\Split The Box\images\bom2.png">
+                                <collision-poly>
+                                    <point x="0.0990099" y="0.0990099" />
+                                    <point x="0.891089" y="0.0990099" />
+                                    <point x="0.891089" y="0.891089" />
+                                    <point x="0.0990099" y="0.891089" />
+                                </collision-poly>
+                            </frame>
+                        </animation>
+                    </animation-folder>
+                </object-type>
+            </object-folder>
+            <object-folder name="Powerup">
+                <object-type name="power1" sid="5494251698635626">
+                    <plugin id="Sprite" />
+                    <animation-folder>
+                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="4777877572335489" speed="5">
+                            <frame duration="1" hotspotX="0.508772" hotspotY="0.508772" original-source="C:\Users\HT\Desktop\Game Assets\Split The Box\images\power1.png">
+                                <collision-poly>
+                                    <point x="0.157895" y="0.157895" />
+                                    <point x="0.824561" y="0.157895" />
+                                    <point x="0.824561" y="0.824561" />
+                                    <point x="0.157895" y="0.824561" />
+                                </collision-poly>
+                            </frame>
+                        </animation>
+                    </animation-folder>
+                </object-type>
+                <object-type name="power2" sid="2496062129902551">
+                    <plugin id="Sprite" />
+                    <animation-folder>
+                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="6305231818298668" speed="5">
+                            <frame duration="1" hotspotX="0.504951" hotspotY="0.504951" original-source="C:\Users\HT\Desktop\Game Assets\Split The Box\images\power2.png">
+                                <collision-poly>
+                                    <point x="0.0990099" y="0.0891089" />
+                                    <point x="0.891089" y="0.0891089" />
+                                    <point x="0.891089" y="0.891089" />
+                                    <point x="0.0990099" y="0.891089" />
+                                </collision-poly>
+                            </frame>
+                        </animation>
+                    </animation-folder>
+                </object-type>
+            </object-folder>
+            <object-type name="stone" sid="2196642530610605">
+                <plugin id="Sprite" />
+                <instance-variables>
+                    <instance-variable name="direction" sid="5252758360298998" type="string" />
+                </instance-variables>
+                <behaviors>
+                    <behavior-type name="Sine" sid="252236995419925">
+                        <behavior id="Sin" />
+                    </behavior-type>
+                    <behavior-type name="Solid" sid="8339265700148051">
+                        <behavior id="solid" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="7489775589959821" speed="5">
+                        <frame duration="1" hotspotX="0.502994" hotspotY="0.508772" original-source="C:\Users\HT\Desktop\Game Assets\Split The Box\images\stone.png">
+                            <collision-poly>
+                                <point x="0.0538922" y="0.175439" />
+                                <point x="0.94012" y="0.175439" />
+                                <point x="0.94012" y="1" />
+                                <point x="0.0538922" y="1" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="stone2" sid="3183971565436544">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="8009904910750238" speed="5">
+                        <frame duration="1" hotspotX="0.508772" hotspotY="0.508772" original-source="C:\Users\HT\Desktop\Game Assets\Split The Box\images\stone1.png">
+                            <collision-poly>
+                                <point x="0.140351" y="0.157895" />
+                                <point x="0.842105" y="0.157895" />
+                                <point x="0.842105" y="0.824561" />
+                                <point x="0.140351" y="0.824561" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="stone6" sid="1891696895398217">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="931753723984871" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\HT\Desktop\Game Assets\Split The Box\images\stone4.png">
+                            <collision-poly>
+                                <point x="0.210526" y="0.210526" />
+                                <point x="0.5" y="0.105263" />
+                                <point x="0.776316" y="0.223684" />
+                                <point x="0.881579" y="0.5" />
+                                <point x="0.776316" y="0.776316" />
+                                <point x="0.5" y="0.881579" />
+                                <point x="0.223684" y="0.776316" />
+                                <point x="0.105263" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="stone3" sid="5916176774172147">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="2754056145063772" speed="5">
+                        <frame duration="1" hotspotX="0.504951" hotspotY="0.504951" original-source="C:\Users\HT\Desktop\Game Assets\Split The Box\images\stone2.png">
+                            <collision-poly>
+                                <point x="0.0891089" y="0.0990099" />
+                                <point x="0.891089" y="0.0990099" />
+                                <point x="0.891089" y="1" />
+                                <point x="0.0891089" y="1" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="stone4" sid="7173397249457249">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Rotate" sid="1792005909340136">
+                        <behavior id="Rotate" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="6916055290507715" speed="5">
+                        <frame duration="1" hotspotX="0.504854" hotspotY="0.505495" original-source="C:\Users\HT\Desktop\Game Assets\Split The Box\images\stone5.png">
+                            <collision-poly>
+                                <point x="0.0873786" y="0.0989011" />
+                                <point x="0.883495" y="0.0989011" />
+                                <point x="0.495146" y="0.879121" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="stone5" sid="1164851289570085">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="7744532992604878" speed="5">
+                        <frame duration="1" hotspotX="0.504425" hotspotY="0.504425" original-source="C:\Users\HT\Desktop\Game Assets\Split The Box\images\stone3.png">
+                            <collision-poly>
+                                <point x="0.19469" y="0.19469" />
+                                <point x="0.495575" y="0.0619469" />
+                                <point x="0.80531" y="0.19469" />
+                                <point x="0.929204" y="0.495575" />
+                                <point x="0.79646" y="0.79646" />
+                                <point x="0.495575" y="0.929204" />
+                                <point x="0.19469" y="0.80531" />
+                                <point x="0.0619469" y="0.495575" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="stoneForMenu" sid="3242149798574831">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Physics" sid="1903229513414046">
+                        <behavior id="Physics" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="1868376982021626" speed="5">
+                        <frame duration="1" hotspotX="0.502994" hotspotY="0.508772" original-source="C:\Users\HT\Desktop\Game Assets\Split The Box\images\stone.png">
+                            <collision-poly>
+                                <point x="0.0538922" y="0.175439" />
+                                <point x="0.94012" y="0.175439" />
+                                <point x="0.94012" y="1" />
+                                <point x="0.0538922" y="1" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="solidPlatform" sid="4190770322635104">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Solid" sid="4729906237941907">
+                        <behavior id="solid" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="115395883099743" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="wallSolidPlatform" sid="6928868764697218">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Solid" sid="4358500286126756">
+                        <behavior id="solid" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="8720469553802801" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="blueDistanceJoin" sid="6524745693852991">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Physics" sid="3377701465477926">
+                        <behavior id="Physics" />
+                    </behavior-type>
+                    <behavior-type name="DestroyOutsideLayout" sid="8793737132002158">
+                        <behavior id="destroy" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="1537855069049907" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\HT\Desktop\Game Assets\Split The Box\images\blueDistanceJoin.png">
+                            <collision-poly>
+                                <point x="0.0125" y="0.0125" />
+                                <point x="0.9875" y="0.0125" />
+                                <point x="0.9875" y="0.9875" />
+                                <point x="0.0125" y="0.9875" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="bluePole" sid="5518218255849696">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="DestroyOutsideLayout" sid="7669618360776384">
+                        <behavior id="destroy" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="9564278174081834" speed="5">
+                        <frame duration="1" hotspotX="0" hotspotY="0.513514" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="Cog" sid="5259208633896658">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Physics" sid="8217815540559306">
+                        <behavior id="Physics" />
+                    </behavior-type>
+                    <behavior-type name="DestroyOutsideLayout" sid="3055623413527048">
+                        <behavior id="destroy" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="6579915737998084" speed="5">
+                        <frame duration="1" hotspotX="0.513514" hotspotY="0.486486" original-source="C:\Users\HT\Desktop\Game Assets\Split The Box\images\gear.png">
+                            <collision-poly>
+                                <point x="0.206349" y="0.210938" />
+                                <point x="0.5" y="0.0078125" />
+                                <point x="0.392857" y="0.605469" />
+                                <point x="0.992063" y="0.5" />
+                                <point x="0.833333" y="0.828125" />
+                                <point x="0.5" y="0.988281" />
+                                <point x="0.210317" y="0.785156" />
+                                <point x="0.103175" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="Cog2" sid="1270213097152244">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Physics" sid="3976483398513955">
+                        <behavior id="Physics" />
+                    </behavior-type>
+                    <behavior-type name="DestroyOutsideLayout" sid="3538639636483266">
+                        <behavior id="destroy" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="8095439080846344" speed="5">
+                        <frame duration="1" hotspotX="0.513514" hotspotY="0.486486" original-source="C:\Users\HT\Desktop\Game Assets\Split The Box\images\gear.png">
+                            <collision-poly>
+                                <point x="0.206349" y="0.210938" />
+                                <point x="0.5" y="0.0078125" />
+                                <point x="0.392857" y="0.605469" />
+                                <point x="0.992063" y="0.5" />
+                                <point x="0.833333" y="0.828125" />
+                                <point x="0.5" y="0.988281" />
+                                <point x="0.210317" y="0.785156" />
+                                <point x="0.103175" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="orangePole" sid="5035389573994314">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="DestroyOutsideLayout" sid="8044290234604205">
+                        <behavior id="destroy" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="9914037257464807" speed="5">
+                        <frame duration="1" hotspotX="0" hotspotY="0.513514" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="orangeDistanceJoin" sid="3306073825243551">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="8994349662922786" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\HT\Desktop\Game Assets\Split The Box\images\distanceJoin.png">
+                            <image-point name="Imagepoint 1" x="0.5" y="0" />
+                            <image-point name="Imagepoint 2" x="0" y="0.5" />
+                            <image-point name="Imagepoint 3" x="0.5" y="0.5" />
+                            <collision-poly>
+                                <point x="0.0125" y="0.0125" />
+                                <point x="0.9875" y="0.0125" />
+                                <point x="0.9875" y="0.9875" />
+                                <point x="0.0125" y="0.9875" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+        </object-folder>
+        <object-folder name="Buttons">
+            <object-type name="how" sid="3751102241637853">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Physics" sid="3484909037003841">
+                        <behavior id="Physics" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="5752943708884486" speed="0">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\HT\Desktop\Game Assets\Split The Box\images\how.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\HT\Desktop\Game Assets\Split The Box\images\howOver.png">
+                            <collision-poly>
+                                <point x="0.015625" y="0.015625" />
+                                <point x="0.5" y="0" />
+                                <point x="0.984375" y="0.015625" />
+                                <point x="1" y="0.5" />
+                                <point x="0.984375" y="0.984375" />
+                                <point x="0.5" y="1" />
+                                <point x="0.015625" y="0.984375" />
+                                <point x="0" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="next" sid="3709517633251182">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="LiteTween" sid="5570136503773645">
+                        <behavior id="lunarray_LiteTween" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="9756636138065401" speed="0">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\HT\Desktop\Game Assets\Split The Box\images\next.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\HT\Desktop\Game Assets\Split The Box\images\nextOver.png">
+                            <collision-poly>
+                                <point x="0.015625" y="0.015625" />
+                                <point x="0.5" y="0" />
+                                <point x="0.984375" y="0.015625" />
+                                <point x="1" y="0.5" />
+                                <point x="0.984375" y="0.984375" />
+                                <point x="0.5" y="1" />
+                                <point x="0.015625" y="0.984375" />
+                                <point x="0" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="restart" sid="811901088302359">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Physics" sid="2141909740409253">
+                        <behavior id="Physics" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="2137568136192143" speed="0">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\HT\Desktop\Game Assets\Split The Box\images\restart.png">
+                            <collision-poly>
+                                <point x="0.015625" y="0.015625" />
+                                <point x="0.5" y="0" />
+                                <point x="0.984375" y="0.015625" />
+                                <point x="1" y="0.5" />
+                                <point x="0.984375" y="0.984375" />
+                                <point x="0.5" y="1" />
+                                <point x="0.015625" y="0.984375" />
+                                <point x="0" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\HT\Desktop\Game Assets\Split The Box\images\restartOver.png">
+                            <collision-poly>
+                                <point x="0.015625" y="0.015625" />
+                                <point x="0.5" y="0" />
+                                <point x="0.984375" y="0.015625" />
+                                <point x="1" y="0.5" />
+                                <point x="0.984375" y="0.984375" />
+                                <point x="0.5" y="1" />
+                                <point x="0.015625" y="0.984375" />
+                                <point x="0" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="setting" sid="1698313702956115">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Physics" sid="7804766970172673">
+                        <behavior id="Physics" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="4047957977876408" speed="0">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\HT\Desktop\Game Assets\Split The Box\images\setting.png">
+                            <collision-poly>
+                                <point x="0.015625" y="0.015625" />
+                                <point x="0.5" y="0" />
+                                <point x="0.984375" y="0.015625" />
+                                <point x="1" y="0.5" />
+                                <point x="0.984375" y="0.984375" />
+                                <point x="0.5" y="1" />
+                                <point x="0.015625" y="0.984375" />
+                                <point x="0" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\HT\Desktop\Game Assets\Split The Box\images\settingOver.png">
+                            <collision-poly>
+                                <point x="0.015625" y="0.015625" />
+                                <point x="0.5" y="0" />
+                                <point x="0.984375" y="0.015625" />
+                                <point x="1" y="0.5" />
+                                <point x="0.984375" y="0.984375" />
+                                <point x="0.5" y="1" />
+                                <point x="0.015625" y="0.984375" />
+                                <point x="0" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="play" sid="6536613367301479">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Physics" sid="2077141177359712">
+                        <behavior id="Physics" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="4358555587025046" speed="0">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\HT\Desktop\Game Assets\Split The Box\images\play.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\HT\Desktop\Game Assets\Split The Box\images\playOver.png">
+                            <collision-poly>
+                                <point x="0.015625" y="0.015625" />
+                                <point x="0.5" y="0" />
+                                <point x="0.984375" y="0.015625" />
+                                <point x="1" y="0.5" />
+                                <point x="0.984375" y="0.984375" />
+                                <point x="0.5" y="1" />
+                                <point x="0.015625" y="0.984375" />
+                                <point x="0" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="menu" sid="5846050305615296">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Physics" sid="2379321451734633">
+                        <behavior id="Physics" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="5612471509161829" speed="0">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\HT\Desktop\Game Assets\Split The Box\images\menu.png">
+                            <collision-poly>
+                                <point x="0.015625" y="0.015625" />
+                                <point x="0.5" y="0" />
+                                <point x="0.984375" y="0.015625" />
+                                <point x="1" y="0.5" />
+                                <point x="0.984375" y="0.984375" />
+                                <point x="0.5" y="1" />
+                                <point x="0.015625" y="0.984375" />
+                                <point x="0" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\HT\Desktop\Game Assets\Split The Box\images\menuOver.png">
+                            <collision-poly>
+                                <point x="0.015625" y="0.015625" />
+                                <point x="0.5" y="0" />
+                                <point x="0.984375" y="0.015625" />
+                                <point x="1" y="0.5" />
+                                <point x="0.984375" y="0.984375" />
+                                <point x="0.5" y="1" />
+                                <point x="0.015625" y="0.984375" />
+                                <point x="0" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="prev" sid="1810578316154782">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Physics" sid="6571039924678035">
+                        <behavior id="Physics" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="6682375671585884" speed="0">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\HT\Desktop\Game Assets\Split The Box\images\next.png">
+                            <collision-poly>
+                                <point x="1" y="1" />
+                                <point x="0" y="1" />
+                                <point x="0" y="0" />
+                                <point x="1" y="0" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\HT\Desktop\Game Assets\Split The Box\images\nextOver.png">
+                            <collision-poly>
+                                <point x="1" y="0.5" />
+                                <point x="0.984375" y="0.984375" />
+                                <point x="0.5" y="1" />
+                                <point x="0.015625" y="0.984375" />
+                                <point x="0" y="0.5" />
+                                <point x="0.015625" y="0.015625" />
+                                <point x="0.5" y="0" />
+                                <point x="0.984375" y="0.015625" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="facebook" sid="324181131083093">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Physics" sid="9754232512840801">
+                        <behavior id="Physics" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="6303275185102245" speed="0">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\HT\Desktop\Game Assets\Split The Box\images\facebook.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\HT\Desktop\Game Assets\Split The Box\images\facebookOver.png">
+                            <collision-poly>
+                                <point x="0.015625" y="0.015625" />
+                                <point x="0.5" y="0" />
+                                <point x="0.984375" y="0.015625" />
+                                <point x="1" y="0.5" />
+                                <point x="0.984375" y="0.984375" />
+                                <point x="0.5" y="1" />
+                                <point x="0.015625" y="0.984375" />
+                                <point x="0" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="twitter" sid="737588962190577">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Physics" sid="7225956176004094">
+                        <behavior id="Physics" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="3444572930032435" speed="0">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\HT\Desktop\Game Assets\Split The Box\images\twitter.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\HT\Desktop\Game Assets\Split The Box\images\twitterOver.png">
+                            <collision-poly>
+                                <point x="0.015625" y="0.015625" />
+                                <point x="0.5" y="0" />
+                                <point x="0.984375" y="0.015625" />
+                                <point x="1" y="0.5" />
+                                <point x="0.984375" y="0.984375" />
+                                <point x="0.5" y="1" />
+                                <point x="0.015625" y="0.984375" />
+                                <point x="0" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="music" sid="8039987221251113">
+                <plugin id="Sprite" />
+                <instance-variables>
+                    <instance-variable name="status" sid="4932084018294392" type="number" />
+                </instance-variables>
+                <behaviors>
+                    <behavior-type name="Fade" sid="5572531125943909">
+                        <behavior id="Fade" />
+                    </behavior-type>
+                    <behavior-type name="Physics" sid="2800133473009221">
+                        <behavior id="Physics" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="4" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="9315330812526482" speed="0">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\HT\Desktop\Game Assets\Split The Box\images\music.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\HT\Desktop\Game Assets\Split The Box\images\musicOver.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\HT\Desktop\Game Assets\Split The Box\images\mute.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\HT\Desktop\Game Assets\Split The Box\images\muteOver.png" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="bgmusic" sid="3876825183063431">
+                <plugin id="Sprite" />
+                <instance-variables>
+                    <instance-variable name="status" sid="6673889010027459" type="number" />
+                </instance-variables>
+                <behaviors>
+                    <behavior-type name="Fade" sid="1038836701311084">
+                        <behavior id="Fade" />
+                    </behavior-type>
+                    <behavior-type name="Physics" sid="4129996158033761">
+                        <behavior id="Physics" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="4" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="2497835770996428" speed="0">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\HT\Desktop\Game Assets\Split The Box\images\bgmusic.png">
+                            <collision-poly>
+                                <point x="0.015625" y="0.015625" />
+                                <point x="0.5" y="0" />
+                                <point x="0.984375" y="0.015625" />
+                                <point x="1" y="0.5" />
+                                <point x="0.984375" y="0.984375" />
+                                <point x="0.5" y="1" />
+                                <point x="0.015625" y="0.984375" />
+                                <point x="0" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\HT\Desktop\Game Assets\Split The Box\images\bgmusicOver.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\HT\Desktop\Game Assets\Split The Box\images\muteMusic.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\HT\Desktop\Game Assets\Split The Box\images\muteMusicOver.png" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+        </object-folder>
+        <object-folder name="UI">
+            <object-type name="gameTitle" sid="2193159009050345">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="5497373865741927" speed="5">
+                        <frame duration="1" hotspotX="0.500761" hotspotY="0.503497" original-source="C:\Users\HT\Desktop\Game Assets\Split The Box\images\gameTitle.png" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="viewsbg" sid="6207703824670285">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="39662050748107" speed="5">
+                        <frame duration="1" hotspotX="0" hotspotY="0" original-source="C:\Users\HT\Desktop\Game Assets\Split The Box\viewsbg.png" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="level_complete" sid="7215378709431876">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="LiteTween" sid="1678497085877933">
+                        <behavior id="lunarray_LiteTween" />
+                    </behavior-type>
+                    <behavior-type name="Physics" sid="4965432486397805">
+                        <behavior id="Physics" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="3063740595305373" speed="5">
+                        <frame duration="1" hotspotX="0.500963" hotspotY="0.5" original-source="C:\Users\HT\Desktop\Game Assets\Split The Box\images\level_complete.png">
+                            <collision-poly>
+                                <point x="0" y="0.263158" />
+                                <point x="1" y="0.263158" />
+                                <point x="1" y="1" />
+                                <point x="0" y="1" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="closeButton" sid="6046868898094583">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Pin" sid="7273005851443261">
+                        <behavior id="Pin" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="7476495520577645" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\HT\Desktop\Game Assets\Split The Box\images\closeButton.png">
+                            <collision-poly>
+                                <point x="0.1875" y="0.1875" />
+                                <point x="0.5" y="0.0208333" />
+                                <point x="0.8125" y="0.1875" />
+                                <point x="0.916667" y="0.5" />
+                                <point x="0.791667" y="0.791667" />
+                                <point x="0.5" y="0.895833" />
+                                <point x="0.208333" y="0.791667" />
+                                <point x="0.0625" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="howtoplayPanel" sid="5566311767242839">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="LiteTween" sid="5197379426248578">
+                        <behavior id="lunarray_LiteTween" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="765614568271775" speed="5">
+                        <frame duration="1" hotspotX="0.501171" hotspotY="0.501901" original-source="C:\Users\HT\Desktop\Game Assets\Split The Box\images\popup_02.png" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="select_level" sid="9240379804961731">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="8919503584578971" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.508197" original-source="C:\Users\HT\Desktop\Game Assets\Split The Box\images\select_level.png">
+                            <collision-poly>
+                                <point x="0.0341615" y="0.180328" />
+                                <point x="0.968944" y="0.163934" />
+                                <point x="0.97205" y="0.852459" />
+                                <point x="0.5" y="0.901639" />
+                                <point x="0.0279503" y="0.852459" />
+                                <point x="0.00931677" y="0.491803" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="finishedGame" sid="3473546633513209">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="LiteTween" sid="211208993298781">
+                        <behavior id="lunarray_LiteTween" />
+                    </behavior-type>
+                    <behavior-type name="Physics" sid="2354826750350128">
+                        <behavior id="Physics" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="7450959727988847" speed="5">
+                        <frame duration="1" hotspotX="0.501618" hotspotY="0.5" original-source="C:\Users\HT\Desktop\Game Assets\Split The Box\images\finshedGame.png">
+                            <collision-poly>
+                                <point x="0" y="5.40167e-008" />
+                                <point x="1" y="0" />
+                                <point x="1" y="1" />
+                                <point x="0" y="1" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="plus" sid="8549730069198476">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="LiteTween" sid="5327098423388411">
+                        <behavior id="lunarray_LiteTween" />
+                    </behavior-type>
+                    <behavior-type name="Fade" sid="8911532875237716">
+                        <behavior id="Fade" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="7846023098775237" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\HT\Desktop\Game Assets\Split The Box\images\plus.png">
+                            <collision-poly>
+                                <point x="0.16" y="0.307692" />
+                                <point x="0.5" y="0.0384615" />
+                                <point x="0.92" y="0.153846" />
+                                <point x="0.98" y="0.5" />
+                                <point x="0.92" y="0.846154" />
+                                <point x="0.5" y="0.576923" />
+                                <point x="0.08" y="0.846154" />
+                                <point x="0" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="failedlevel" sid="3645308928129492">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="LiteTween" sid="5896178424625255">
+                        <behavior id="lunarray_LiteTween" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="2635315895171546" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\HT\Desktop\Game Assets\Split The Box\images\failedlevel.png">
+                            <collision-poly>
+                                <point x="0.0446009" y="0.128378" />
+                                <point x="0.5" y="0.162162" />
+                                <point x="0.955399" y="0.128378" />
+                                <point x="0.953052" y="0.5" />
+                                <point x="0.830986" y="0.513514" />
+                                <point x="0.5" y="0.871622" />
+                                <point x="0.206573" y="0.405405" />
+                                <point x="0.0399061" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+        </object-folder>
+        <object-folder name="LevelItem">
+            <object-type name="locked" sid="9373353780024758">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="3" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="8786477373952091" speed="0">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\HT\Desktop\Game Assets\Split The Box\images\locked.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\HT\Desktop\Game Assets\Split The Box\images\unlocked.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\HT\Desktop\Game Assets\Split The Box\images\unlocked.png" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="unlocked" sid="5638306531588531">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="5469982089280954" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\HT\Desktop\Game Assets\Split The Box\images\unlocked.png">
+                            <collision-poly>
+                                <point x="0.015625" y="0.015625" />
+                                <point x="0.5" y="0" />
+                                <point x="0.984375" y="0.015625" />
+                                <point x="1" y="0.5" />
+                                <point x="0.984375" y="0.984375" />
+                                <point x="0.5" y="1" />
+                                <point x="0.015625" y="0.984375" />
+                                <point x="0" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="starlevel" sid="3893976344322746">
+                <plugin id="Sprite" />
+                <instance-variables>
+                    <instance-variable name="level" sid="1643682672441635" type="number" />
+                </instance-variables>
+                <animation-folder>
+                    <animation framecount="4" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="3366601041280237" speed="0">
+                        <frame duration="1" hotspotX="0" hotspotY="0" original-source="C:\Users\HT\Desktop\Game Assets\Split The Box\images\0star.png">
+                            <collision-poly>
+                                <point x="0.5" y="0.0769231" />
+                                <point x="0.828125" y="0.461538" />
+                                <point x="0.5" y="0.846154" />
+                                <point x="0.171875" y="0.461538" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0" hotspotY="0" original-source="C:\Users\HT\Desktop\Game Assets\Split The Box\images\1star.png">
+                            <collision-poly>
+                                <point x="0.1875" y="0.923077" />
+                                <point x="0.5" y="0.0769231" />
+                                <point x="0.828125" y="0.461538" />
+                                <point x="0.5" y="0.846154" />
+                                <point x="0.171875" y="0.461538" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0" hotspotY="0" original-source="C:\Users\HT\Desktop\Game Assets\Split The Box\images\2star.png">
+                            <collision-poly>
+                                <point x="0.1875" y="0.923077" />
+                                <point x="0.5" y="0" />
+                                <point x="0.828125" y="0.461538" />
+                                <point x="0.5" y="0.923077" />
+                                <point x="0.171875" y="0.461538" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0" hotspotY="0" original-source="C:\Users\HT\Desktop\Game Assets\Split The Box\images\3star.png">
+                            <collision-poly>
+                                <point x="0.1875" y="0.923077" />
+                                <point x="0.5" y="0" />
+                                <point x="0.8125" y="0.923077" />
+                                <point x="0.84375" y="0.461538" />
+                                <point x="0.5" y="0.923077" />
+                                <point x="0.171875" y="0.461538" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+        </object-folder>
+        <object-folder name="SpriteFonts">
+            <object-type name="LevelLabel" sid="550493081351302">
+                <plugin id="Spritefont2" />
+                <instance-variables>
+                    <instance-variable name="level" sid="8088673202891834" type="number" />
+                </instance-variables>
+                <texture original-source="C:\Users\HT\Desktop\Game Assets\Split The Box\SpriteFont_SnakeintheBoot_(15.75)_[Left,8,0,0]_42x45.png" />
+            </object-type>
+            <object-type name="currentLevel" sid="4267351071383452">
+                <plugin id="Spritefont2" />
+                <texture original-source="C:\Users\HT\Desktop\Game Assets\Split The Box\SpriteFont_SnakeintheBoot_AntiAlias_(9)_[Left,8,0,0]_29x27.png" />
+            </object-type>
+            <object-type name="huiLabel" sid="1279133005319239">
+                <plugin id="Spritefont2" />
+                <texture original-source="C:\Users\HT\Desktop\Game Assets\Split The Box\SpriteFont_SnakeintheBoot_AntiAlias_(9)_[Left,8,0,0]_29x27.png" />
+            </object-type>
+            <object-type name="secondText" sid="6146232880852488">
+                <plugin id="Spritefont2" />
+                <texture original-source="C:\Users\HT\Desktop\Game Assets\Split The Box\SpriteFont_SnakeintheBoot_AntiAlias_(9)_[Left,8,0,0]_29x27.png" />
+            </object-type>
+        </object-folder>
+        <object-folder name="Practicle">
+            <object-type name="BomParticles" sid="3222810690286509">
+                <plugin id="Particles" />
+                <texture />
+            </object-type>
+            <object-type name="PowerupParticles" sid="2107377907721715">
+                <plugin id="Particles" />
+                <texture />
+            </object-type>
+        </object-folder>
+        <object-folder name="StarSystem">
+            <object-type name="Particles" sid="26827795159192">
+                <plugin id="Particles" />
+                <texture original-source="C:\Users\HT\Desktop\Game Assets\Split The Box\images\star1clear.png" />
+            </object-type>
+            <object-type name="star1" sid="7076977282705723">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="LiteTween" sid="1151252915765499">
+                        <behavior id="lunarray_LiteTween" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="9641169856735738" speed="5">
+                        <frame duration="1" hotspotX="0.507042" hotspotY="0.506849" original-source="C:\Users\HT\Desktop\Game Assets\Split The Box\images\star1.png">
+                            <collision-poly>
+                                <point x="0.295775" y="0.287671" />
+                                <point x="0.492958" y="0.0547945" />
+                                <point x="0.774648" y="0.219178" />
+                                <point x="0.830986" y="0.493151" />
+                                <point x="0.830986" y="0.835616" />
+                                <point x="0.492958" y="0.863014" />
+                                <point x="0.239437" y="0.767123" />
+                                <point x="0.056338" y="0.493151" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="star2clear" sid="2943605368115478">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Fade" sid="7684465459058992">
+                        <behavior id="Fade" />
+                    </behavior-type>
+                    <behavior-type name="LiteTween" sid="6316389270671299">
+                        <behavior id="lunarray_LiteTween" />
+                    </behavior-type>
+                    <behavior-type name="Pin" sid="8958629555911949">
+                        <behavior id="Pin" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="8604916110888569" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\HT\Desktop\Game Assets\Split The Box\images\star2clear.png">
+                            <collision-poly>
+                                <point x="0.5" y="0.0340909" />
+                                <point x="0.923913" y="0.5" />
+                                <point x="0.826087" y="0.818182" />
+                                <point x="0.5" y="0.863636" />
+                                <point x="0.163043" y="0.829545" />
+                                <point x="0.0869565" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="star2" sid="8666819678171079">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="LiteTween" sid="1606240879442654">
+                        <behavior id="lunarray_LiteTween" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="3957577457038709" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\HT\Desktop\Game Assets\Split The Box\images\star2.png">
+                            <collision-poly>
+                                <point x="0.5" y="0.0227273" />
+                                <point x="0.902174" y="0.5" />
+                                <point x="0.826087" y="0.818182" />
+                                <point x="0.5" y="0.852273" />
+                                <point x="0.173913" y="0.818182" />
+                                <point x="0.0978261" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="star3" sid="2079400842823105">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="LiteTween" sid="8067974662313096">
+                        <behavior id="lunarray_LiteTween" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="1124329088606105" speed="5">
+                        <frame duration="1" hotspotX="0.492958" hotspotY="0.506849" original-source="C:\Users\HT\Desktop\Game Assets\Split The Box\images\star1.png">
+                            <collision-poly>
+                                <point x="0.943662" y="0.493151" />
+                                <point x="0.760563" y="0.767123" />
+                                <point x="0.507042" y="0.863014" />
+                                <point x="0.169014" y="0.835616" />
+                                <point x="0.169014" y="0.493151" />
+                                <point x="0.225352" y="0.219178" />
+                                <point x="0.507042" y="0.0547945" />
+                                <point x="0.704225" y="0.287671" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="star1clear" sid="7407343604408023">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Fade" sid="4816987728011674">
+                        <behavior id="Fade" />
+                    </behavior-type>
+                    <behavior-type name="LiteTween" sid="7871181022951571">
+                        <behavior id="lunarray_LiteTween" />
+                    </behavior-type>
+                    <behavior-type name="Pin" sid="5913746929315433">
+                        <behavior id="Pin" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="3798484975158752" speed="5">
+                        <frame duration="1" hotspotX="0.507042" hotspotY="0.506849" original-source="C:\Users\HT\Desktop\Game Assets\Split The Box\images\star1clear.png">
+                            <collision-poly>
+                                <point x="0.295775" y="0.287671" />
+                                <point x="0.492958" y="0.0410959" />
+                                <point x="0.774648" y="0.219178" />
+                                <point x="0.873239" y="0.493151" />
+                                <point x="0.859155" y="0.863014" />
+                                <point x="0.492958" y="0.90411" />
+                                <point x="0.239437" y="0.767123" />
+                                <point x="0.0422535" y="0.493151" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="star3clear" sid="8465058090211223">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Fade" sid="5414954268136284">
+                        <behavior id="Fade" />
+                    </behavior-type>
+                    <behavior-type name="LiteTween" sid="5484062857732915">
+                        <behavior id="lunarray_LiteTween" />
+                    </behavior-type>
+                    <behavior-type name="Pin" sid="6301009533903402">
+                        <behavior id="Pin" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="8938850196520289" speed="5">
+                        <frame duration="1" hotspotX="0.492958" hotspotY="0.506849" original-source="C:\Users\HT\Desktop\Game Assets\Split The Box\images\star1clear.png">
+                            <collision-poly>
+                                <point x="0.957747" y="0.493151" />
+                                <point x="0.760563" y="0.767123" />
+                                <point x="0.507042" y="0.90411" />
+                                <point x="0.140845" y="0.863014" />
+                                <point x="0.126761" y="0.493151" />
+                                <point x="0.225352" y="0.219178" />
+                                <point x="0.507042" y="0.0410959" />
+                                <point x="0.704225" y="0.287671" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+        </object-folder>
+    </object-folder>
+    <families>
+        <family name="Obstacle" plugin-id="Sprite" sid="4712789584190267">
+            <members>
+                <member>stone</member>
+                <member>stone2</member>
+                <member>stone3</member>
+                <member>stone4</member>
+                <member>stone5</member>
+                <member>stone6</member>
+            </members>
+            <behaviors>
+                <behavior-type name="Physics" sid="575420833052633">
+                    <behavior id="Physics" />
+                </behavior-type>
+            </behaviors>
+        </family>
+        <family name="Blocks" plugin-id="Sprite" sid="5881684325821962">
+            <members>
+                <member>blue128</member>
+                <member>blue16</member>
+                <member>blue160</member>
+                <member>blue20</member>
+                <member>blue32</member>
+                <member>blue40</member>
+                <member>blue64</member>
+                <member>blue80</member>
+                <member>brown128</member>
+                <member>brown16</member>
+                <member>brown160</member>
+                <member>brown20</member>
+                <member>brown32</member>
+                <member>brown40</member>
+                <member>brown64</member>
+                <member>brown80</member>
+                <member>orange128</member>
+                <member>orange16</member>
+                <member>orange160</member>
+                <member>orange20</member>
+                <member>orange32</member>
+                <member>orange40</member>
+                <member>orange64</member>
+                <member>orange80</member>
+                <member>orangeDistanceJoin</member>
+                <member>pink128</member>
+                <member>pink16</member>
+                <member>pink160</member>
+                <member>pink20</member>
+                <member>pink32</member>
+                <member>pink40</member>
+                <member>pink64</member>
+                <member>pink80</member>
+            </members>
+            <instance-variables>
+                <instance-variable name="color" sid="4193520485182499" type="string" />
+            </instance-variables>
+            <behaviors>
+                <behavior-type name="Physics" sid="8872104869769591">
+                    <behavior id="Physics" />
+                </behavior-type>
+                <behavior-type name="DestroyOutsideLayout" sid="220360584465554">
+                    <behavior id="destroy" />
+                </behavior-type>
+            </behaviors>
+        </family>
+        <family name="Buttons" plugin-id="Sprite" sid="5616561577145813">
+            <members>
+                <member>facebook</member>
+                <member>how</member>
+                <member>menu</member>
+                <member>next</member>
+                <member>play</member>
+                <member>prev</member>
+                <member>restart</member>
+                <member>setting</member>
+                <member>twitter</member>
+            </members>
+            <instance-variables>
+                <instance-variable name="name" sid="3319207785153875" type="string" />
+            </instance-variables>
+            <behaviors>
+                <behavior-type name="Fade" sid="7411244023699141">
+                    <behavior id="Fade" />
+                </behavior-type>
+            </behaviors>
+        </family>
+        <family name="GreenBlock" plugin-id="Sprite" sid="8095273841751602">
+            <members>
+                <member>green128</member>
+                <member>green16</member>
+                <member>green160</member>
+                <member>green20</member>
+                <member>green32</member>
+                <member>green40</member>
+                <member>green64</member>
+                <member>green80</member>
+            </members>
+            <behaviors>
+                <behavior-type name="Physics" sid="2958625606502196">
+                    <behavior id="Physics" />
+                </behavior-type>
+            </behaviors>
+        </family>
+        <family name="BomObstacle" plugin-id="Sprite" sid="8633447963580233">
+            <members>
+                <member>bom</member>
+                <member>bom2</member>
+            </members>
+            <behaviors>
+                <behavior-type name="Physics" sid="2894504820489462">
+                    <behavior id="Physics" />
+                </behavior-type>
+            </behaviors>
+        </family>
+        <family name="PowerObstacle" plugin-id="Sprite" sid="1468106570312541">
+            <members>
+                <member>power1</member>
+                <member>power2</member>
+            </members>
+            <instance-variables>
+                <instance-variable name="direction" sid="9540415137824709" type="number" />
+                <instance-variable name="force" sid="3442760361832137" type="number" />
+            </instance-variables>
+            <behaviors>
+                <behavior-type name="Physics" sid="1691738103283159">
+                    <behavior id="Physics" />
+                </behavior-type>
+            </behaviors>
+        </family>
+    </families>
+    <layout-folder>
+        <layout-folder name="Views">
+            <layout>Menu.xml</layout>
+            <layout>GameObjects.xml</layout>
+            <layout>Level.xml</layout>
+        </layout-folder>
+        <layout-folder name="Level">
+            <layout>Level1.xml</layout>
+            <layout>Level2.xml</layout>
+            <layout>Level3.xml</layout>
+            <layout>Level4.xml</layout>
+            <layout>Level5.xml</layout>
+            <layout>Level6.xml</layout>
+            <layout>Level7.xml</layout>
+            <layout>Level8.xml</layout>
+            <layout>Level9.xml</layout>
+            <layout>Level10.xml</layout>
+            <layout>Level11.xml</layout>
+            <layout>Level12.xml</layout>
+            <layout>Level13.xml</layout>
+            <layout>Level14.xml</layout>
+            <layout>Level15.xml</layout>
+            <layout>Level16.xml</layout>
+            <layout>Level17.xml</layout>
+            <layout>Level18.xml</layout>
+            <layout>Level19.xml</layout>
+            <layout>Level20.xml</layout>
+            <layout>Level21.xml</layout>
+            <layout>Level22.xml</layout>
+            <layout>Level23.xml</layout>
+            <layout>Level24.xml</layout>
+            <layout>Level25.xml</layout>
+            <layout>Level26.xml</layout>
+            <layout>Level27.xml</layout>
+            <layout>Level28.xml</layout>
+            <layout>Level29.xml</layout>
+            <layout>Level30.xml</layout>
+            <layout>Level31.xml</layout>
+            <layout>Level32.xml</layout>
+        </layout-folder>
+    </layout-folder>
+    <event-folder>
+        <event-folder name="Views">
+            <event-sheet>Level.xml</event-sheet>
+            <event-sheet>Menu.xml</event-sheet>
+            <event-sheet>Navigation.xml</event-sheet>
+        </event-folder>
+        <event-folder name="Game System">
+            <event-sheet>SplitBlue.xml</event-sheet>
+            <event-sheet>SplitBrown.xml</event-sheet>
+            <event-sheet>SplitOrange.xml</event-sheet>
+            <event-sheet>SplitGreen.xml</event-sheet>
+            <event-sheet>SplitPink.xml</event-sheet>
+            <event-sheet>SystemVariable.xml</event-sheet>
+            <event-sheet>GamePlay.xml</event-sheet>
+            <event-sheet>StarSystem.xml</event-sheet>
+        </event-folder>
+        <event-folder name="Level">
+            <event-sheet>Level1.xml</event-sheet>
+            <event-sheet>Level2.xml</event-sheet>
+            <event-sheet>Level3.xml</event-sheet>
+            <event-sheet>Level4.xml</event-sheet>
+            <event-sheet>Level5.xml</event-sheet>
+            <event-sheet>Level6.xml</event-sheet>
+            <event-sheet>Level7.xml</event-sheet>
+            <event-sheet>Level8.xml</event-sheet>
+            <event-sheet>Level9.xml</event-sheet>
+            <event-sheet>Level10.xml</event-sheet>
+            <event-sheet>Level11.xml</event-sheet>
+            <event-sheet>Level12.xml</event-sheet>
+            <event-sheet>Level13.xml</event-sheet>
+            <event-sheet>Level14.xml</event-sheet>
+            <event-sheet>Level15.xml</event-sheet>
+            <event-sheet>Level16.xml</event-sheet>
+            <event-sheet>Level17.xml</event-sheet>
+            <event-sheet>Level18.xml</event-sheet>
+            <event-sheet>Level19.xml</event-sheet>
+            <event-sheet>Level20.xml</event-sheet>
+            <event-sheet>Level21.xml</event-sheet>
+            <event-sheet>Level22.xml</event-sheet>
+            <event-sheet>Level23.xml</event-sheet>
+            <event-sheet>Level24.xml</event-sheet>
+            <event-sheet>Level25.xml</event-sheet>
+            <event-sheet>Level26.xml</event-sheet>
+            <event-sheet>Level27.xml</event-sheet>
+            <event-sheet>Level28.xml</event-sheet>
+            <event-sheet>Level29.xml</event-sheet>
+            <event-sheet>Level30.xml</event-sheet>
+            <event-sheet>Level31.xml</event-sheet>
+            <event-sheet>Level32.xml</event-sheet>
+        </event-folder>
+    </event-folder>
+    <global-instances>
+        <global-instance type="Mouse" uid="1" />
+        <global-instance type="Touch" uid="49">
+            <properties>
+                <use-mouse-input>Yes</use-mouse-input>
+            </properties>
+        </global-instance>
+        <global-instance type="ChromeConsole" uid="5" />
+        <global-instance type="Function" uid="237" />
+        <global-instance type="WebStorage" uid="238" />
+        <global-instance type="Browser" uid="893" />
+        <global-instance type="Audio" uid="900">
+            <properties>
+                <timescale-audio>Off</timescale-audio>
+                <saveload>All</saveload>
+                <play-in-background>No</play-in-background>
+                <positioned-audio></positioned-audio>
+                <panning-model>HRTF</panning-model>
+                <distance-model>Inverse</distance-model>
+                <listener-z-height>600</listener-z-height>
+                <reference-distance>600</reference-distance>
+                <maximum-distance>10000</maximum-distance>
+                <roll-off-factor>1</roll-off-factor>
+            </properties>
+        </global-instance>
+        <global-instance type="AdmobAds" uid="901">
+            <properties>
+                <overlap>Yes</overlap>
+                <test-mode>True</test-mode>
+                <android></android>
+                <banner-id-android></banner-id-android>
+                <interstitial-id-android></interstitial-id-android>
+                <ios></ios>
+                <banner-id-ios></banner-id-ios>
+                <interstitial-id-ios></interstitial-id-ios>
+                <windows-phone></windows-phone>
+                <banner-id-wp8></banner-id-wp8>
+                <interstitial-id-wp8></interstitial-id-wp8>
+            </properties>
+        </global-instance>
+    </global-instances>
+    <sounds-folder>
+        <file name="backgroundMusic.m4a" />
+        <file name="breakblockbump.ogg" />
+        <file name="LaserBeam.ogg" />
+        <file name="LaserBeam.m4a" />
+        <file name="levelcomplete.m4a" />
+        <file name="breakblockbump.m4a" />
+        <file name="bongbong.ogg" />
+        <file name="bongbong.m4a" />
+        <file name="levelcomplete.ogg" />
+        <file name="SweetBleep.m4a" />
+        <file name="backgroundMusic.ogg" />
+        <file name="SweetBleep.ogg" />
+        <file name="GameOver1.m4a" />
+        <file name="GameOver1.ogg" />
+        <file name="overmenu.m4a" />
+        <file name="overmenu.ogg" />
+        <file name="bgloop.m4a" />
+        <file name="bgloop.ogg" />
+    </sounds-folder>
+    <music-folder />
+    <files-folder>
+        <file-folder name="Icons">
+            <file name="icon-16.png" />
+            <file name="icon-32.png" />
+            <file name="icon-114.png" />
+            <file name="icon-128.png" />
+            <file name="icon-256.png" />
+            <file name="loading-logo.png" />
+        </file-folder>
+    </files-folder>
+</c2project>

@@ -1,0 +1,152 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2uistate>
+    <!--This is a UI state file - its content describes the user interface settings when the project was last open.
+It is entirely optional and the project will load without it.  If you are placing the project under source control,
+you probably do not want to add any .uistate.xml files to the repository.-->
+    <configurations>
+        <active>
+            <configuration name="HTML5" />
+        </active>
+        <display name="HTML5" />
+    </configurations>
+    <open-tabs>
+        <layout order="3">Menu</layout>
+        <event-sheet order="0">Level</event-sheet>
+        <event-sheet order="1">GamePlay</event-sheet>
+        <event-sheet order="2">StarSystem</event-sheet>
+        <event-sheet active="1" order="4">Menu</event-sheet>
+        <event-sheet order="5">Navigation</event-sheet>
+        <event-sheet order="6">SystemVariable</event-sheet>
+    </open-tabs>
+    <properties>
+        <property expanded="1" name="About" />
+        <property expanded="1" name="Project settings" />
+        <property expanded="0" name="Window Size" />
+        <property expanded="1" name="Configuration Settings" />
+    </properties>
+    <families-expanded root="0">
+        <family expanded="0" name="Obstacle" />
+        <family expanded="0" name="Blocks" />
+        <family expanded="0" name="Buttons" />
+        <family expanded="0" name="GreenBlock" />
+        <family expanded="0" name="BomObstacle" />
+        <family expanded="0" name="PowerObstacle" />
+    </families-expanded>
+    <folders-expanded>
+        <folder expanded="0" path="object-folder/" />
+        <folder expanded="0" path="object-folder/Geen/" />
+        <folder expanded="0" path="object-folder/Blue/" />
+        <folder expanded="0" path="object-folder/Orange/" />
+        <folder expanded="0" path="object-folder/Brown/" />
+        <folder expanded="0" path="object-folder/Pink/" />
+        <folder expanded="0" path="object-folder/Plugins/" />
+        <folder expanded="0" path="object-folder/Obstacle/" />
+        <folder expanded="0" path="object-folder/Obstacle/Bom/" />
+        <folder expanded="1" path="object-folder/Obstacle/Powerup/" />
+        <folder expanded="0" path="object-folder/Buttons/" />
+        <folder expanded="0" path="object-folder/UI/" />
+        <folder expanded="1" path="object-folder/LevelItem/" />
+        <folder expanded="0" path="object-folder/SpriteFonts/" />
+        <folder expanded="0" path="object-folder/Practicle/" />
+        <folder expanded="0" path="object-folder/StarSystem/" />
+        <folder expanded="1" path="layout-folder/" />
+        <folder expanded="1" path="layout-folder/Views/" />
+        <folder expanded="0" path="layout-folder/Level/" />
+        <folder expanded="1" path="event-folder/" />
+        <folder expanded="1" path="event-folder/Views/" />
+        <folder expanded="1" path="event-folder/Game System/" />
+        <folder expanded="0" path="event-folder/Level/" />
+        <folder expanded="0" path="file-folder/" />
+        <folder expanded="0" path="sound-folder/" />
+        <folder expanded="1" path="music-folder/" />
+        <folder expanded="1" path="file-folder/Icons/" />
+        <folder expanded="1" path="animation-folder/green128/" />
+        <folder expanded="1" path="animation-folder/green16/" />
+        <folder expanded="1" path="animation-folder/green160/" />
+        <folder expanded="1" path="animation-folder/green40/" />
+        <folder expanded="1" path="animation-folder/green64/" />
+        <folder expanded="1" path="animation-folder/green32/" />
+        <folder expanded="1" path="animation-folder/green20/" />
+        <folder expanded="1" path="animation-folder/green80/" />
+        <folder expanded="1" path="animation-folder/blue160/" />
+        <folder expanded="1" path="animation-folder/blue128/" />
+        <folder expanded="1" path="animation-folder/blue20/" />
+        <folder expanded="1" path="animation-folder/blue40/" />
+        <folder expanded="1" path="animation-folder/blue32/" />
+        <folder expanded="1" path="animation-folder/blue64/" />
+        <folder expanded="1" path="animation-folder/blue16/" />
+        <folder expanded="1" path="animation-folder/blue80/" />
+        <folder expanded="1" path="animation-folder/orange128/" />
+        <folder expanded="1" path="animation-folder/orange160/" />
+        <folder expanded="1" path="animation-folder/orange32/" />
+        <folder expanded="1" path="animation-folder/orange80/" />
+        <folder expanded="1" path="animation-folder/orange16/" />
+        <folder expanded="1" path="animation-folder/orange20/" />
+        <folder expanded="1" path="animation-folder/orange40/" />
+        <folder expanded="1" path="animation-folder/orange64/" />
+        <folder expanded="1" path="animation-folder/brown16/" />
+        <folder expanded="1" path="animation-folder/brown128/" />
+        <folder expanded="1" path="animation-folder/brown32/" />
+        <folder expanded="1" path="animation-folder/brown40/" />
+        <folder expanded="1" path="animation-folder/brown20/" />
+        <folder expanded="1" path="animation-folder/brown64/" />
+        <folder expanded="1" path="animation-folder/brown160/" />
+        <folder expanded="1" path="animation-folder/brown80/" />
+        <folder expanded="1" path="animation-folder/pink64/" />
+        <folder expanded="1" path="animation-folder/pink160/" />
+        <folder expanded="1" path="animation-folder/pink128/" />
+        <folder expanded="1" path="animation-folder/pink80/" />
+        <folder expanded="1" path="animation-folder/pink40/" />
+        <folder expanded="1" path="animation-folder/pink32/" />
+        <folder expanded="1" path="animation-folder/pink20/" />
+        <folder expanded="1" path="animation-folder/pink16/" />
+        <folder expanded="1" path="animation-folder/bom/" />
+        <folder expanded="1" path="animation-folder/bom2/" />
+        <folder expanded="1" path="animation-folder/power1/" />
+        <folder expanded="1" path="animation-folder/power2/" />
+        <folder expanded="1" path="animation-folder/stone/" />
+        <folder expanded="1" path="animation-folder/stone2/" />
+        <folder expanded="1" path="animation-folder/stone6/" />
+        <folder expanded="1" path="animation-folder/stone3/" />
+        <folder expanded="1" path="animation-folder/stone4/" />
+        <folder expanded="1" path="animation-folder/stone5/" />
+        <folder expanded="1" path="animation-folder/stoneForMenu/" />
+        <folder expanded="1" path="animation-folder/solidPlatform/" />
+        <folder expanded="1" path="animation-folder/wallSolidPlatform/" />
+        <folder expanded="1" path="animation-folder/blueDistanceJoin/" />
+        <folder expanded="1" path="animation-folder/bluePole/" />
+        <folder expanded="1" path="animation-folder/Cog/" />
+        <folder expanded="1" path="animation-folder/Cog2/" />
+        <folder expanded="1" path="animation-folder/orangePole/" />
+        <folder expanded="1" path="animation-folder/orangeDistanceJoin/" />
+        <folder expanded="1" path="animation-folder/how/" />
+        <folder expanded="1" path="animation-folder/next/" />
+        <folder expanded="1" path="animation-folder/restart/" />
+        <folder expanded="1" path="animation-folder/setting/" />
+        <folder expanded="1" path="animation-folder/play/" />
+        <folder expanded="1" path="animation-folder/menu/" />
+        <folder expanded="1" path="animation-folder/prev/" />
+        <folder expanded="1" path="animation-folder/facebook/" />
+        <folder expanded="1" path="animation-folder/twitter/" />
+        <folder expanded="1" path="animation-folder/music/" />
+        <folder expanded="1" path="animation-folder/bgmusic/" />
+        <folder expanded="1" path="animation-folder/gameTitle/" />
+        <folder expanded="1" path="animation-folder/viewsbg/" />
+        <folder expanded="1" path="animation-folder/level_complete/" />
+        <folder expanded="1" path="animation-folder/closeButton/" />
+        <folder expanded="1" path="animation-folder/howtoplayPanel/" />
+        <folder expanded="1" path="animation-folder/select_level/" />
+        <folder expanded="1" path="animation-folder/finishedGame/" />
+        <folder expanded="1" path="animation-folder/plus/" />
+        <folder expanded="1" path="animation-folder/failedlevel/" />
+        <folder expanded="1" path="animation-folder/locked/" />
+        <folder expanded="1" path="animation-folder/unlocked/" />
+        <folder expanded="1" path="animation-folder/starlevel/" />
+        <folder expanded="1" path="animation-folder/star1/" />
+        <folder expanded="1" path="animation-folder/star2clear/" />
+        <folder expanded="1" path="animation-folder/star2/" />
+        <folder expanded="1" path="animation-folder/star3/" />
+        <folder expanded="1" path="animation-folder/star1clear/" />
+        <folder expanded="1" path="animation-folder/star3clear/" />
+    </folders-expanded>
+</c2uistate>

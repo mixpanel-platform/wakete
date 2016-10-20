@@ -1,0 +1,100 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Level31</name>
+    <events>
+        <include>Navigation</include>
+        <include>SplitGreen</include>
+        <include>SplitBlue</include>
+        <include>SplitOrange</include>
+        <include>SplitBrown</include>
+        <include>SplitPink</include>
+        <include>SystemVariable</include>
+        <include>GamePlay</include>
+        <event-block sid="3945924261664655">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="7430429779746202" type="System" />
+            </conditions>
+            <actions>
+                <action behavior="Rotate" id="0" name="Set speed" sid="6557474707805365" type="stone4">
+                    <param id="0" name="Speed">180</param>
+                </action>
+                <action id="-9" name="Set value" sid="3413254288017268" type="System">
+                    <param id="0" name="Variable">currentLevel</param>
+                    <param id="1" name="Value">31</param>
+                </action>
+                <action id="-9" name="Set value" sid="1385390562156925" type="System">
+                    <param id="0" name="Variable">second_earn_star3</param>
+                    <param id="1" name="Value">3.7</param>
+                </action>
+                <action id="-9" name="Set value" sid="5192714773446041" type="System">
+                    <param id="0" name="Variable">second_earn_star2</param>
+                    <param id="1" name="Value">4.2</param>
+                </action>
+                <action id="-9" name="Set value" sid="1906746211790203" type="System">
+                    <param id="0" name="Variable">second_earn_star1</param>
+                    <param id="1" name="Value">4.7</param>
+                </action>
+                <action id="-9" name="Set value" sid="3661077880154289" type="System">
+                    <param id="0" name="Variable">failedSecond</param>
+                    <param id="1" name="Value">5.7</param>
+                </action>
+                <action id="0" name="Set text" sid="4304814617098393" type="currentLevel">
+                    <param id="0" name="Text">str(currentLevel)&amp;&quot;/&quot;&amp;str( totalLevel)</param>
+                </action>
+                <action behavior="Physics" id="21" name="Set immovable" sid="4221264954422498" type="stone5">
+                    <param id="0" name="Setting">0</param>
+                </action>
+                <action behavior="Physics" id="21" name="Set immovable" sid="5023717470419079" type="stone6">
+                    <param id="0" name="Setting">0</param>
+                </action>
+                <action behavior="Sine" disabled="1" id="0" name="Set active" sid="5518504812431054" type="stone">
+                    <param id="0" name="State">1</param>
+                </action>
+                <action behavior="Physics" id="10" name="Create distance joint" sid="5016712640253191" type="Cog">
+                    <param id="0" name="This image point">0</param>
+                    <param id="1" name="Object">orangeDistanceJoin</param>
+                    <param id="2" name="That image point">0</param>
+                    <param id="3" name="Damping ratio">0</param>
+                    <param id="4" name="Spring frequency">0</param>
+                </action>
+                <action behavior="Physics" id="10" name="Create distance joint" sid="2112668898827912" type="Cog2">
+                    <param id="0" name="This image point">0</param>
+                    <param id="1" name="Object">blueDistanceJoin</param>
+                    <param id="2" name="That image point">0</param>
+                    <param id="3" name="Damping ratio">0</param>
+                    <param id="4" name="Spring frequency">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="5312156147896858">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="7654475622591121" type="System" />
+            </conditions>
+            <actions>
+                <action id="-4" name="Set position to another object" sid="4893172751848676" type="orangePole">
+                    <param id="0" name="Object">Cog</param>
+                    <param id="1" name="Image point (optional)">0</param>
+                </action>
+                <action id="-22" name="Set angle toward position" sid="6947848839644973" type="orangePole">
+                    <param id="0" name="X">orangeDistanceJoin.X</param>
+                    <param id="1" name="Y">orangeDistanceJoin.Y</param>
+                </action>
+                <action id="-5" name="Set width" sid="2697875499425362" type="orangePole">
+                    <param id="0" name="Width">distance(Cog.X, Cog.Y, orangeDistanceJoin.X, orangeDistanceJoin.Y)</param>
+                </action>
+                <action id="-4" name="Set position to another object" sid="4354734860843728" type="bluePole">
+                    <param id="0" name="Object">Cog2</param>
+                    <param id="1" name="Image point (optional)">0</param>
+                </action>
+                <action id="-22" name="Set angle toward position" sid="5572919697400481" type="bluePole">
+                    <param id="0" name="X">blueDistanceJoin.X</param>
+                    <param id="1" name="Y">blueDistanceJoin.Y</param>
+                </action>
+                <action id="-5" name="Set width" sid="3490929315698583" type="bluePole">
+                    <param id="0" name="Width">distance(Cog2.X, Cog2.Y, blueDistanceJoin.X, blueDistanceJoin.Y)</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

@@ -1,0 +1,224 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>SplitOrange</name>
+    <events>
+        <include>SystemVariable</include>
+        <event-block sid="3426602856063753">
+            <conditions>
+                <condition id="3" name="On touched object" sid="2470576849872688" type="Touch">
+                    <param id="0" name="Object">orange128</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="3136326415745918" type="System">
+                    <param id="0" name="Variable">clicked128</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="0" name="Spawn another object" sid="9732124842624761" type="orange128">
+                    <param id="0" name="Object">orange64</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="Image point">0</param>
+                </action>
+                <action id="0" name="Spawn another object" sid="5984977829790798" type="orange128">
+                    <param id="0" name="Object">orange64</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="Image point">1</param>
+                </action>
+                <action id="0" name="Spawn another object" sid="4967081976281527" type="orange128">
+                    <param id="0" name="Object">orange64</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="Image point">2</param>
+                </action>
+                <action id="0" name="Spawn another object" sid="4974595458112534" type="orange128">
+                    <param id="0" name="Object">orange64</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="Image point">3</param>
+                </action>
+                <action id="-9" name="Destroy" sid="6912717199431814" type="orange128" />
+            </actions>
+        </event-block>
+        <event-block sid="9485745266514969">
+            <conditions>
+                <condition id="3" name="On touched object" sid="6892895960808361" type="Touch">
+                    <param id="0" name="Object">orange64</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="9080620405147234" type="System">
+                    <param id="0" name="Variable">clicked128</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="3114887745116714" type="System">
+                    <param id="0" name="Variable">clicked64</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="0" name="Spawn another object" sid="777107177905116" type="orange64">
+                    <param id="0" name="Object">orange32</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="Image point">0</param>
+                </action>
+                <action id="0" name="Spawn another object" sid="3231502646650336" type="orange64">
+                    <param id="0" name="Object">orange32</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="Image point">1</param>
+                </action>
+                <action id="0" name="Spawn another object" sid="6229195153556158" type="orange64">
+                    <param id="0" name="Object">orange32</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="Image point">2</param>
+                </action>
+                <action id="0" name="Spawn another object" sid="3262404346157709" type="orange64">
+                    <param id="0" name="Object">orange32</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="Image point">3</param>
+                </action>
+                <action id="-9" name="Destroy" sid="1593510565321454" type="orange64" />
+            </actions>
+        </event-block>
+        <event-block sid="1030272023997502">
+            <conditions>
+                <condition id="3" name="On touched object" sid="9101195203453885" type="Touch">
+                    <param id="0" name="Object">orange32</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="1361032559471859" type="System">
+                    <param id="0" name="Variable">clicked64</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Spawn another object" sid="6033022450206727" type="orange32">
+                    <param id="0" name="Object">orange16</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="Image point">0</param>
+                </action>
+                <action id="0" name="Spawn another object" sid="2039395273703652" type="orange32">
+                    <param id="0" name="Object">orange16</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="Image point">1</param>
+                </action>
+                <action id="0" name="Spawn another object" sid="6697742198637843" type="orange32">
+                    <param id="0" name="Object">orange16</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="Image point">2</param>
+                </action>
+                <action id="0" name="Spawn another object" sid="412487301271871" type="orange32">
+                    <param id="0" name="Object">orange16</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="Image point">3</param>
+                </action>
+                <action id="-9" name="Destroy" sid="457467830582962" type="orange32" />
+            </actions>
+        </event-block>
+        <event-block sid="5593523331238965">
+            <conditions>
+                <condition id="3" name="On touched object" sid="287665026565456" type="Touch">
+                    <param id="0" name="Object">orange160</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="4618435532465531" type="System">
+                    <param id="0" name="Variable">clicked160</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="0" name="Spawn another object" sid="5250157903397368" type="orange160">
+                    <param id="0" name="Object">orange80</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="Image point">0</param>
+                </action>
+                <action id="0" name="Spawn another object" sid="1491557699851532" type="orange160">
+                    <param id="0" name="Object">orange80</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="Image point">1</param>
+                </action>
+                <action id="0" name="Spawn another object" sid="476957121914569" type="orange160">
+                    <param id="0" name="Object">orange80</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="Image point">2</param>
+                </action>
+                <action id="0" name="Spawn another object" sid="1448318522856317" type="orange160">
+                    <param id="0" name="Object">orange80</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="Image point">3</param>
+                </action>
+                <action id="-9" name="Destroy" sid="9577184605124005" type="orange160" />
+            </actions>
+        </event-block>
+        <event-block sid="2418463811172198">
+            <conditions>
+                <condition id="3" name="On touched object" sid="9215574577738486" type="Touch">
+                    <param id="0" name="Object">orange80</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="2445457519645238" type="System">
+                    <param id="0" name="Variable">clicked160</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="4679309164899933" type="System">
+                    <param id="0" name="Variable">clicked80</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="0" name="Spawn another object" sid="7363002946921524" type="orange80">
+                    <param id="0" name="Object">orange40</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="Image point">0</param>
+                </action>
+                <action id="0" name="Spawn another object" sid="1124521978619414" type="orange80">
+                    <param id="0" name="Object">orange40</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="Image point">1</param>
+                </action>
+                <action id="0" name="Spawn another object" sid="5089724084293796" type="orange80">
+                    <param id="0" name="Object">orange40</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="Image point">2</param>
+                </action>
+                <action id="0" name="Spawn another object" sid="6602387127296009" type="orange80">
+                    <param id="0" name="Object">orange40</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="Image point">3</param>
+                </action>
+                <action id="-9" name="Destroy" sid="8602553403081328" type="orange80" />
+            </actions>
+        </event-block>
+        <event-block sid="9191895790250547">
+            <conditions>
+                <condition id="3" name="On touched object" sid="2514590662436699" type="Touch">
+                    <param id="0" name="Object">orange40</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="5416238681791475" type="System">
+                    <param id="0" name="Variable">clicked80</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Spawn another object" sid="2283949289231598" type="orange40">
+                    <param id="0" name="Object">orange20</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="Image point">0</param>
+                </action>
+                <action id="0" name="Spawn another object" sid="6102025091782903" type="orange40">
+                    <param id="0" name="Object">orange20</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="Image point">1</param>
+                </action>
+                <action id="0" name="Spawn another object" sid="3566481210493519" type="orange40">
+                    <param id="0" name="Object">orange20</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="Image point">2</param>
+                </action>
+                <action id="0" name="Spawn another object" sid="7882021992343765" type="orange40">
+                    <param id="0" name="Object">orange20</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="Image point">3</param>
+                </action>
+                <action id="-9" name="Destroy" sid="8888643832019596" type="orange40" />
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

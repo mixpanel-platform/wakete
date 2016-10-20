@@ -1,0 +1,449 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Navigation</name>
+    <events>
+        <variable constant="0" name="howToPlayIsOpen" sid="5864208232373932" static="0" type="number">0</variable>
+        <event-block sid="176541320041209">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="6835459559583003" type="System" />
+            </conditions>
+            <actions>
+                <action behavior="Physics" id="23" name="Enable/disable collisions" sid="4958008312845116" type="menu">
+                    <param id="0" name="Object">Blocks</param>
+                    <param id="1" name="State">0</param>
+                </action>
+                <action behavior="Physics" id="23" name="Enable/disable collisions" sid="5411867184794463" type="menu">
+                    <param id="0" name="Object">GreenBlock</param>
+                    <param id="1" name="State">0</param>
+                </action>
+                <action behavior="Physics" id="23" name="Enable/disable collisions" sid="6520484897224015" type="restart">
+                    <param id="0" name="Object">Blocks</param>
+                    <param id="1" name="State">0</param>
+                </action>
+                <action behavior="Physics" id="23" name="Enable/disable collisions" sid="7914889144252888" type="restart">
+                    <param id="0" name="Object">GreenBlock</param>
+                    <param id="1" name="State">0</param>
+                </action>
+                <action behavior="Physics" id="23" name="Enable/disable collisions" sid="2905701985263889" type="menu">
+                    <param id="0" name="Object">Obstacle</param>
+                    <param id="1" name="State">0</param>
+                </action>
+                <action behavior="Physics" id="23" name="Enable/disable collisions" sid="4119965746102035" type="restart">
+                    <param id="0" name="Object">Obstacle</param>
+                    <param id="1" name="State">0</param>
+                </action>
+                <action behavior="Physics" id="23" name="Enable/disable collisions" sid="961839516001983" type="menu">
+                    <param id="0" name="Object">PowerObstacle</param>
+                    <param id="1" name="State">0</param>
+                </action>
+                <action behavior="Physics" id="23" name="Enable/disable collisions" sid="9271785213811859" type="restart">
+                    <param id="0" name="Object">PowerObstacle</param>
+                    <param id="1" name="State">0</param>
+                </action>
+                <action behavior="Physics" id="23" name="Enable/disable collisions" sid="5828737355071949" type="menu">
+                    <param id="0" name="Object">BomObstacle</param>
+                    <param id="1" name="State">0</param>
+                </action>
+                <action behavior="Physics" id="23" name="Enable/disable collisions" sid="934641804549092" type="restart">
+                    <param id="0" name="Object">BomObstacle</param>
+                    <param id="1" name="State">0</param>
+                </action>
+                <action behavior="Physics" id="23" name="Enable/disable collisions" sid="7607807528273337" type="stoneForMenu">
+                    <param id="0" name="Object">Blocks</param>
+                    <param id="1" name="State">0</param>
+                </action>
+                <action behavior="Physics" id="23" name="Enable/disable collisions" sid="9213319889828829" type="stoneForMenu">
+                    <param id="0" name="Object">GreenBlock</param>
+                    <param id="1" name="State">0</param>
+                </action>
+                <action behavior="Pin" id="0" name="Pin to object" sid="8653160821579217" type="closeButton">
+                    <param id="0" name="Pin to">howtoplayPanel</param>
+                    <param id="1" name="Mode">1</param>
+                </action>
+                <action id="-9" name="Set value" sid="8572625082394887" type="System">
+                    <param id="0" name="Variable">howToPlayIsOpen</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-7" name="Set size" sid="7264547218820025" type="viewsbg">
+                    <param id="0" name="Width">854</param>
+                    <param id="1" name="Height">480</param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block sid="1549406273940745">
+                    <conditions>
+                        <condition id="-8" name="Compare two values" sid="3004652782377712" type="System">
+                            <param id="0" name="First value">int(WebStorage.LocalValue(&quot;music&quot;))</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="2" name="Set muted" sid="8613974891186282" type="Audio">
+                            <param id="0" name="Tag">&quot;soundfx&quot;</param>
+                            <param id="1" name="State">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="6005666412066674">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="4021075900415251" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="2" name="Set muted" sid="1892992625596945" type="Audio">
+                            <param id="0" name="Tag">&quot;soundfx&quot;</param>
+                            <param id="1" name="State">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="2281124545929798">
+                    <conditions>
+                        <condition id="-8" name="Compare two values" sid="7353285269677823" type="System">
+                            <param id="0" name="First value">LayoutName</param>
+                            <param id="1" name="Comparison">1</param>
+                            <param id="2" name="Second value">&quot;Menu&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-2" name="Set Y" sid="4453156194766267" type="stoneForMenu">
+                            <param id="0" name="Y">ViewportBottom(0)+22</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-group description="" sid="5265728908561496" title="Menu Events">
+            <sub-events>
+                <event-block sid="6829657781919204">
+                    <conditions>
+                        <condition id="3" name="On touched object" sid="8752866137697729" type="Touch">
+                            <param id="0" name="Object">music</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="3360138974287874">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="3881816372964746" type="music">
+                                    <param id="0" name="Instance variable">status</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="5" name="Set frame" sid="6703793097812372" type="music">
+                                    <param id="0" name="Frame number">2</param>
+                                </action>
+                                <action id="0" name="Set local value" sid="2568374997925541" type="WebStorage">
+                                    <param id="0" name="Key">&quot;music&quot;</param>
+                                    <param id="1" name="Value">0</param>
+                                </action>
+                                <action id="-10" name="Set value" sid="3454992789124045" type="music">
+                                    <param id="0" name="Instance variable">status</param>
+                                    <param id="1" name="Value">0</param>
+                                </action>
+                                <action id="2" name="Set muted" sid="4574001246681203" type="Audio">
+                                    <param id="0" name="Tag">&quot;soundfx&quot;</param>
+                                    <param id="1" name="State">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="1368684727658818">
+                            <conditions>
+                                <condition id="-22" name="Else" sid="7257838608111599" type="System" />
+                            </conditions>
+                            <actions>
+                                <action id="5" name="Set frame" sid="5211440438251034" type="music">
+                                    <param id="0" name="Frame number">0</param>
+                                </action>
+                                <action id="0" name="Set local value" sid="2062582154205532" type="WebStorage">
+                                    <param id="0" name="Key">&quot;music&quot;</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                                <action id="-10" name="Set value" sid="4060746391705619" type="music">
+                                    <param id="0" name="Instance variable">status</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                                <action id="2" name="Set muted" sid="9561418377815801" type="Audio">
+                                    <param id="0" name="Tag">&quot;soundfx&quot;</param>
+                                    <param id="1" name="State">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="873936752221253">
+                    <conditions>
+                        <condition id="3" name="On touched object" sid="2970501157355571" type="Touch">
+                            <param id="0" name="Object">bgmusic</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="5232171549534645">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="3324011620258374" type="bgmusic">
+                                    <param id="0" name="Instance variable">status</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="5" name="Set frame" sid="7026575507773466" type="bgmusic">
+                                    <param id="0" name="Frame number">2</param>
+                                </action>
+                                <action id="0" name="Set local value" sid="1884974806340166" type="WebStorage">
+                                    <param id="0" name="Key">&quot;bgmusic&quot;</param>
+                                    <param id="1" name="Value">0</param>
+                                </action>
+                                <action id="-10" name="Set value" sid="6611075500489583" type="bgmusic">
+                                    <param id="0" name="Instance variable">status</param>
+                                    <param id="1" name="Value">0</param>
+                                </action>
+                                <action id="2" name="Set muted" sid="1259836822595209" type="Audio">
+                                    <param id="0" name="Tag">&quot;loopmusic&quot;</param>
+                                    <param id="1" name="State">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="9266155682966688">
+                            <conditions>
+                                <condition id="-22" name="Else" sid="1085107437163032" type="System" />
+                            </conditions>
+                            <actions>
+                                <action id="5" name="Set frame" sid="1296215795085873" type="bgmusic">
+                                    <param id="0" name="Frame number">0</param>
+                                </action>
+                                <action id="0" name="Set local value" sid="6817492558492978" type="WebStorage">
+                                    <param id="0" name="Key">&quot;bgmusic&quot;</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                                <action id="-10" name="Set value" sid="8903220674894254" type="bgmusic">
+                                    <param id="0" name="Instance variable">status</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                                <action id="2" name="Set muted" sid="9350781692081798" type="Audio">
+                                    <param id="0" name="Tag">&quot;loopmusic&quot;</param>
+                                    <param id="1" name="State">1</param>
+                                </action>
+                            </actions>
+                            <sub-events>
+                                <event-block sid="8743880138126398">
+                                    <conditions>
+                                        <condition id="5" inverted="1" name="Is tag playing" sid="7739316703920743" type="Audio">
+                                            <param id="0" name="Tag">&quot;loopmusic&quot;</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="0" name="Play" sid="8700942709516579" type="Audio">
+                                            <param id="0" name="Audio file">bgloop</param>
+                                            <param id="2" name="Loop">1</param>
+                                            <param id="3" name="Volume">volume</param>
+                                            <param id="1" name="Tag (optional)">&quot;loopmusic&quot;</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="6415100529205547">
+                    <conditions>
+                        <condition id="3" name="On touched object" sid="4619355041648218" type="Touch">
+                            <param id="0" name="Object">Buttons</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="5" name="Set frame" sid="6148007260108719" type="Buttons">
+                            <param id="0" name="Frame number">1</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="2584414806837678" type="System">
+                            <param id="0" name="Seconds">0.1</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="9475414123111956" type="System">
+                            <param id="0" name="Variable">howToPlayIsOpen</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="0" name="Play" sid="4656005645514385" type="Audio">
+                            <param id="0" name="Audio file">SweetBleep</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">volume</param>
+                            <param id="1" name="Tag (optional)">&quot;soundfx&quot;</param>
+                        </action>
+                    </actions>
+                    <sub-events>
+                        <event-block sid="2588557124736629">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="1190184613691845" type="Buttons">
+                                    <param id="0" name="Instance variable">name</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">&quot;play&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-2" name="Go to layout" sid="7923503498058363" type="System">
+                                    <param id="0" name="Layout">Level</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="9804747942985301">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="1894639740550205" type="Buttons">
+                                    <param id="0" name="Instance variable">name</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">&quot;menu&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-2" name="Go to layout" sid="2940466677695346" type="System">
+                                    <param id="0" name="Layout">Menu</param>
+                                </action>
+                                <action id="-12" name="Set group active" sid="495417874215072" type="System">
+                                    <param id="0" name="Group name">&quot;OnDestroyGreenBlock&quot;</param>
+                                    <param id="1" name="State">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="8563809248131383">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="1039544697061981" type="Buttons">
+                                    <param id="0" name="Instance variable">name</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">&quot;restart&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-26" name="Restart layout" sid="4843025674025122" type="System" />
+                            </actions>
+                        </event-block>
+                        <event-block sid="3085535128237255">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="4472152257280562" type="Buttons">
+                                    <param id="0" name="Instance variable">name</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">&quot;howtoplay&quot;</param>
+                                </condition>
+                                <condition id="-14" name="Compare variable" sid="8610372219649743" type="System">
+                                    <param id="0" name="Variable">howToPlayIsOpen</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">0</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action behavior="LiteTween" id="10" name="Start" sid="5985925084333158" type="howtoplayPanel">
+                                    <param id="0" name="Start Mode">0</param>
+                                    <param id="1" name="Force use current">0</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="6628405889915875" type="System">
+                                    <param id="0" name="Variable">howToPlayIsOpen</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                                <action id="-12" name="Set group active" sid="8531162717507614" type="System">
+                                    <param id="0" name="Group name">&quot;Menu Events&quot;</param>
+                                    <param id="1" name="State">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="1234915352493047">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="8708666963848495" type="Buttons">
+                                    <param id="0" name="Instance variable">name</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">&quot;next&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-25" name="Go to layout (by name)" sid="4445521120191003" type="System">
+                                    <param id="0" name="Layout">&quot;Level&quot;&amp;currentLevel</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="6135067214431466">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="7927749049228641" type="Buttons">
+                                    <param id="0" name="Instance variable">name</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">&quot;facebook&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="8" name="Open URL in new window" sid="452352678958731" type="Browser">
+                                    <param id="0" name="URL">&quot;https://www.facebook.com/sharer/sharer.php?u=http://dev-zoom.com/construct-game/facebook-share-msg.php&quot;</param>
+                                    <param id="1" name="Tag">&quot;NewWindow&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="5588229241391209">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="2844121489011053" type="Buttons">
+                                    <param id="0" name="Instance variable">name</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">&quot;twitter&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="8" name="Open URL in new window" sid="8386098560613711" type="Browser">
+                                    <param id="0" name="URL">&quot;https://twitter.com/intent/tweet?source=webclient&amp;text=I finished The Boxes Physic, how about you?&quot;</param>
+                                    <param id="1" name="Tag">&quot;NewWindow&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="2662997477894923">
+                    <conditions>
+                        <condition id="1" name="On any touch end" sid="3244597806881256" type="Touch" />
+                    </conditions>
+                    <actions>
+                        <action id="5" name="Set frame" sid="8472632229114512" type="Buttons">
+                            <param id="0" name="Frame number">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-block sid="6438992129007553">
+            <conditions>
+                <condition behavior="Physics" id="0" name="Is sleeping" sid="935265068610427" type="menu" />
+                <condition id="-4" inverted="1" name="Is outside layout" sid="4483130865457747" type="menu" />
+            </conditions>
+            <actions>
+                <action behavior="Physics" id="21" name="Set immovable" sid="9986317971637903" type="menu">
+                    <param id="0" name="Setting">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="3870594912737421">
+            <conditions>
+                <condition behavior="Physics" id="0" name="Is sleeping" sid="9235246648015478" type="restart" />
+                <condition id="-4" inverted="1" name="Is outside layout" sid="3326706864902708" type="restart" />
+            </conditions>
+            <actions>
+                <action behavior="Physics" id="21" name="Set immovable" sid="4324839675166877" type="restart">
+                    <param id="0" name="Setting">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="6674673016349201">
+            <conditions>
+                <condition id="3" name="On touched object" sid="7295915772952599" type="Touch">
+                    <param id="0" name="Object">closeButton</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="LiteTween" id="11" name="Reverse" sid="5061904075241457" type="howtoplayPanel">
+                    <param id="0" name="Reverse mode">0</param>
+                </action>
+                <action id="-9" name="Set value" sid="8860011789912829" type="System">
+                    <param id="0" name="Variable">howToPlayIsOpen</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-12" name="Set group active" sid="7124724387600567" type="System">
+                    <param id="0" name="Group name">&quot;Menu Events&quot;</param>
+                    <param id="1" name="State">1</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

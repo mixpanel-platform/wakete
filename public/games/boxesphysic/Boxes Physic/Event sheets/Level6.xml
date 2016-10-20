@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Level6</name>
+    <events>
+        <include>Navigation</include>
+        <include>SplitGreen</include>
+        <include>SplitBlue</include>
+        <include>SplitOrange</include>
+        <include>SplitBrown</include>
+        <include>SplitPink</include>
+        <include>SystemVariable</include>
+        <include>GamePlay</include>
+        <event-block sid="7044035995540218">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="6367551577805491" type="System" />
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="1965918272874262" type="System">
+                    <param id="0" name="Variable">currentLevel</param>
+                    <param id="1" name="Value">6</param>
+                </action>
+                <action id="-9" name="Set value" sid="2189250922902415" type="System">
+                    <param id="0" name="Variable">second_earn_star3</param>
+                    <param id="1" name="Value">4</param>
+                </action>
+                <action id="-9" name="Set value" sid="2419862799175938" type="System">
+                    <param id="0" name="Variable">second_earn_star2</param>
+                    <param id="1" name="Value">4.5</param>
+                </action>
+                <action id="-9" name="Set value" sid="1142838367311077" type="System">
+                    <param id="0" name="Variable">second_earn_star1</param>
+                    <param id="1" name="Value">5</param>
+                </action>
+                <action id="-9" name="Set value" sid="334965781415496" type="System">
+                    <param id="0" name="Variable">failedSecond</param>
+                    <param id="1" name="Value">6</param>
+                </action>
+                <action id="0" name="Set text" sid="2110472411835843" type="currentLevel">
+                    <param id="0" name="Text">str(currentLevel)&amp;&quot;/&quot;&amp;str( totalLevel)</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

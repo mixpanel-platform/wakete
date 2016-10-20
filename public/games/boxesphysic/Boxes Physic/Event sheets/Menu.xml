@@ -1,0 +1,128 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Menu</name>
+    <events>
+        <include>Navigation</include>
+        <event-block sid="3293770400405409">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="5773045907451955" type="System" />
+            </conditions>
+            <actions>
+                <action disabled="1" id="0" name="Set local value" sid="655109030704377" type="WebStorage">
+                    <param id="0" name="Key">&quot;current_level&quot;</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block sid="6569984964928241">
+                    <conditions>
+                        <condition id="3" inverted="1" name="Local key exists" sid="7336089636440775" type="WebStorage">
+                            <param id="0" name="Key">&quot;music&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set local value" sid="8674663807511978" type="WebStorage">
+                            <param id="0" name="Key">&quot;music&quot;</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="4503150054418657">
+                    <conditions>
+                        <condition id="3" inverted="1" name="Local key exists" sid="3776289516243838" type="WebStorage">
+                            <param id="0" name="Key">&quot;bgmusic&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set local value" sid="8089743879111394" type="WebStorage">
+                            <param id="0" name="Key">&quot;bgmusic&quot;</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="7514465588502804">
+                    <conditions>
+                        <condition id="-8" name="Compare two values" sid="5849184697311714" type="System">
+                            <param id="0" name="First value">int(WebStorage.LocalValue(&quot;music&quot;))</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="5" name="Set frame" sid="5542318364990205" type="music">
+                            <param id="0" name="Frame number">0</param>
+                        </action>
+                        <action id="-10" name="Set value" sid="983697632331851" type="music">
+                            <param id="0" name="Instance variable">status</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="292326396769543">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="9256320104956224" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="5" name="Set frame" sid="1833956729857545" type="music">
+                            <param id="0" name="Frame number">2</param>
+                        </action>
+                        <action id="-10" name="Set value" sid="1906615531185" type="music">
+                            <param id="0" name="Instance variable">status</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="9123294078711564">
+                    <conditions>
+                        <condition id="-8" name="Compare two values" sid="2355534364310494" type="System">
+                            <param id="0" name="First value">int(WebStorage.LocalValue(&quot;bgmusic&quot;))</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="5" name="Set frame" sid="8067764442858062" type="bgmusic">
+                            <param id="0" name="Frame number">0</param>
+                        </action>
+                        <action id="-10" name="Set value" sid="6733552588688462" type="bgmusic">
+                            <param id="0" name="Instance variable">status</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
+                    <sub-events>
+                        <event-block sid="8775453360470535">
+                            <conditions>
+                                <condition id="5" inverted="1" name="Is tag playing" sid="9688442725133687" type="Audio">
+                                    <param id="0" name="Tag">&quot;loopmusic&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Play" sid="4174318125452236" type="Audio">
+                                    <param id="0" name="Audio file">bgloop</param>
+                                    <param id="2" name="Loop">1</param>
+                                    <param id="3" name="Volume">volume</param>
+                                    <param id="1" name="Tag (optional)">&quot;loopmusic&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="4990851899065719">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="5723324142992835" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="5" name="Set frame" sid="1046829252318974" type="bgmusic">
+                            <param id="0" name="Frame number">2</param>
+                        </action>
+                        <action id="-10" name="Set value" sid="4304612866671875" type="bgmusic">
+                            <param id="0" name="Instance variable">status</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+    </events>
+</c2eventsheet>

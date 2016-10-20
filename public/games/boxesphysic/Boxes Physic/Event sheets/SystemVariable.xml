@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>SystemVariable</name>
+    <events>
+        <variable constant="0" name="totalGreenBlocks" sid="6369382839732533" static="0" type="number">0</variable>
+        <variable constant="0" name="wasFailed" sid="8432307217582808" static="0" type="number">0</variable>
+        <variable constant="0" name="second_earn_star1" sid="160262401113478" static="0" type="number">0</variable>
+        <variable constant="0" name="second_earn_star2" sid="4038574717723615" static="0" type="number">0</variable>
+        <variable constant="0" name="second_earn_star3" sid="9959835438463949" static="0" type="number">0</variable>
+        <variable constant="0" name="failedSecond" sid="4122815230653919" static="0" type="number">5</variable>
+        <variable constant="0" name="firstTap" sid="2647060320544161" static="0" type="number">0</variable>
+        <variable constant="0" name="wasComplete" sid="9535918151290801" static="0" type="number">0</variable>
+        <variable constant="0" name="secondChallenge" sid="1076517053484772" static="0" type="number">0</variable>
+        <variable constant="0" name="miliSecondChallenge" sid="1678537286792992" static="0" type="number">0</variable>
+        <variable constant="0" name="volume" sid="6147558018028131" static="0" type="number">-20</variable>
+        <variable constant="0" name="forceDelta" sid="6167154163221411" static="0" type="number">70</variable>
+        <variable constant="0" name="totalLevel" sid="8646979174317607" static="0" type="number">32</variable>
+        <variable constant="0" name="currentLevel" sid="8826662421629596" static="0" type="number">1</variable>
+        <variable constant="0" name="clicked160" sid="6136998736622151" static="0" type="number">0</variable>
+        <variable constant="0" name="clicked80" sid="315662564071814" static="0" type="number">0</variable>
+        <variable constant="0" name="clicked40" sid="7792908185059201" static="0" type="number">0</variable>
+        <variable constant="0" name="clicked128" sid="9378837230307512" static="0" type="number">0</variable>
+        <variable constant="0" name="clicked64" sid="6668170242894749" static="0" type="number">0</variable>
+        <variable constant="0" name="clicked32" sid="637411827418154" static="0" type="number">0</variable>
+        <variable constant="0" name="numClick" sid="6176535594833488" static="0" type="number">3</variable>
+    </events>
+</c2eventsheet>

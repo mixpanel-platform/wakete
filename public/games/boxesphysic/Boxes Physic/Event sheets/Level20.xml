@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Level20</name>
+    <events>
+        <include>Navigation</include>
+        <include>SplitGreen</include>
+        <include>SplitBlue</include>
+        <include>SplitOrange</include>
+        <include>SplitBrown</include>
+        <include>SplitPink</include>
+        <include>SystemVariable</include>
+        <include>GamePlay</include>
+        <event-block sid="3477500705331329">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="7206965189707257" type="System" />
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="8109331063078925" type="System">
+                    <param id="0" name="Variable">currentLevel</param>
+                    <param id="1" name="Value">20</param>
+                </action>
+                <action id="-9" name="Set value" sid="58354269311771" type="System">
+                    <param id="0" name="Variable">second_earn_star3</param>
+                    <param id="1" name="Value">5.5</param>
+                </action>
+                <action id="-9" name="Set value" sid="4048597660082823" type="System">
+                    <param id="0" name="Variable">second_earn_star2</param>
+                    <param id="1" name="Value">6</param>
+                </action>
+                <action id="-9" name="Set value" sid="4461738670702659" type="System">
+                    <param id="0" name="Variable">second_earn_star1</param>
+                    <param id="1" name="Value">6.5</param>
+                </action>
+                <action id="-9" name="Set value" sid="5245489024594958" type="System">
+                    <param id="0" name="Variable">failedSecond</param>
+                    <param id="1" name="Value">7.5</param>
+                </action>
+                <action id="0" name="Set text" sid="9464358358708025" type="currentLevel">
+                    <param id="0" name="Text">str(currentLevel)&amp;&quot;/&quot;&amp;str( totalLevel)</param>
+                </action>
+                <action behavior="Physics" id="21" name="Set immovable" sid="6409882163472715" type="stone5">
+                    <param id="0" name="Setting">0</param>
+                </action>
+                <action behavior="Physics" id="21" name="Set immovable" sid="8824929238882384" type="stone6">
+                    <param id="0" name="Setting">0</param>
+                </action>
+                <action behavior="Sine" id="0" name="Set active" sid="3637076132216393" type="stone">
+                    <param id="0" name="State">1</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

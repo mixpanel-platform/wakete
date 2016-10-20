@@ -1,0 +1,154 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Level</name>
+    <events>
+        <include>Navigation</include>
+        <event-block sid="1848702249853823">
+            <conditions>
+                <condition id="3" inverted="1" name="Local key exists" sid="1883470508900597" type="WebStorage">
+                    <param id="0" name="Key">&quot;current_level&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Set local value" sid="5406414469806113" type="WebStorage">
+                    <param id="0" name="Key">&quot;current_level&quot;</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="5106468010673371">
+            <conditions>
+                <condition id="3" name="On touched object" sid="9375497613052288" type="Touch">
+                    <param id="0" name="Object">LevelLabel</param>
+                </condition>
+                <condition id="-8" name="Compare two values" sid="8424533079395201" type="System">
+                    <param id="0" name="First value">LevelLabel.level</param>
+                    <param id="1" name="Comparison">3</param>
+                    <param id="2" name="Second value">int(WebStorage.LocalValue(&quot;current_level&quot;))</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-25" name="Go to layout (by name)" sid="182065246745242" type="System">
+                    <param id="0" name="Layout">&quot;Level&quot;&amp;LevelLabel.level</param>
+                </action>
+                <action id="0" name="Play" sid="9639823721574029" type="Audio">
+                    <param id="0" name="Audio file">SweetBleep</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">volume</param>
+                    <param id="1" name="Tag (optional)">&quot;soundfx&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="9802167711896993">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="8670837379324281" type="System" />
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="5343315952824631">
+                    <conditions>
+                        <condition id="-10" name="For" sid="4237397166668717" type="System">
+                            <param id="0" name="Name">&quot;scanLevelItems&quot;</param>
+                            <param id="1" name="Start index">1</param>
+                            <param id="2" name="End index">int(WebStorage.LocalValue(&quot;current_level&quot;))</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="3486183058386586">
+                            <conditions>
+                                <condition id="-33" name="Pick by comparison" sid="2729773170014223" type="System">
+                                    <param id="0" name="Object">LevelLabel</param>
+                                    <param id="1" name="Expression">LevelLabel.level</param>
+                                    <param id="2" name="Comparison">0</param>
+                                    <param id="3" name="Value">loopindex</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="9373631937373787">
+                                    <conditions>
+                                        <condition id="-33" name="Pick by comparison" sid="9052023577170047" type="System">
+                                            <param id="0" name="Object">starlevel</param>
+                                            <param id="1" name="Expression">int(starlevel.level)</param>
+                                            <param id="2" name="Comparison">0</param>
+                                            <param id="3" name="Value">int(LevelLabel.level)</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions />
+                                    <sub-events>
+                                        <event-block sid="3281778256712229">
+                                            <conditions>
+                                                <condition id="3" inverted="1" name="Local key exists" sid="1116509888005158" type="WebStorage">
+                                                    <param id="0" name="Key">&quot;star_level_&quot;&amp;loopindex</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="5" name="Set frame" sid="2123477809759836" type="starlevel">
+                                                    <param id="0" name="Frame number">0</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="5891050458232723">
+                                            <conditions>
+                                                <condition id="-22" name="Else" sid="9879517402207707" type="System" />
+                                            </conditions>
+                                            <actions>
+                                                <action id="5" name="Set frame" sid="1796502095961222" type="starlevel">
+                                                    <param id="0" name="Frame number">int(WebStorage.LocalValue(&quot;star_level_&quot;&amp;loopindex))</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                    </sub-events>
+                                </event-block>
+                                <event-block sid="4797327563755862">
+                                    <conditions>
+                                        <condition id="-15" name="Pick nearest/furthest" sid="1324987061598618" type="locked">
+                                            <param id="0" name="Which">0</param>
+                                            <param id="1" name="X">LevelLabel.X</param>
+                                            <param id="2" name="Y">LevelLabel.Y</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="5" name="Set frame" sid="1593087269489294" type="locked">
+                                            <param id="0" name="Frame number">2</param>
+                                        </action>
+                                        <action id="-16" name="Set opacity" sid="5220682158609615" type="LevelLabel">
+                                            <param id="0" name="Opacity">100</param>
+                                        </action>
+                                    </actions>
+                                    <sub-events>
+                                        <event-block sid="6047601563337202">
+                                            <conditions>
+                                                <condition id="-8" name="Compare two values" sid="4677272445813189" type="System">
+                                                    <param id="0" name="First value">loopindex</param>
+                                                    <param id="1" name="Comparison">2</param>
+                                                    <param id="2" name="Second value">int(WebStorage.LocalValue(&quot;current_level&quot;))</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions />
+                                        </event-block>
+                                        <event-block sid="9506465007765643">
+                                            <conditions>
+                                                <condition id="-22" name="Else" sid="1103096109659335" type="System" />
+                                            </conditions>
+                                            <actions>
+                                                <action id="5" name="Set frame" sid="3773130360163098" type="locked">
+                                                    <param id="0" name="Frame number">1</param>
+                                                </action>
+                                                <action id="-16" name="Set opacity" sid="496370915171307" type="LevelLabel">
+                                                    <param id="0" name="Opacity">100</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                    </sub-events>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
+        </event-block>
+    </events>
+</c2eventsheet>

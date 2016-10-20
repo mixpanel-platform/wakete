@@ -1,0 +1,224 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>SplitPink</name>
+    <events>
+        <include>SystemVariable</include>
+        <event-block sid="9213623791884308">
+            <conditions>
+                <condition id="3" name="On touched object" sid="6848900453087548" type="Touch">
+                    <param id="0" name="Object">pink128</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="7820825971742774" type="System">
+                    <param id="0" name="Variable">clicked128</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="0" name="Spawn another object" sid="2408771940632059" type="pink128">
+                    <param id="0" name="Object">pink64</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="Image point">0</param>
+                </action>
+                <action id="0" name="Spawn another object" sid="8951924722164026" type="pink128">
+                    <param id="0" name="Object">pink64</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="Image point">1</param>
+                </action>
+                <action id="0" name="Spawn another object" sid="8028842864607043" type="pink128">
+                    <param id="0" name="Object">pink64</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="Image point">2</param>
+                </action>
+                <action id="0" name="Spawn another object" sid="6608746193507953" type="pink128">
+                    <param id="0" name="Object">pink64</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="Image point">3</param>
+                </action>
+                <action id="-9" name="Destroy" sid="8105617674819738" type="pink128" />
+            </actions>
+        </event-block>
+        <event-block sid="8979089622633216">
+            <conditions>
+                <condition id="3" name="On touched object" sid="4222735490249752" type="Touch">
+                    <param id="0" name="Object">pink64</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="8086924590866994" type="System">
+                    <param id="0" name="Variable">clicked128</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="1075124115188734" type="System">
+                    <param id="0" name="Variable">clicked64</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="0" name="Spawn another object" sid="8911488579805265" type="pink64">
+                    <param id="0" name="Object">pink32</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="Image point">0</param>
+                </action>
+                <action id="0" name="Spawn another object" sid="1937482773892093" type="pink64">
+                    <param id="0" name="Object">pink32</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="Image point">1</param>
+                </action>
+                <action id="0" name="Spawn another object" sid="5960594194917112" type="pink64">
+                    <param id="0" name="Object">pink32</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="Image point">2</param>
+                </action>
+                <action id="0" name="Spawn another object" sid="7102418993730568" type="pink64">
+                    <param id="0" name="Object">pink32</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="Image point">3</param>
+                </action>
+                <action id="-9" name="Destroy" sid="4417563362382383" type="pink64" />
+            </actions>
+        </event-block>
+        <event-block sid="3832820659790552">
+            <conditions>
+                <condition id="3" name="On touched object" sid="9450533745894862" type="Touch">
+                    <param id="0" name="Object">pink32</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="2182647509530106" type="System">
+                    <param id="0" name="Variable">clicked64</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Spawn another object" sid="1919420349687828" type="pink32">
+                    <param id="0" name="Object">pink16</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="Image point">0</param>
+                </action>
+                <action id="0" name="Spawn another object" sid="3160399803883249" type="pink32">
+                    <param id="0" name="Object">pink16</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="Image point">1</param>
+                </action>
+                <action id="0" name="Spawn another object" sid="2150384183212235" type="pink32">
+                    <param id="0" name="Object">pink16</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="Image point">2</param>
+                </action>
+                <action id="0" name="Spawn another object" sid="1769553619340196" type="pink32">
+                    <param id="0" name="Object">pink16</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="Image point">3</param>
+                </action>
+                <action id="-9" name="Destroy" sid="3310282355732021" type="pink32" />
+            </actions>
+        </event-block>
+        <event-block sid="949162340160115">
+            <conditions>
+                <condition id="3" name="On touched object" sid="8625683336914006" type="Touch">
+                    <param id="0" name="Object">pink160</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="6514594061946544" type="System">
+                    <param id="0" name="Variable">clicked160</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="0" name="Spawn another object" sid="775865493250828" type="pink160">
+                    <param id="0" name="Object">pink80</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="Image point">0</param>
+                </action>
+                <action id="0" name="Spawn another object" sid="9226558620320764" type="pink160">
+                    <param id="0" name="Object">pink80</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="Image point">1</param>
+                </action>
+                <action id="0" name="Spawn another object" sid="2724064208183033" type="pink160">
+                    <param id="0" name="Object">pink80</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="Image point">2</param>
+                </action>
+                <action id="0" name="Spawn another object" sid="9594288788000775" type="pink160">
+                    <param id="0" name="Object">pink80</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="Image point">3</param>
+                </action>
+                <action id="-9" name="Destroy" sid="4772009925019488" type="pink160" />
+            </actions>
+        </event-block>
+        <event-block sid="3651687313727716">
+            <conditions>
+                <condition id="3" name="On touched object" sid="8157408423065793" type="Touch">
+                    <param id="0" name="Object">pink80</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="3573737706805097" type="System">
+                    <param id="0" name="Variable">clicked160</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="9022285589585281" type="System">
+                    <param id="0" name="Variable">clicked80</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="0" name="Spawn another object" sid="9568960787000873" type="pink80">
+                    <param id="0" name="Object">pink40</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="Image point">0</param>
+                </action>
+                <action id="0" name="Spawn another object" sid="9438777047639716" type="pink80">
+                    <param id="0" name="Object">pink40</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="Image point">1</param>
+                </action>
+                <action id="0" name="Spawn another object" sid="4625900332944336" type="pink80">
+                    <param id="0" name="Object">pink40</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="Image point">2</param>
+                </action>
+                <action id="0" name="Spawn another object" sid="3780179855288924" type="pink80">
+                    <param id="0" name="Object">pink40</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="Image point">3</param>
+                </action>
+                <action id="-9" name="Destroy" sid="4306281924112077" type="pink80" />
+            </actions>
+        </event-block>
+        <event-block sid="9160014701916186">
+            <conditions>
+                <condition id="3" name="On touched object" sid="5096628243892254" type="Touch">
+                    <param id="0" name="Object">pink40</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="8586072099436236" type="System">
+                    <param id="0" name="Variable">clicked80</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Spawn another object" sid="8835857279963327" type="pink40">
+                    <param id="0" name="Object">pink20</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="Image point">0</param>
+                </action>
+                <action id="0" name="Spawn another object" sid="2299863342549632" type="pink40">
+                    <param id="0" name="Object">pink20</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="Image point">1</param>
+                </action>
+                <action id="0" name="Spawn another object" sid="9058823689940377" type="pink40">
+                    <param id="0" name="Object">pink20</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="Image point">2</param>
+                </action>
+                <action id="0" name="Spawn another object" sid="7379975698763736" type="pink40">
+                    <param id="0" name="Object">pink20</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="Image point">3</param>
+                </action>
+                <action id="-9" name="Destroy" sid="6424848750532307" type="pink40" />
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

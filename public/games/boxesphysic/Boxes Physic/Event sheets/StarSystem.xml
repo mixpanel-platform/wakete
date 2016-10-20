@@ -1,0 +1,370 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>StarSystem</name>
+    <events>
+        <event-block sid="939552232147166">
+            <conditions>
+                <condition id="0" name="On function" sid="2851765570431579" type="Function">
+                    <param id="0" name="Name">&quot;animateStar&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="LiteTween" id="10" name="Start" sid="2201733308020134" type="star1">
+                    <param id="0" name="Start Mode">0</param>
+                    <param id="1" name="Force use current">0</param>
+                </action>
+                <action id="-16" name="Wait" sid="434739901315192" type="System">
+                    <param id="0" name="Seconds">0.25</param>
+                </action>
+                <action behavior="LiteTween" id="10" name="Start" sid="6278454646790564" type="star2">
+                    <param id="0" name="Start Mode">0</param>
+                    <param id="1" name="Force use current">0</param>
+                </action>
+                <action id="-16" name="Wait" sid="8235535619526832" type="System">
+                    <param id="0" name="Seconds">0.25</param>
+                </action>
+                <action behavior="LiteTween" id="10" name="Start" sid="2248227277703535" type="star3">
+                    <param id="0" name="Start Mode">0</param>
+                    <param id="1" name="Force use current">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="9747001472966874">
+            <conditions>
+                <condition id="0" name="On function" sid="5988293204995626" type="Function">
+                    <param id="0" name="Name">&quot;checkStar&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-12" name="Set group active" sid="2791249628260829" type="System">
+                    <param id="0" name="Group name">&quot;TweenStart&quot;</param>
+                    <param id="1" name="State">1</param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block sid="7274108956724826">
+                    <conditions>
+                        <condition id="-8" name="Compare two values" sid="2703779352057521" type="System">
+                            <param id="0" name="First value">secondChallenge+miliSecondChallenge/1000</param>
+                            <param id="1" name="Comparison">3</param>
+                            <param id="2" name="Second value">second_earn_star3</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set local value" sid="8956734627223319" type="WebStorage">
+                            <param id="0" name="Key">&quot;star_level_&quot;&amp; Function.Param(0)</param>
+                            <param id="1" name="Value">3</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="5538724401899849">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="7209707402325757" type="System" />
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="9123174912186802">
+                            <conditions>
+                                <condition id="-8" name="Compare two values" sid="3120691840547822" type="System">
+                                    <param id="0" name="First value">secondChallenge+miliSecondChallenge/1000</param>
+                                    <param id="1" name="Comparison">3</param>
+                                    <param id="2" name="Second value">second_earn_star2</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set local value" sid="9015810289464505" type="WebStorage">
+                                    <param id="0" name="Key">&quot;star_level_&quot;&amp;Function.Param(0)</param>
+                                    <param id="1" name="Value">2</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="4823682740360033">
+                            <conditions>
+                                <condition id="-22" name="Else" sid="3929295832474219" type="System" />
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="8563510712841795">
+                                    <conditions>
+                                        <condition id="-8" name="Compare two values" sid="2623833942961849" type="System">
+                                            <param id="0" name="First value">secondChallenge+miliSecondChallenge/1000</param>
+                                            <param id="1" name="Comparison">3</param>
+                                            <param id="2" name="Second value">second_earn_star1</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="0" name="Set local value" sid="3122244860622077" type="WebStorage">
+                                            <param id="0" name="Key">&quot;star_level_&quot;&amp;Function.Param(0)</param>
+                                            <param id="1" name="Value">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="9081621877547155">
+                                    <conditions>
+                                        <condition id="-22" name="Else" sid="2670317437212221" type="System" />
+                                    </conditions>
+                                    <actions>
+                                        <action id="0" name="Set local value" sid="4444297438095986" type="WebStorage">
+                                            <param id="0" name="Key">&quot;star_level_&quot;&amp;Function.Param(0)</param>
+                                            <param id="1" name="Value">0</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-group description="" inactive="1" sid="3229112566390561" title="TweenStart">
+            <sub-events>
+                <event-block sid="669757605189226">
+                    <conditions>
+                        <condition behavior="LiteTween" id="2" name="On tween start" sid="7837887719949588" type="star1" />
+                    </conditions>
+                    <actions>
+                        <action behavior="Pin" id="0" name="Pin to object" sid="8135972249009342" type="star1clear">
+                            <param id="0" name="Pin to">star1</param>
+                            <param id="1" name="Mode">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="105499635068834">
+                    <conditions>
+                        <condition behavior="LiteTween" id="4" name="On tween end" sid="5350329130227378" type="star1" />
+                        <condition id="-8" name="Compare two values" sid="7628251147184066" type="System">
+                            <param id="0" name="First value">secondChallenge+miliSecondChallenge/1000</param>
+                            <param id="1" name="Comparison">3</param>
+                            <param id="2" name="Second value">second_earn_star1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="Fade" id="1" name="Start fade" sid="8993263181510532" type="star1clear" />
+                        <action behavior="LiteTween" id="10" name="Start" sid="7576645387527873" type="star1clear">
+                            <param id="0" name="Start Mode">0</param>
+                            <param id="1" name="Force use current">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="4761829673792413">
+                    <conditions>
+                        <condition behavior="LiteTween" id="2" name="On tween start" sid="2414728052002413" type="star2" />
+                    </conditions>
+                    <actions>
+                        <action behavior="Pin" id="0" name="Pin to object" sid="8734001103335053" type="star2clear">
+                            <param id="0" name="Pin to">star2</param>
+                            <param id="1" name="Mode">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="8706064900819443">
+                    <conditions>
+                        <condition behavior="LiteTween" id="4" name="On tween end" sid="8503132034714683" type="star2" />
+                        <condition id="-8" name="Compare two values" sid="6014307580040371" type="System">
+                            <param id="0" name="First value">secondChallenge+miliSecondChallenge/1000</param>
+                            <param id="1" name="Comparison">3</param>
+                            <param id="2" name="Second value">second_earn_star2</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="Fade" id="1" name="Start fade" sid="4224242412146318" type="star2clear" />
+                        <action behavior="LiteTween" id="10" name="Start" sid="192512696351073" type="star2clear">
+                            <param id="0" name="Start Mode">0</param>
+                            <param id="1" name="Force use current">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="7946559073320182">
+                    <conditions>
+                        <condition behavior="LiteTween" id="2" name="On tween start" sid="8036804871271859" type="star3" />
+                    </conditions>
+                    <actions>
+                        <action behavior="Pin" id="0" name="Pin to object" sid="7000726796890618" type="star3clear">
+                            <param id="0" name="Pin to">star3</param>
+                            <param id="1" name="Mode">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="1355254391777374">
+                    <conditions>
+                        <condition behavior="LiteTween" id="4" name="On tween end" sid="7496180645469071" type="star3" />
+                        <condition id="-8" name="Compare two values" sid="4561794397767816" type="System">
+                            <param id="0" name="First value">secondChallenge+miliSecondChallenge/1000</param>
+                            <param id="1" name="Comparison">3</param>
+                            <param id="2" name="Second value">second_earn_star3</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="Fade" id="1" name="Start fade" sid="5380613832909301" type="star3clear" />
+                        <action behavior="LiteTween" id="10" name="Start" sid="5802362837269883" type="star3clear">
+                            <param id="0" name="Start Mode">0</param>
+                            <param id="1" name="Force use current">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="4419657173759369">
+                    <conditions>
+                        <condition behavior="LiteTween" id="2" name="On tween start" sid="5822437902848805" type="star1clear" />
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Spawn another object" sid="1730241236454245" type="star1clear">
+                            <param id="0" name="Object">Particles</param>
+                            <param id="1" name="Layer">3</param>
+                            <param id="2" name="Image point">0</param>
+                        </action>
+                    </actions>
+                    <sub-events>
+                        <event-block sid="9252449841832845">
+                            <conditions>
+                                <condition id="-8" name="Compare two values" sid="295913270757916" type="System">
+                                    <param id="0" name="First value">int(WebStorage.LocalValue(&quot;music&quot;))</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Second value">1</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Play" sid="1609662145380299" type="Audio">
+                                    <param id="0" name="Audio file">bongbong</param>
+                                    <param id="2" name="Loop">0</param>
+                                    <param id="3" name="Volume">volume</param>
+                                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="5325095059867967">
+                    <conditions>
+                        <condition behavior="LiteTween" id="4" name="On tween end" sid="2443254171840799" type="star1clear" />
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Spawn another object" sid="4952605392758227" type="star1clear">
+                            <param id="0" name="Object">plus</param>
+                            <param id="1" name="Layer">3</param>
+                            <param id="2" name="Image point">0</param>
+                        </action>
+                        <action behavior="LiteTween" id="3" name="Set target" sid="7065255112905157" type="plus">
+                            <param id="0" name="Target is">0</param>
+                            <param id="1" name="Relativity">0</param>
+                            <param id="2" name="Value">star1clear.X</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="1227154833078041">
+                    <conditions>
+                        <condition behavior="LiteTween" id="2" name="On tween start" sid="8593968928884814" type="star2clear" />
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Spawn another object" sid="4557678538211172" type="star2clear">
+                            <param id="0" name="Object">Particles</param>
+                            <param id="1" name="Layer">3</param>
+                            <param id="2" name="Image point">0</param>
+                        </action>
+                    </actions>
+                    <sub-events>
+                        <event-block sid="4362565344722977">
+                            <conditions>
+                                <condition id="-8" name="Compare two values" sid="5940553515541185" type="System">
+                                    <param id="0" name="First value">int(WebStorage.LocalValue(&quot;music&quot;))</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Second value">1</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Play" sid="580720052674447" type="Audio">
+                                    <param id="0" name="Audio file">bongbong</param>
+                                    <param id="2" name="Loop">0</param>
+                                    <param id="3" name="Volume">volume</param>
+                                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="6365011454638849">
+                    <conditions>
+                        <condition behavior="LiteTween" id="4" name="On tween end" sid="673218334740256" type="star2clear" />
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Spawn another object" sid="9069388791284034" type="star2clear">
+                            <param id="0" name="Object">plus</param>
+                            <param id="1" name="Layer">3</param>
+                            <param id="2" name="Image point">0</param>
+                        </action>
+                        <action behavior="LiteTween" id="3" name="Set target" sid="9590025783863494" type="plus">
+                            <param id="0" name="Target is">0</param>
+                            <param id="1" name="Relativity">0</param>
+                            <param id="2" name="Value">star2clear.X</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="2842030242965224">
+                    <conditions>
+                        <condition behavior="LiteTween" id="2" name="On tween start" sid="8068526020234225" type="star3clear" />
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Spawn another object" sid="6647286955187693" type="star3clear">
+                            <param id="0" name="Object">Particles</param>
+                            <param id="1" name="Layer">3</param>
+                            <param id="2" name="Image point">0</param>
+                        </action>
+                    </actions>
+                    <sub-events>
+                        <event-block sid="635772111269824">
+                            <conditions>
+                                <condition id="-8" name="Compare two values" sid="4384878136301558" type="System">
+                                    <param id="0" name="First value">int(WebStorage.LocalValue(&quot;music&quot;))</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Second value">1</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Play" sid="4621277450092451" type="Audio">
+                                    <param id="0" name="Audio file">bongbong</param>
+                                    <param id="2" name="Loop">0</param>
+                                    <param id="3" name="Volume">volume</param>
+                                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="5674225878014024">
+                    <conditions>
+                        <condition behavior="LiteTween" id="4" name="On tween end" sid="8297956457110661" type="star3clear" />
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Spawn another object" sid="8303444496614718" type="star3clear">
+                            <param id="0" name="Object">plus</param>
+                            <param id="1" name="Layer">3</param>
+                            <param id="2" name="Image point">0</param>
+                        </action>
+                        <action behavior="LiteTween" id="3" name="Set target" sid="5750588692683286" type="plus">
+                            <param id="0" name="Target is">0</param>
+                            <param id="1" name="Relativity">0</param>
+                            <param id="2" name="Value">star3clear.X</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="6164600491850849">
+                    <conditions>
+                        <condition id="-18" name="On created" sid="3292991226374293" type="plus" />
+                    </conditions>
+                    <actions>
+                        <action behavior="LiteTween" id="3" name="Set target" sid="3759571669322917" type="plus">
+                            <param id="0" name="Target is">1</param>
+                            <param id="1" name="Relativity">0</param>
+                            <param id="2" name="Value">-100</param>
+                        </action>
+                        <action behavior="Fade" id="1" name="Start fade" sid="5592965580397304" type="plus" />
+                        <action behavior="LiteTween" id="10" name="Start" sid="2516470544876653" type="plus">
+                            <param id="0" name="Start Mode">0</param>
+                            <param id="1" name="Force use current">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+    </events>
+</c2eventsheet>

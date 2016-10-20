@@ -1,0 +1,553 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>GamePlay</name>
+    <events>
+        <include>StarSystem</include>
+        <event-block sid="9665893335364598">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="4365415791968458" type="System" />
+            </conditions>
+            <actions>
+                <action id="-12" name="Set group active" sid="8169297365877878" type="System">
+                    <param id="0" name="Group name">&quot;TweenStart&quot;</param>
+                    <param id="1" name="State">0</param>
+                </action>
+                <action behavior="Physics" id="23" name="Enable/disable collisions" sid="8085861568820389" type="level_complete">
+                    <param id="0" name="Object">Blocks</param>
+                    <param id="1" name="State">0</param>
+                </action>
+                <action behavior="Physics" id="23" name="Enable/disable collisions" sid="3528897969205299" type="level_complete">
+                    <param id="0" name="Object">GreenBlock</param>
+                    <param id="1" name="State">0</param>
+                </action>
+                <action behavior="Rotate" id="0" name="Set speed" sid="8681272376692529" type="stone4">
+                    <param id="0" name="Speed">0</param>
+                </action>
+                <action id="-9" name="Set value" sid="3981452247701212" type="System">
+                    <param id="0" name="Variable">miliSecondChallenge</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-9" name="Set value" sid="2541921267798557" type="System">
+                    <param id="0" name="Variable">secondChallenge</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-9" name="Set value" sid="5700605372331776" type="System">
+                    <param id="0" name="Variable">wasComplete</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-9" name="Set value" sid="3873272486559949" type="System">
+                    <param id="0" name="Variable">firstTap</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-9" name="Set value" sid="6164808673296551" type="System">
+                    <param id="0" name="Variable">wasFailed</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-12" name="Set group active" sid="6924641148637861" type="System">
+                    <param id="0" name="Group name">&quot;OnDestroyGreenBlock&quot;</param>
+                    <param id="1" name="State">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="5521358496606994">
+            <conditions>
+                <condition id="-6" name="Every X seconds" sid="7598025234566637" type="System">
+                    <param id="0" name="Interval (seconds)">0.016</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="3256947797736505">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="9808894629053963" type="System">
+                            <param id="0" name="Variable">wasComplete</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="7369745131675821" type="System">
+                            <param id="0" name="Variable">firstTap</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Add to" sid="6616260359944981" type="System">
+                            <param id="0" name="Variable">miliSecondChallenge</param>
+                            <param id="1" name="Value">1000*dt</param>
+                        </action>
+                        <action id="0" name="Set text" sid="1663887107140519" type="secondText">
+                            <param id="0" name="Text">&quot;CHALLENGE:&quot;&amp;int(secondChallenge)&amp;&quot;:&quot;&amp;int(miliSecondChallenge)</param>
+                        </action>
+                    </actions>
+                    <sub-events>
+                        <event-block sid="1099766526580929">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="9378985778895885" type="System">
+                                    <param id="0" name="Variable">miliSecondChallenge</param>
+                                    <param id="1" name="Comparison">5</param>
+                                    <param id="2" name="Value">1000</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Set value" sid="6839631312249323" type="System">
+                                    <param id="0" name="Variable">miliSecondChallenge</param>
+                                    <param id="1" name="Value">0</param>
+                                </action>
+                                <action id="-10" name="Add to" sid="4795097063372637" type="System">
+                                    <param id="0" name="Variable">secondChallenge</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                                <action id="0" name="Set text" sid="5240015041703296" type="secondText">
+                                    <param id="0" name="Text">&quot;CHALLENGE:&quot;&amp;int(secondChallenge)&amp;&quot;:&quot;&amp;int(miliSecondChallenge)</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="8066386809687653">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="1697332627383955" type="System">
+                                    <param id="0" name="Variable">failedSecond</param>
+                                    <param id="1" name="Comparison">3</param>
+                                    <param id="2" name="Value">secondChallenge+(miliSecondChallenge/1000)</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Set value" sid="8184995722738814" type="System">
+                                    <param id="0" name="Variable">wasFailed</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="2857183109212298" type="System">
+                                    <param id="0" name="Variable">wasComplete</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="5069662503125083" type="System">
+                                    <param id="0" name="Variable">firstTap</param>
+                                    <param id="1" name="Value">0</param>
+                                </action>
+                                <action behavior="LiteTween" id="10" name="Start" sid="8791966922018819" type="failedlevel">
+                                    <param id="0" name="Start Mode">0</param>
+                                    <param id="1" name="Force use current">0</param>
+                                </action>
+                                <action id="0" name="Set local value" sid="8284993570305797" type="WebStorage">
+                                    <param id="0" name="Key">&quot;star_level_&quot;&amp;currentLevel</param>
+                                    <param id="1" name="Value">0</param>
+                                </action>
+                            </actions>
+                            <sub-events>
+                                <event-block sid="869029107158498">
+                                    <conditions>
+                                        <condition id="-8" name="Compare two values" sid="3327649623604166" type="System">
+                                            <param id="0" name="First value">int(WebStorage.LocalValue(&quot;music&quot;))</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Second value">1</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="0" name="Play" sid="9122096287376388" type="Audio">
+                                            <param id="0" name="Audio file">GameOver1</param>
+                                            <param id="2" name="Loop">0</param>
+                                            <param id="3" name="Volume">volume</param>
+                                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="9083932271400027">
+            <conditions>
+                <condition id="-4" name="Is outside layout" sid="2720905615206379" type="GreenBlock" />
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="8132132889535798" type="GreenBlock" />
+            </actions>
+        </event-block>
+        <event-block sid="3625766857139589">
+            <conditions>
+                <condition id="-18" name="On created" sid="6551328642564703" type="GreenBlock" />
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="6908284982628253" type="System">
+                    <param id="0" name="Variable">totalGreenBlocks</param>
+                    <param id="1" name="Value">GreenBlock.Count</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-group description="" inactive="1" sid="9612737829643735" title="OnDestroyGreenBlock">
+            <sub-events>
+                <event-block sid="2688743490953595">
+                    <conditions>
+                        <condition id="-19" name="On destroyed" sid="2272121856874044" type="GreenBlock" />
+                    </conditions>
+                    <actions>
+                        <action id="-11" name="Subtract from" sid="7286258098236521" type="System">
+                            <param id="0" name="Variable">totalGreenBlocks</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
+                    <sub-events>
+                        <event-block sid="4511847454145898">
+                            <conditions>
+                                <condition id="-8" name="Compare two values" sid="6490496747600167" type="System">
+                                    <param id="0" name="First value">totalGreenBlocks</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Second value">0</param>
+                                </condition>
+                                <condition id="-14" name="Compare variable" sid="5572848340514695" type="System">
+                                    <param id="0" name="Variable">wasFailed</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">0</param>
+                                </condition>
+                                <condition id="-14" name="Compare variable" sid="2519803085619583" type="System">
+                                    <param id="0" name="Variable">secondChallenge</param>
+                                    <param id="1" name="Comparison">1</param>
+                                    <param id="2" name="Value">0</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Set value" sid="524039603094669" type="System">
+                                    <param id="0" name="Variable">wasComplete</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="8889653685773367" type="System">
+                                    <param id="0" name="Variable">firstTap</param>
+                                    <param id="1" name="Value">0</param>
+                                </action>
+                                <action id="-9" name="Destroy" sid="5931422801020828" type="PowerObstacle" />
+                                <action id="-9" name="Destroy" sid="6317676891681713" type="BomObstacle" />
+                                <action behavior="Physics" id="26" name="Remove all joints" sid="6654136760307003" type="Cog" />
+                                <action behavior="Physics" id="26" name="Remove all joints" sid="9150300163239491" type="Cog2" />
+                                <action id="-9" name="Destroy" sid="2496679131488355" type="Obstacle" />
+                                <action id="0" name="Call function" sid="6685051546729955" type="Function">
+                                    <param id="0" name="Name">&quot;checkStar&quot;</param>
+                                    <param id="1" name="Parameter {n}">int(currentLevel)</param>
+                                </action>
+                                <action id="0" name="Call function" sid="9499839373400061" type="Function">
+                                    <param id="0" name="Name">&quot;animateStar&quot;</param>
+                                    <param id="1" name="Parameter {n}"></param>
+                                </action>
+                            </actions>
+                            <sub-events>
+                                <event-block sid="9787051947838842">
+                                    <conditions>
+                                        <condition id="-8" name="Compare two values" sid="4216442413404467" type="System">
+                                            <param id="0" name="First value">int(WebStorage.LocalValue(&quot;music&quot;))</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Second value">1</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="0" name="Play" sid="2129609773882386" type="Audio">
+                                            <param id="0" name="Audio file">levelcomplete</param>
+                                            <param id="2" name="Loop">0</param>
+                                            <param id="3" name="Volume">volume</param>
+                                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="476269032718661">
+                                    <conditions>
+                                        <condition id="-14" name="Compare variable" sid="8789419608457559" type="System">
+                                            <param id="0" name="Variable">currentLevel</param>
+                                            <param id="1" name="Comparison">2</param>
+                                            <param id="2" name="Value">totalLevel</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action behavior="LiteTween" id="10" name="Start" sid="8287916643185894" type="level_complete">
+                                            <param id="0" name="Start Mode">0</param>
+                                            <param id="1" name="Force use current">0</param>
+                                        </action>
+                                        <action behavior="LiteTween" id="10" name="Start" sid="3788733315567" type="next">
+                                            <param id="0" name="Start Mode">0</param>
+                                            <param id="1" name="Force use current">0</param>
+                                        </action>
+                                        <action id="-10" name="Add to" sid="3151433310484591" type="System">
+                                            <param id="0" name="Variable">currentLevel</param>
+                                            <param id="1" name="Value">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="5534072238422722">
+                                    <conditions>
+                                        <condition id="-22" name="Else" sid="1216747097432143" type="System" />
+                                    </conditions>
+                                    <actions>
+                                        <action id="-10" name="Add to" sid="2014108026107554" type="System">
+                                            <param id="0" name="Variable">currentLevel</param>
+                                            <param id="1" name="Value">1</param>
+                                        </action>
+                                        <action behavior="LiteTween" id="10" name="Start" sid="5035586914044788" type="finishedGame">
+                                            <param id="0" name="Start Mode">0</param>
+                                            <param id="1" name="Force use current">0</param>
+                                        </action>
+                                        <action behavior="Physics" id="27" name="Set enabled" sid="835165101132605" type="facebook">
+                                            <param id="0" name="Mode">1</param>
+                                        </action>
+                                        <action behavior="Physics" id="27" name="Set enabled" sid="3604062956313858" type="twitter">
+                                            <param id="0" name="Mode">1</param>
+                                        </action>
+                                        <action id="0" name="Set local value" sid="6130555179155575" type="WebStorage">
+                                            <param id="0" name="Key">&quot;current_level&quot;</param>
+                                            <param id="1" name="Value">currentLevel</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="2676756897253938">
+                                    <conditions>
+                                        <condition id="-14" name="Compare variable" sid="5065151306229332" type="System">
+                                            <param id="0" name="Variable">currentLevel</param>
+                                            <param id="1" name="Comparison">5</param>
+                                            <param id="2" name="Value">int(WebStorage.LocalValue(&quot;current_level&quot;))</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="0" name="Set local value" sid="9863112199751924" type="WebStorage">
+                                            <param id="0" name="Key">&quot;current_level&quot;</param>
+                                            <param id="1" name="Value">currentLevel</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-block sid="7125109782670296">
+            <conditions>
+                <condition id="3" name="On touched object" sid="1193996704634813" type="Touch">
+                    <param id="0" name="Object">BomObstacle</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="2324502517839325" type="BomObstacle" />
+                <action id="0" name="Spawn another object" sid="1587337439949818" type="BomObstacle">
+                    <param id="0" name="Object">BomParticles</param>
+                    <param id="1" name="Layer">1</param>
+                    <param id="2" name="Image point">0</param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block sid="2699512310178058">
+                    <conditions>
+                        <condition id="-8" name="Compare two values" sid="2929872851620295" type="System">
+                            <param id="0" name="First value">int(WebStorage.LocalValue(&quot;music&quot;))</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Play" sid="8635182085591097" type="Audio">
+                            <param id="0" name="Audio file">breakblockbump</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">volume</param>
+                            <param id="1" name="Tag (optional)">&quot;soundfx&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="8318506890086253">
+            <conditions>
+                <condition id="3" name="On touched object" sid="3087610506882654" type="Touch">
+                    <param id="0" name="Object">PowerObstacle</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="9437660753050038">
+                    <conditions>
+                        <condition id="-8" name="Compare two values" sid="8643167215424598" type="System">
+                            <param id="0" name="First value">int(WebStorage.LocalValue(&quot;music&quot;))</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Play" sid="9917330589031022" type="Audio">
+                            <param id="0" name="Audio file">LaserBeam</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">volume</param>
+                            <param id="1" name="Tag (optional)">&quot;soundfx&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="1422145159795941">
+                    <conditions>
+                        <condition id="-15" name="Pick nearest/furthest" sid="278860769210848" type="Blocks">
+                            <param id="0" name="Which">0</param>
+                            <param id="1" name="X">PowerObstacle.X</param>
+                            <param id="2" name="Y">PowerObstacle.Y</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="Physics" id="2" name="Apply force at angle" sid="5066755489449413" type="Blocks">
+                            <param id="0" name="Force">PowerObstacle.force</param>
+                            <param id="1" name="Angle">PowerObstacle.direction</param>
+                            <param id="2" name="Image point">0</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="6946329553741493" type="System">
+                            <param id="0" name="Seconds">0.1</param>
+                        </action>
+                        <action id="-9" name="Destroy" sid="9413187344068909" type="PowerObstacle" />
+                        <action id="0" name="Spawn another object" sid="2058410096970536" type="PowerObstacle">
+                            <param id="0" name="Object">PowerupParticles</param>
+                            <param id="1" name="Layer">1</param>
+                            <param id="2" name="Image point">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="6092200330716197">
+            <conditions>
+                <condition id="1" name="On any touch end" sid="8410758052707699" type="Touch" />
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="1717436767720787" type="System">
+                    <param id="0" name="Variable">clicked128</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-9" name="Set value" sid="6230477782885287" type="System">
+                    <param id="0" name="Variable">clicked64</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-9" name="Set value" sid="5593825300317854" type="System">
+                    <param id="0" name="Variable">clicked32</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-9" name="Set value" sid="8981849332185891" type="System">
+                    <param id="0" name="Variable">clicked160</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-9" name="Set value" sid="9955543241701637" type="System">
+                    <param id="0" name="Variable">clicked80</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-9" name="Set value" sid="3676178982575742" type="System">
+                    <param id="0" name="Variable">clicked40</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="5009466587835403">
+            <conditions>
+                <condition id="0" name="On any touch start" sid="8136838248685515" type="Touch" />
+                <condition id="-14" name="Compare variable" sid="1546936718367999" type="System">
+                    <param id="0" name="Variable">firstTap</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+                <condition id="4" inverted="1" name="Is touching object" sid="8310857360202616" type="Touch">
+                    <param id="0" name="Object">Buttons</param>
+                </condition>
+                <condition id="4" inverted="1" name="Is touching object" sid="2811338651349304" type="Touch">
+                    <param id="0" name="Object">Obstacle</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="6442834886306196" type="System">
+                    <param id="0" name="Variable">firstTap</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="5425547230474111">
+            <conditions>
+                <condition id="3" name="On touched object" sid="5222624267737915" type="Touch">
+                    <param id="0" name="Object">Blocks</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="8689339517248148">
+                    <conditions>
+                        <condition id="-8" name="Compare two values" sid="3012597514684792" type="System">
+                            <param id="0" name="First value">int(WebStorage.LocalValue(&quot;music&quot;))</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Play" sid="9281657620129965" type="Audio">
+                            <param id="0" name="Audio file">overmenu</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">volume</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="7113729615678652">
+            <conditions>
+                <condition id="3" name="On touched object" sid="6078911109908067" type="Touch">
+                    <param id="0" name="Object">GreenBlock</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="7854421661355708">
+                    <conditions>
+                        <condition id="-8" name="Compare two values" sid="2258111166806177" type="System">
+                            <param id="0" name="First value">(WebStorage.LocalValue(&quot;music&quot;))</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Play" sid="5180983866865639" type="Audio">
+                            <param id="0" name="Audio file">overmenu</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">volume</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block any="1" sid="8681397938638723">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="7654994692918315" type="Blocks">
+                    <param id="0" name="Object">Obstacle</param>
+                </condition>
+                <condition id="0" name="On collision with another object" sid="6353787568855314" type="Blocks">
+                    <param id="0" name="Object">Blocks</param>
+                </condition>
+                <condition id="0" name="On collision with another object" sid="7884731666402816" type="Blocks">
+                    <param id="0" name="Object">GreenBlock</param>
+                </condition>
+                <condition id="0" name="On collision with another object" sid="5388620835980315" type="GreenBlock">
+                    <param id="0" name="Object">Obstacle</param>
+                </condition>
+                <condition id="0" name="On collision with another object" sid="1789621782997667" type="GreenBlock">
+                    <param id="0" name="Object">GreenBlock</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="4694835641559689">
+                    <conditions>
+                        <condition id="-8" name="Compare two values" sid="4785338046100348" type="System">
+                            <param id="0" name="First value">int(WebStorage.LocalValue(&quot;music&quot;))</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Play" sid="227362555381084" type="Audio">
+                            <param id="0" name="Audio file">overmenu</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">volume</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+    </events>
+</c2eventsheet>
