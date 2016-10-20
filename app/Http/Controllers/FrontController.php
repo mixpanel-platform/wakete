@@ -212,11 +212,11 @@ class FrontController extends Controller
         if (empty($clientRequest)) {
             $clientRequest[] = $request->cookie('client');
         }
-        echo "<pre>";
-        print_r(Cache::get($key));
-        print_r($request->cookie('client'));
-        print_r($clientRequest);
-        die();
+        // echo "<pre>";
+        // print_r(Cache::get($key));
+        // print_r($request->cookie('client'));
+        // print_r($clientRequest);
+        // die();
 
         /* Si no esta en la cache lo enviamos a logearse */
         if ( empty($clientRequest) ) {
