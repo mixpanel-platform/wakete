@@ -1,0 +1,62 @@
+{
+	"play"					: "PLAY",
+	"how_to_play"			: "HOW TO PLAY",
+	"facebook_connect"		: "FACEBOOK CONNECT",
+	"play_more_games"		: "PLAY MORE GAMES",
+	"buy_more_credits"		: "BUY MORE CREDITS",
+	"rate_this_game"		: "RATE THIS GAME",
+	"facebook_share"		: "I think you would love this game. Try it out and see how good you are!",
+	"facebook_score"		: "I've scored #i points playing at #s!!! Try and beat this score if you can!",
+	"back"					: "BACK",
+	"next"					: "NEXT",
+	"choose_level"			: "CHOOSE A LEVEL",
+	"you_did_it"			: "YOU DID IT!",
+	"input_nickname"		: "INPUT YOUR NICKNAME",
+	"game_over"				: "GAME OVER",
+	"level"					: "LEVEL",
+	"start_desktop"			: "PRESS ARROW KEYS TO START",	
+	"start_mobile"			: "SWIPE TO START",
+	"add_to_home"			: "Add this game to your Home, so, you can back playing it in full screen.",
+	"final_score"			: "Final Score: ",
+	"main_menu"				: "MAIN MENU",
+	"submit_score"			: "SUBMIT SCORE",
+	"share_score"			: "SHARE SCORE",
+	"pause"					: "PAUSE",
+
+	"howToPlay_desktop": {
+		"p1"					: "Control the hero by using keyboard arrows keys.\n\nPress P key for pausing the game",
+		"p2"					: "Pay attention, don't get touched by ghosts.",
+		"p3"					: "Collect all the coins to finis the level.",
+		"p4"					: "Power-up pill give you temporary ability of defeat enemies.",
+		"p5"					: ""
+	},
+
+	"howToPlay_mobile": {
+		"p1"					: "Move the hero by swiping in the four directions.",
+		"p2"					: "Don't get touched by ghosts.",
+		"p3"					: "Collect all the coins to finis the level.",
+		"p4"					: "Power-up pill give you temporary ability of defeat enemies.",
+		"p5"					: ""
+	},
+
+	"info":{
+		"title1"				: "A GAME BY",
+		"text1"					: "OFFICINE PIXEL SNC (FFX.IT)",
+		"title2"				: "SOFTWARE",
+		"text2"					: "Lamberto Tedaldi",
+		"title3"				: "GRAPHIC",
+		"text3"					: "Davide Romboli",
+		"title4"				: "MARKETING MANAGER",
+		"text4"					: "ALESSANDRA TOMBACCINI (SICOMUNICA.NET)",
+		"title5"				: "MUSIC",
+		"text5"					: "Pubic Domain Music",
+		"title6"				: "DEVELOPED USING",
+		"text6"					: "MELONJS GIMP INKSCAPE TILED"
+	},
+
+	"score":{
+		"done"					: "DONE",
+		"hi_score"				: "TODAY HI-SCORE",
+		"no_score_yet"			: "NO SCORE YET"
+	}
+}

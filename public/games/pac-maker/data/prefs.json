@@ -1,0 +1,1195 @@
+{
+	"GAME_WIDTH":{
+		"value":320,
+		"type":"number",
+		"properties":{
+			"label":"Width",
+			"description":"Game width expressed in pixel",
+			"min":256,
+			"max":4096,
+			"group":"preferences"
+		}
+	},
+	
+	"GAME_HEIGHT":{
+		"value":480,
+		"type":"number",
+		"properties":{
+			"label":"Height",
+			"description":"Game height expressed in pixel",
+			"min":256,
+			"max":4096,
+			"group":"preferences"
+		}
+	},
+	
+	"TILES_WIDTH":{
+		"value":32,
+		"type":"number",
+		"properties":{
+			"label":"Tiles Width",
+			"description":"Tiles width expressed in pixel",
+			"min":8,
+			"max":256,
+			"group":"preferences"
+		}
+	},
+	
+	"TILES_HEIGHT":{
+		"value":32,
+		"type":"number",
+		"properties":{
+			"label":"Tiles Height",
+			"description":"Tiles height expressed in pixel",
+			"min":8,
+			"max":256,
+			"group":"preferences"
+		}
+	},
+	
+	"SCALE_INTERPOLATION_DESKTOP":{
+		"value":"true",
+		"type":"bool",
+		"properties":{
+			"label":"Scale Interpolation Desktop",
+			"description":"It enable or disable pixel interpolation on desktop.",
+			"group":"preferences"
+		}
+	},
+	
+	"SCALE_INTERPOLATION_MOBILE":{
+		"value":"true",
+		"type":"bool",
+		"properties":{
+			"label":"Scale Interpolation Mobile",
+			"description":"It enable or disable pixel interpolation on mobile devices.",
+			"group":"preferences"
+		}
+	},
+
+	"MAX_FPS":{
+		"value":30,
+		"type":"number",
+		"properties":{
+			"label":"Max FPS",
+			"description":"This is the maximum frames per second rate.",
+			"min":10,
+			"max":60,
+			"group":"preferences"
+		}
+	},
+
+	"AUDIOENABLED":{
+		"value":"true",
+		"type":"bool",
+		"properties":{
+			"label":"Audio",
+			"description":"This turns on/off the whole audio system",
+			"group":"preferences"
+		}
+	},
+	
+	"MUSICENABLED":{
+		"value":"true",
+		"type":"bool",
+		"properties":{
+			"label":"Music",
+			"description":"This turns on/off only the background music",
+			"group":"preferences"
+		}
+	},
+	
+	"ADS_ON_NEW_LEVEL":{
+		"value":"false",
+		"type":"bool",
+		"properties":{
+			"label":"Ads on new level",
+			"description":"This turns on/off ad screen when player completes each level.",
+			"group":"preferences"
+		}
+	},
+	
+	"ADS_ON_DEATH":{
+		"value":"false",
+		"type":"bool",
+		"properties":{
+			"label":"Ads on player death",
+			"description":"This turns on/off ad screen when player dies",
+			"group":"preferences"
+		}
+	},
+
+	"BETWEEN_LEVELS_ADS_DESKTOP":{
+		"value":"ad.html",
+		"type":"url",
+		"properties":{
+			"label":"Ads page desktop",
+			"description":"This is the URL of the page shown on computers if Ads on death and/or Ads on new level are set to on.",
+			"group":"preferences"
+		}
+	},
+	
+	"BETWEEN_LEVELS_ADS_MOBILE":{
+		"value":"ad.html",
+		"type":"url",
+		"properties":{
+			"label":"Ads page mobile",
+			"description":"This is the URL of the page shown on mobile devices if Ads on death and/or Ads on new level are set to on.",
+			"group":"preferences"
+		}
+	},
+
+	"IN_GAME_ADS":{
+		"value":"false",
+		"type":"bool",
+		"properties":{
+			"label":"In-game ads",
+			"description":"This turns on/off the banner inside the game.",
+			"group":"preferences"
+		}
+	},
+
+	"MOBILE_CONTROLS":{
+		"value":"swipe",
+		"type":"select",
+		"properties":{
+			"label":"Mobile Controls",
+			"description":"You can control the game by swipung over the screen or by tapping on the side where you wish the character goes.",
+			"values":["swipe","tap"],
+			"group":"preferences"
+		}
+	},
+
+	"GAME_NAME_1":{
+		"value":"The Incredible",
+		"type":"text",
+		"properties":{
+			"label":"First line text",
+			"description":"First line of the text shown in loading screen",
+			"group":"loading"
+		}
+	},
+	
+	"GAME_NAME_1_SIZE":{
+		"value":30,
+		"type":"number",
+		"properties":{
+			"label":"First line font size",
+			"description":"Font size of the first line of the text.",
+			"min":10,
+			"max":60,
+			"group":"loading"
+		}
+	},
+	
+	"GAME_NAME_1_COLOR":{
+		"value":"#ff0000",
+		"type":"color",
+		"properties":{
+			"label":"First line color",
+			"description":"Color of first line expressed in hex value",
+			"group":"loading"
+		}
+	},
+	
+	"GAME_NAME_2":{
+		"value":"Pac Maker",
+		"type":"text",
+		"properties":{
+			"label":"Second line text",
+			"description":"Second line of the text shown in loading screen",
+			"group":"loading"
+		}
+	},
+	
+	"GAME_NAME_2_SIZE":{
+		"value":60,
+		"type":"number",
+		"properties":{
+			"label":"Second line font size",
+			"description":"Font size of the second line of the text.",
+			"min":10,
+			"max":60,
+			"group":"loading"
+		}
+	},
+	
+	"GAME_NAME_2_COLOR":{
+		"value":"#FFFF00",
+		"type":"color",
+		"properties":{
+			"label":"Second line color",
+			"description":"Color of second line expressed in hex value",
+			"group":"loading"
+		}
+	},
+	
+	"LOADING_BG_COLOR":{
+		"value":"#310d3a",
+		"type":"color",
+		"properties":{
+			"label":"Loading screen backgorund color",
+			"description":"Loading screen backgorund color expressed in hex value",
+			"group":"loading"
+		}
+	},
+	
+	"LOADING_BAR_COLOR":{
+		"value":"#ff0000",
+		"type":"color",
+		"properties":{
+			"label":"Progress bar color",
+			"description":"Progress bar in color loading screen expressed in hex value",
+			"group":"loading"
+		}
+	},
+	
+	"GAME_LANGUAGES":{
+		"value":["en","it"],
+		"type":"text",
+		"properties":{
+			"label":"Game languages",
+			"description":"add your additional languages here. For esample 'ru','es', etc...",
+			"group":"sys"
+		}
+	},
+	
+	"TOGGLE_AUDIO_BUTTON":{
+		"value":"true",
+		"type":"bool",
+		"properties":{
+			"label":"Audio Toggle Button",
+			"description":"This turns on/off the Audio Toggle Button from showing in home screen.",
+			"group":"menu"
+		}
+	},
+	
+	"FULLSCREEN_BUTTON":{
+		"value":"true",
+		"type":"bool",
+		"properties":{
+			"label":"Full Screen Button",
+			"description":"This turns on/off the Full Screen Button from showing in home screen.",
+			"group":"menu"
+		}
+	},
+	
+	"INFORMATION_BUTTON":{
+		"value":"true",
+		"type":"bool",
+		"properties":{
+			"label":"Info Button",
+			"description":"This turns on/off the Info Button from showing in home screen.",
+			"group":"menu"
+		}
+	},
+	
+	"HISCORE_BUTTON":{
+		"value":"true",
+		"type":"bool",
+		"properties":{
+			"label":"Leaderboard Button",
+			"description":"This turns on/off the Leaderboard Button from showing in home screen.",
+			"group":"menu"
+		}
+	},
+	
+	"HOW_TO_PLAY_BUTTON":{
+		"value":"true",
+		"type":"bool",
+		"properties":{
+			"label":"How To Play Button",
+			"description":"This turns on/off the How To Play Button from showing in home screen.",
+			"group":"menu"
+		}
+	},
+	
+	"MORE_GAMES_BUTTON":{
+		"value":"true",
+		"type":"bool",
+		"properties":{
+			"label":"More Games Button",
+			"description":"This turns on/off the More Games Button from showing in home screen.",
+			"group":"menu"
+		}
+	},
+	
+	"MORE_GAMES_URL":{
+		"value":"http://www.ffx.it/",
+		"type":"url",
+		"properties":{
+			"label":"More Games Link",
+			"description":"Url for 'More Games' button",
+			"group":"menu"
+		}
+	},
+	
+	"SCORE_URL":{
+		"value":"http://ffx.it/games/pac-maker/saveScore.php",
+		"type":"url",
+		"properties":{
+			"label":"Leaderboard Server",
+			"description":"URL to the server side script that will receive the score data.",
+			"group":"sys"
+		}
+	},
+	
+	"IOS_RATING_URL":{
+		"value":"https://itunes.apple.com/us/app/pac-maker/id#########",
+		"type":"url",
+		"properties":{
+			"label":"iOS Rating URL",
+			"description":"URL for 'Rate this game' button if the game runs as ibrid app on iOS",
+			"group":"sys"
+		}
+	},
+	
+	"ANDROID_RATING_URL":{
+		"value":"market://details?id=it.ffx.pac-maker",
+		"type":"url",
+		"properties":{
+			"label":"Android Rating URL",
+			"description":"RL for 'Rate this game' button if the game runs as ibrid app on Android",
+			"group":"sys"
+		}
+	},
+	
+	"USE_SELECT_LEVEL_SCREEN":{
+		"value":"true",
+		"type":"bool",
+		"properties":{
+			"label":"Select Level Screen",
+			"description":"This enable or disable the select level screen.",
+			"group":"preferences"
+		}
+	},
+	
+	"SUBMIT_SCORE_BUTTON":{
+		"value":"true",
+		"type":"bool",
+		"properties":{
+			"label":"Submit Score Button",
+			"description":"Enable or disable the Submit Score Button from showing in Game Over screen.",
+			"group":"preferences"
+		}
+	},
+	
+	"KEYBOARD_NUMBERS":{
+		"value":"true",
+		"type":"bool",
+		"properties":{
+			"label":"Keyboard With Numbers",
+			"description":"Enable or disable numbers in virtual keyboard when player enters his/her nickname.",
+			"group":"preferences"
+		}
+	},
+	
+	"PLAYER_VELOCITY":{
+		"value":60,
+		"type":"range",
+		"properties":{
+			"label":"Player Speed",
+			"description":"Default speed of the player's sprite, when it's in normal play, expressed in pixel per seconds. This value may be overridden by editor settings.",
+			"min":10,
+			"max":200,
+			"step":10,
+			"group":"game"
+		}
+	},
+	
+	"ENEMY_VELOCITY":{
+		"value":60,
+		"type":"range",
+		"properties":{
+			"label":"Enemies Speed",
+			"description":"Default enemies speed, when player is in normal play, expressed in pixel per seconds. This value may be overridden by editor settings.",
+			"min":10,
+			"max":200,
+			"step":10,
+			"group":"game"
+		}
+	},
+	
+	"PLAYER_VELOCITY_ON_POWER_UP":{
+		"value":80,
+		"type":"range",
+		"properties":{
+			"label":"Player Speed on Power-up",
+			"description":"Player's sprite velocity during power-up time. This value may be overridden by editor settings.",
+			"min":10,
+			"max":200,
+			"step":10,
+			"group":"game"
+		}
+	},
+	
+	"ENEMY_VELOCITY_ON__POWER_UP":{
+		"value":60,
+		"type":"range",
+		"properties":{
+			"label":"Enemy Speed on Power-up",
+			"description":"Enemies velocity during player's power up. This value may be overwritten by editor settings. This value may be overridden by editor settings.",
+			"min":10,
+			"max":200,
+			"step":10,
+			"group":"game"
+		}
+	},
+	
+	"DOT_POINTS":{
+		"value":100,
+		"type":"number",
+		"properties":{
+			"label":"Dots Score",
+			"description":"The points given by collecting a dot.",
+			"min":0,
+			"max":9999,
+			"group":"game"
+		}
+	},
+	
+	"PILL_POINTS":{
+		"value":200,
+		"type":"number",
+		"properties":{
+			"label":"Pill Score",
+			"description":"The points given by collecting a power-up pill.",
+			"min":0,
+			"max":9999,
+			"group":"game"
+		}
+	},
+	
+	"ENEMY_POINTS":{
+		"value":500,
+		"type":"number",
+		"properties":{
+			"label":"Enemy Score",
+			"description":"The points given by the killing any enemies during power-up.",
+			"min":0,
+			"max":9999,
+			"group":"game"
+		}
+	},
+	
+	"HUD_POSITION":{
+		"value":"upper",
+		"type":"select",
+		"properties":{
+			"label":"HUD Position",
+			"description":"You can set the HUD (score, lives, pause button) in the upper or in the lower side of the game viewport.",
+			"values":["upper","lower"],
+			"group":"game"
+		}
+	},
+	
+	"PAUSE_BUTTON":{
+		"value":"true",
+		"type":"bool",
+		"properties":{
+			"label":"Pause Button",
+			"description":"In-game pause button on/off, if you turn on radar consider disabling this because radar have the pause button function too.",
+			"group":"game"
+		}
+	},
+	
+	"POWER_UP_DURATION":{
+		"value":10000,
+		"type":"number",
+		"properties":{
+			"label":"Power Up Duration",
+			"description":"Duration in milliseconds of power-up time that is when the player eats a pill. A value of 10000 corresponds to 10 seconds.",
+			"min":0,
+			"max":9999,
+			"group":"game"
+		}
+	},
+	
+	"ENDING_POWER_UP_ALERT":{
+		"value":2000,
+		"type":"number",
+		"properties":{
+			"label":"Power Down Alert",
+			"description":"When power-up time is ending, the enemy can play a specific animation for warning the player of that fact, this value sets how much time before the animation starts. Time is expressed in milliseconds.",
+			"min":0,
+			"max":9999,
+			"group":"game"
+		}
+	},
+	
+	"POWER_UP_KILLS_ENEMIES":{
+		"value":"true",
+		"type":"bool",
+		"properties":{
+			"label":"Power Up Kills Ememies",
+			"description":"Sets the ability of killing enemies during power up time.",
+			"group":"game"
+		}
+	},
+	
+	"POWER_UP_INVULNERABILITY":{
+		"value":"true",
+		"type":"bool",
+		"properties":{
+			"label":"Power Up Invulnerability",
+			"description":"Sets player invulnerability from enemies on power up time.",
+			"group":"game"
+		}
+	},
+	
+	"ON_DEAD_ENEMY_ACTION":{
+		"value":"respawn",
+		"type":"select",
+		"properties":{
+			"label":"Action when Enemy Dies",
+			"description":"This sets what happen when an enemy dies: it can respawn on its original position or remove itself from the level.",
+			"values":["respawn","remove"],
+			"group":"game"
+		}
+	},
+	
+	"ENEMY_RESPAWN_TIME":{
+		"value":6000,
+		"type":"number",
+		"properties":{
+			"label":"Enemy Respawn Time",
+			"description":"The time the enemy must waits before starting again if respawn on dead. It's the time expressed in milliseconds.",
+			"min":0,
+			"max":9999,
+			"group":"game"
+		}
+	},
+	
+	"ENEMIES_HIDDEN_ON_DEAD":{
+		"value":"false",
+		"type":"bool",
+		"properties":{
+			"label":"Enemy hidden untill respawns.",
+			"description":"Keep enemy sprite hidden after its dead untill it respawns.",
+			"group":"game"
+		}
+	},
+	
+	"PLAYER_USES_TELEPORT":{
+		"value":"true",
+		"type":"bool",
+		"properties":{
+			"label":"Player Uses Teleport",
+			"description":"Teleports are special objects you can put on the map in order to move instantly the player or enemies from one point to another. This parameter allows or disallows player from using teleport objects.",
+			"group":"game"
+		}
+	},
+	
+	
+	"ENEMIES_USE_TELEPORT":{
+		"value":"true",
+		"type":"bool",
+		"properties":{
+			"label":"Enemies Use Teleport",
+			"description":"This parameter allows or disallows enemies from using teleport objects.",
+			"group":"game"
+		}
+	},
+	
+	"RADAR":{
+		"value":"false",
+		"type":"bool",
+		"properties":{
+			"label":"Radar",
+			"description":"This parameter may be set true or false and it turn on or off the the radar screen on HUD.",
+			"group":"game"
+		}
+	},
+	
+	"RADAR_POS_X":{
+		"value":0.5,
+		"type":"range",
+		"properties":{
+			"label":"Radar Horizontal Position",
+			"description":"This is the horizontal position of the radar expressed in percentage of the screen width. 0:left, 1: right, 0.5:center.",
+			"min":0,
+			"max":1,
+			"step":0.1,
+			"group":"game"
+		}
+	},
+	
+	"RADAR_POS_Y":{
+		"value":0,
+		"type":"range",
+		"properties":{
+			"label":"Radar Horizontal Position",
+			"description":"This is the vertical position of the radar expressed in percentage of the screen height. 0:up, 1: down, 0.5:middle.",
+			"min":0,
+			"max":1,
+			"step":0.1,
+			"group":"game"
+		}
+	},
+	
+	"RADAR_WIDTH":{
+		"value":40,
+		"type":"number",
+		"properties":{
+			"label":"Radar Width",
+			"description":"Width size of the radar screen expressed in pixels, the height will be calculated according the map size.",
+			"min":10,
+			"max":200,
+			"group":"game"
+		}
+	},
+	
+	"PLAYER_ANIMATION_NORMAL_UP_STAND":{
+		"value":[7],
+		"type":"animation",
+		"properties":{
+			"label":"Player Standing Up",
+			"description":"This animation is used when player stuck on a wall when it's in up direction.",
+			"group":"game"
+		}
+	},
+	
+	"PLAYER_ANIMATION_NORMAL_DOWN_STAND":{
+		"value":[15],
+		"type":"animation",
+		"properties":{
+			"label":"Player Standing Down",
+			"description":"This animation is used when player stuck on a wall when it's in down direction.",
+			"group":"game"
+		}
+	},
+	
+	"PLAYER_ANIMATION_NORMAL_RIGHT_STAND":{
+		"value":[3],
+		"type":"animation",
+		"properties":{
+			"label":"Player Standing Right",
+			"description":"This animation is used when player stuck on a wall when it's in right direction.",
+			"group":"game"
+		}
+	},
+	
+	"PLAYER_ANIMATION_NORMAL_LEFT_STAND":{
+		"value":[11],
+		"type":"animation",
+		"properties":{
+			"label":"Player Standing Left",
+			"description":"This animation is used when player stuck on a wall when it's in left direction.",
+			"group":"game"
+		}
+	},
+	
+	"PLAYER_ANIMATION_NORMAL_UP_WALK":{
+		"value":[4,5,6,7,6,5],
+		"type":"animation",
+		"properties":{
+			"label":"Player Going Up",
+			"description":"This animation is used on player when is in normal mode and it's walking in up direction.",
+			"group":"game"
+		}
+	},
+	
+	"PLAYER_ANIMATION_NORMAL_DOWN_WALK":{
+		"value":[12,13,14,15,14,13],
+		"type":"animation",
+		"properties":{
+			"label":"Player Going Down",
+			"description":"This animation is used on player when is in normal mode and it's walking in down direction.",
+			"group":"game"
+		}
+	},
+	
+	"PLAYER_ANIMATION_NORMAL_RIGHT_WALK":{
+		"value":[0,1,2,3,2,1],
+		"type":"animation",
+		"properties":{
+			"label":"Player Going Right",
+			"description":"This animation is used on player when is in normal mode and it's walking in right direction.",
+			"group":"game"
+		}
+	},
+	
+	"PLAYER_ANIMATION_NORMAL_LEFT_WALK":{
+		"value":[8,9,10,11,10,9],
+		"type":"animation",
+		"properties":{
+			"label":"Player Going Left",
+			"description":"This animation is used on player when is in normal mode and it's walking in left direction.",
+			"group":"game"
+		}
+	},
+
+	"PLAYER_ANIMATION_POWER_UP_UP_STAND":{
+		"value":[23],
+		"type":"animation",
+		"properties":{
+			"label":"Player Power-Up Standing Up",
+			"description":"This animation is used on player when is in power-up mode and stuck on a wall in up direction. If you wish maintain the same player appearance as in normal mode, set the same values of the normal ones.",
+			"group":"game"
+		}
+	},
+	
+	"PLAYER_ANIMATION_POWER_UP_DOWN_STAND":{
+		"value":[31],
+		"type":"animation",
+		"properties":{
+			"label":"Player Power-Up Standing Down",
+			"description":"This animation is used on player when is in power-up mode and stuck on a wall in down direction. If you wish maintain the same player appearance as in normal mode, set the same values of the normal ones.",
+			"group":"game"
+		}
+	},
+	
+	"PLAYER_ANIMATION_POWER_UP_RIGHT_STAND":{
+		"value":[19],
+		"type":"animation",
+		"properties":{
+			"label":"Player Power-Up Standing Right",
+			"description":"This animation is used on player when is in power-up mode and stuck on a wall in right direction. If you wish maintain the same player appearance as in normal mode, set the same values of the normal ones.",
+			"group":"game"
+		}
+	},
+	
+	"PLAYER_ANIMATION_POWER_UP_LEFT_STAND":{
+		"value":[27],
+		"type":"animation",
+		"properties":{
+			"label":"Player Power-Up Standing Left",
+			"description":"This animation is used on player when is in power-up mode and stuck on a wall in left direction. If you wish maintain the same player appearance as in normal mode, set the same values of the normal ones.",
+			"group":"game"
+		}
+	},
+	
+	"PLAYER_ANIMATION_POWER_UP_UP_WALK":{
+		"value":[20,21,22,23,22,21],
+		"type":"animation",
+		"properties":{
+			"label":"Player Power-Up Going Up",
+			"description":"This animation is used on player when is in power-up mode and it's walking in up direction. If you wish maintain the same player appearance as in normal mode, set the same values of the normal ones.",
+			"group":"game"
+		}
+	},
+	
+	"PLAYER_ANIMATION_POWER_UP_DOWN_WALK":{
+		"value":[28,29,30,31,30,29],
+		"type":"animation",
+		"properties":{
+			"label":"Player Power-Up Going Down",
+			"description":"This animations is used on player when is in power-up mode and it's walking in down direction. If you wish maintain the same player appearance as in normal mode, set the same values of the normal ones.",
+			"group":"game"
+		}
+	},
+	
+	"PLAYER_ANIMATION_POWER_UP_RIGHT_WALK":{
+		"value":[16,17,18,19,18,17],
+		"type":"animation",
+		"properties":{
+			"label":"Player Power-Up Going Right",
+			"description":"This animations is used on player when is in power-up mode and it's walking in right direction. If you wish maintain the same player appearance as in normal mode, set the same values of the normal ones.",
+			"group":"game"
+		}
+	},
+	
+	"PLAYER_ANIMATION_POWER_UP_LEFT_WALK":{
+		"value":[24,25,26,27,26,25],
+		"type":"animation",
+		"properties":{
+			"label":"Player Power-Up Going Left",
+			"description":"This animations is used on player when is in power-up mode and it's walking in left direction. If you wish maintain the same player appearance as in normal mode, set the same values of the normal ones.",
+			"group":"game"
+		}
+	},
+
+	"PLAYER_ANIMATION_POWER_DOWN_UP_STAND":{
+		"value":[23,7],
+		"type":"animation",
+		"properties":{
+			"label":"Player Power-Down Standing Up",
+			"description":"This animation is used as a warn when player is in power-up and the power-up time is near ending and character is standing in up direction.",
+			"group":"game"
+		}
+	},
+	
+	"PLAYER_ANIMATION_POWER_DOWN_DOWN_STAND":{
+		"value":[31,15],
+		"type":"animation",
+		"properties":{
+			"label":"Player Power-Down Standing Down",
+			"description":"This animation is used as a warn when player is in power-up and the power-up time is near ending and character is standing in down direction.",
+			"group":"game"
+		}
+	},
+	
+	"PLAYER_ANIMATION_POWER_DOWN_RIGHT_STAND":{
+		"value":[19,3],
+		"type":"animation",
+		"properties":{
+			"label":"Player Power-Down Standing Right",
+			"description":"This animation is used as a warn when player is in power-up and the power-up time is near ending and character is standing in right direction.",
+			"group":"game"
+		}
+	},
+	
+	"PLAYER_ANIMATION_POWER_DOWN_LEFT_STAND":{
+		"value":[27,11],
+		"type":"animation",
+		"properties":{
+			"label":"Player Power-Down Standing Left",
+			"description":"This animation is used as a warn when player is in power-up and the power-up time is near ending and character is standing in left direction.",
+			"group":"game"
+		}
+	},
+
+	"PLAYER_ANIMATION_POWER_DOWN_UP_WALK":{
+		"value":[20,5,22,7,22,5],
+		"type":"animation",
+		"properties":{
+			"label":"Player Power-Down Going Up",
+			"description":"This animation is used as a warn when player is in power-up and the power-up time is near ending and character is going in up direction.",
+			"group":"game"
+		}
+	},
+	
+	"PLAYER_ANIMATION_POWER_DOWN_DOWN_WALK":{
+		"value":[28,13,30,15,30,13],
+		"type":"animation",
+		"properties":{
+			"label":"Player Power-Down Going Down",
+			"description":"This animation is used as a warn when player is in power-up and the power-up time is near ending in down direction.",
+			"group":"game"
+		}
+	},
+	
+	"PLAYER_ANIMATION_POWER_DOWN_RIGHT_WALK":{
+		"value":[16,1,18,3,18,1],
+		"type":"animation",
+		"properties":{
+			"label":"Player Power-Down Going Right",
+			"description":"This animation is used as a warn when player is in power-up and the power-up time is near ending in right direction.",
+			"group":"game"
+		}
+	},
+	
+	"PLAYER_ANIMATION_POWER_DOWN_LEFT_WALK":{
+		"value":[24,9,26,11,26,9],
+		"type":"animation",
+		"properties":{
+			"label":"Player Power-Down Going Left",
+			"description":"This animation is used as a warn when player is in power-up and the power-up time is near ending in left direction.",
+			"group":"game"
+		}
+	},
+	
+	"PLAYER_ANIMATION_VICTORY":{
+		"value":[7,3,15,11,7,3,15,11,7,3,15,11],
+		"type":"animation",
+		"properties":{
+			"label":"Player Victory",
+			"description":"This animation is performed on player when a level is completed.",
+			"group":"game"
+		}
+	},
+	
+	"PLAYER_ANIMATION_DYING":{
+		"value":[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15],
+		"type":"animation",
+		"properties":{
+			"label":"Player Dying",
+			"description":"This animation is performed when the player dies. Please keep a long trail with the last frame, otherwise, you will see this animation looping.",
+			"group":"game"
+		}
+	},
+
+	"ENEMY_ANIMATION_NORMAL_UP_WALK":{
+		"value":[4,5,6,7],
+		"type":"animation",
+		"properties":{
+			"label":"Enemy Going Up",
+			"description":"This animation is used on enemies when player is in normal mode and enemy is going in up direction.",
+			"group":"game"
+		}
+	},
+	
+	"ENEMY_ANIMATION_NORMAL_DOWN_WALK":{
+		"value":[12,13,14,15],
+		"type":"animation",
+		"properties":{
+			"label":"Enemy Going Down",
+			"description":"This animation is used on enemies when player is in normal mode and enemy is going in down direction.",
+			"group":"game"
+		}
+	},
+	
+	"ENEMY_ANIMATION_NORMAL_RIGHT_WALK":{
+		"value":[0,1,2,3],
+		"type":"animation",
+		"properties":{
+			"label":"Enemy Going Right",
+			"description":"This animation is used on enemies when player is in normal mode and enemy is going in right direction.",
+			"group":"game"
+		}
+	},
+	
+	"ENEMY_ANIMATION_NORMAL_LEFT_WALK":{
+		"value":[8,9,10,11],
+		"type":"animation",
+		"properties":{
+			"label":"Enemy Going Left",
+			"description":"This animation is used on enemies when player is in normal mode and enemy is going in left direction.",
+			"group":"game"
+		}
+	},
+
+	"ENEMY_ANIMATION_ATTACK_UP_WALK":{
+		"value":[20,21,22,23],
+		"type":"animation",
+		"properties":{
+			"label":"Enemy Attack Up",
+			"description":"This animation is used on enemies when player is in normal mode and the enemy is chasing the player in up direction.",
+			"group":"game"
+		}
+	},
+	
+	"ENEMY_ANIMATION_ATTACK_DOWN_WALK":{
+		"value":[28,29,30,31],
+		"type":"animation",
+		"properties":{
+			"label":"Enemy Attack Down",
+			"description":"This animation is used on enemies when player is in normal mode and the enemy is chasing the player in down direction.",
+			"group":"game"
+		}
+	},
+	
+	"ENEMY_ANIMATION_ATTACK_RIGHT_WALK":{
+		"value":[16,17,18,19],
+		"type":"animation",
+		"properties":{
+			"label":"Enemy Attack Right",
+			"description":"This animation is used on enemies when player is in normal mode and the enemy is chasing the player in right direction.",
+			"group":"game"
+		}
+	},
+	
+	"ENEMY_ANIMATION_ATTACK_LEFT_WALK":{
+		"value":[24,25,26,27],
+		"type":"animation",
+		"properties":{
+			"label":"Enemy Attack Left",
+			"description":"This animation is used on enemies when player is in normal mode and the enemy is chasing the player in left direction.",
+			"group":"game"
+		}
+	},
+
+	"ENEMY_ANIMATION_BITE_UP_WALK":{
+		"value":[20,21,22,23],
+		"type":"animation",
+		"properties":{
+			"label":"Enemy Bite Up",
+			"description":"This animation is used on enemies when player is in normal mode and the enemy captures the player in up direction.",
+			"group":"game"
+		}
+	},
+	
+	"ENEMY_ANIMATION_BITE_DOWN_WALK":{
+		"value":[28,29,30,31],
+		"type":"animation",
+		"properties":{
+			"label":"Enemy Bite Down",
+			"description":"This animation is used on enemies when player is in normal mode and the enemy captures the player in down direction.",
+			"group":"game"
+		}
+	},
+	
+	"ENEMY_ANIMATION_BITE_RIGHT_WALK":{
+		"value":[16,17,18,19],
+		"type":"animation",
+		"properties":{
+			"label":"Enemy Bite Right",
+			"description":"This animation is used on enemies when player is in normal mode and the enemy captures the player in right direction.",
+			"group":"game"
+		}
+	},
+	
+	"ENEMY_ANIMATION_BITE_LEFT_WALK":{
+		"value":[24,25,26,27],
+		"type":"animation",
+		"properties":{
+			"label":"Enemy Bite Left",
+			"description":"This animation is used on enemies when player is in normal mode and the enemy captures the player in left direction.",
+			"group":"game"
+		}
+	},
+
+	"ENEMY_ANIMATION_SCARED_UP_WALK":{
+		"value":[36,37,38,39],
+		"type":"animation",
+		"properties":{
+			"label":"Enemy Scared Up",
+			"description":"This animation is used on enemies when player is in power-up and enemy flees in up direction.",
+			"group":"game"
+		}
+	},
+	
+	"ENEMY_ANIMATION_SCARED_DOWN_WALK":{
+		"value":[44,45,46,47],
+		"type":"animation",
+		"properties":{
+			"label":"Enemy Scared Down",
+			"description":"This animation is used on enemies when player is in power-up and enemy flees in down direction.",
+			"group":"game"
+		}
+	},
+	
+	"ENEMY_ANIMATION_SCARED_RIGHT_WALK":{
+		"value":[32,33,34,35],
+		"type":"animation",
+		"properties":{
+			"label":"Enemy Scared Right",
+			"description":"This animation is used on enemies when player is in power-up and enemy flees in right direction.",
+			"group":"game"
+		}
+	},
+	
+	"ENEMY_ANIMATION_SCARED_LEFT_WALK":{
+		"value":[40,41,42,43],
+		"type":"animation",
+		"properties":{
+			"label":"Enemy Scared Left",
+			"description":"This animation is used on enemies when player is in power-up and enemy flees in left direction.",
+			"group":"game"
+		}
+	},
+
+	"ENEMY_ANIMATION_ENDING_UP_WALK":{
+		"value":[36,37,6,7],
+		"type":"animation",
+		"properties":{
+			"label":"Enemy Power-Down Up",
+			"description":"This animation is used on enemies when player is in power-up and the power-up time is near ending and enemy is going in up direction.",
+			"group":"game"
+		}
+	},
+	
+	"ENEMY_ANIMATION_ENDING_DOWN_WALK":{
+		"value":[44,45,14,15],
+		"type":"animation",
+		"properties":{
+			"label":"Enemy Power-Down Down",
+			"description":"This animation is used on enemies when player is in power-up and the power-up time is near ending and enemy is going in down direction.",
+			"group":"game"
+		}
+	},
+	
+	"ENEMY_ANIMATION_ENDING_RIGHT_WALK":{
+		"value":[32,33,2,3],
+		"type":"animation",
+		"properties":{
+			"label":"Enemy Power-Down Right",
+			"description":"This animation is used on enemies when player is in power-up and the power-up time is near ending and enemy is going in right direction.",
+			"group":"game"
+		}
+	},
+	
+	"ENEMY_ANIMATION_ENDING_LEFT_WALK":{
+		"value":[40,41,10,11],
+		"type":"animation",
+		"properties":{
+			"label":"Enemy Power-Down Left",
+			"description":"This animation is used on enemies when player is in power-up and the power-up time is near ending and enemy is going in left direction.",
+			"group":"game"
+		}
+	},
+
+	"ENEMY_ANIMATION_DYING":{
+		"value":[36,32,44,40,36,32,44,40],
+		"type":"animation",
+		"properties":{
+			"label":"Enemy Dies",
+			"description":"This animation is used when enemy dies.",
+			"group":"game"
+		}
+	},
+	
+	"ENEMY_ANIMATION_RESPAWN":{
+		"value":[],
+		"type":"animation",
+		"properties":{
+			"label":"Enemy Respawn",
+			"description":"This animation is used when enemy respawn.",
+			"group":"game"
+		}
+	},
+
+		
+	
+	"DOT_ANIMATION_LOOP":{
+		"value":[9],
+		"type":"animation",
+		"properties":{
+			"label":"Coin Animation Loop",
+			"description":"This animation is for the coins the player have to pick up in order to complete the level.",
+			"group":"game"
+		}
+	},
+	
+	
+	"DOT_ANIMATION_PICKUP":{
+		"value":[],
+		"type":"animation",
+		"properties":{
+			"label":"Coin Animation Pickup",
+			"description":"This animation is performed by a coin when it's collected by the player. If you don't needs this animation you can keep this list empty []",
+			"group":"game"
+		}
+	},
+
+	"PILL_ANIMATION_LOOP":{
+		"value":[0],
+		"type":"animation",
+		"properties":{
+			"label":"Pill Animation Loop",
+			"description":"This animation is for the power-up pills the player can eat.",
+			"group":"game"
+		}
+	},
+
+	"PILL_ANIMATION_PICKUP":{
+		"value":[],
+		"type":"animation",
+		"properties":{
+			"label":"Pill Animation Pickup",
+			"description":"This animation is performed by a pill when it's eaten by the player. If you don't needs this animation you can keep this list empty []",
+			"group":"game"
+		}
+	},
+
+	"LEVELS_FILES":{
+		"value": ["portrait_level_1.json", "portrait_level_2.json", "portrait_level_3.json", "portrait_level_4.json", "portrait_level_5.json", "portrait_level_6.json", "portrait_level_7.json", "portrait_level_8.json", "portrait_level_9.json", "portrait_level_10.json", "portrait_level_11.json", "portrait_level_12.json", "portrait_level_1.json", "portrait_level_2.json", "portrait_level_3.json", "portrait_level_4.json", "portrait_level_5.json", "portrait_level_6.json", "portrait_level_7.json", "portrait_level_8.json", "portrait_level_9.json", "portrait_level_10.json", "portrait_level_11.json", "portrait_level_12.json"],
+		"type":"files",
+		"properties":{
+			"label":"Levels Files",
+			"description":"The value of this parameter is the list of the level files. When all the levels are completed then the sequence starts again from the first but the levels counter will continue increasing during the game. For example, if you sets a total of 4 levels, when the player compete the fourth level, it will be loaded the level one as the following level but it will be shown as level five. You can design your own levels by loading one of the provided tmx file, extending it and saving it with a new name.",
+			"group":"game"
+		}
+	},
+	
+	"SPRITES_FILES":{
+		"value":["32/player.png", "32/dots.png", "32/pills.png", "32/yellow_enemy.png","32/magenta_enemy.png","32/red_enemy.png","32/green_enemy.png"],
+		"type":"files",
+		"properties":{
+			"label":"Sprites Graphic Files",
+			"description":"This is the list of animation sheets files for game sprites. You can substitute this files with your custom made sprites. Do not change the name of this files because it's used as reference by the game engine.",
+			"group":"game"
+		}
+	},
+	
+	"MAP_FILES":{
+		"value":["32/metatiles.png","32/tiles.png"],
+		"type":"files",
+		"properties":{
+			"label":"Map Graphic Files",
+			"description":"This is the list of graphic files used in level maps. In your own levels you may have used different file names or more than one tile map, if so, make changes here accordingly.",
+			"group":"game"
+		}
+	}
+}
+

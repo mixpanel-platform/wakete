@@ -1,0 +1,258 @@
+<?xml version='1.0' ?>
+	<!-- ||| Instructions Gotcha! Monster |||-->
+
+<config>
+	<!-- ||| START GENERAL CONFIG ||| -->
+	<domain_url>http://c2vn.com/gmonster/</domain_url><!-- your url game, if you want to override it, just type the number between <domain_url> and </domain_url>  -->
+	<facebook_share_url>http://c2vn.com/gmonster/include/share.php</facebook_share_url><!-- url facebook share file, if you want to override it, just type the number between <facebook_share_url> and </facebook_share_url>  -->
+	<twitter_share_text>Check out my monster that i just catch. it so sweet.</twitter_share_text><!-- twitter sgare text, if you want to override it, just type the number between <twitter_share_text> and </twitter_share_text>  -->
+	
+	<total_of_monster>49</total_of_monster><!-- amount of your monster. you can add/remove your monster, if you want to override it, just type the number between <total_of_monster> and </total_of_monster>  -->
+	
+	<monster_bg0>monster_data/monster_bg2.png</monster_bg0><!-- url background of your first monster, if you want to override it, just type the number between <monster_bg0> and </monster_bg0>  -->
+	<monster_images0>monster_data/monster_images0.png</monster_images0><!-- url images of your first monster, if you want to override it, just type the number between <monster_images0> and </monster_images0>  -->
+	<monster_hp0>1500</monster_hp0><!-- hp of your first monster, player can catch him when his hp is zero, if you want to override it, just type the number between <monster_hp0> and </monster_hp0>  -->
+	<monster_times0>120</monster_times0><!-- time to catch of first monster, if time out, he is gone , if you want to override it, just type the number between <monster_times0> and </monster_times0>  -->
+	
+	<monster_bg1>monster_data/monster_bg1.png</monster_bg1><!-- url background of your second monster, if you want to override it, just type the number between <monster_bg0> and </monster_bg0>  -->
+	<monster_images1>monster_data/monster_images1.png</monster_images1><!-- url images of your second monster, if you want to override it, just type the number between <monster_images0> and </monster_images0>  -->
+	<monster_hp1>1200</monster_hp1><!-- hp of your second monster, player can catch him when his hp is zero, if you want to override it, just type the number between <monster_hp0> and </monster_hp0>  -->
+	<monster_times1>60</monster_times1><!-- time to catch of second monster, if time out, he is gone , if you want to override it, just type the number between <monster_times0> and </monster_times0>  -->
+	
+	<monster_bg2>monster_data/monster_bg1.png</monster_bg2>
+	<monster_images2>monster_data/monster_images2.png</monster_images2>
+	<monster_hp2>1500</monster_hp2>
+	<monster_times2>60</monster_times2>
+	
+	<monster_bg3>monster_data/monster_bg1.png</monster_bg3>
+	<monster_images3>monster_data/monster_images3.png</monster_images3>
+	<monster_hp3>2000</monster_hp3>
+	<monster_times3>60</monster_times3>
+	
+	<monster_bg4>monster_data/monster_bg1.png</monster_bg4>
+	<monster_images4>monster_data/monster_images4.png</monster_images4>
+	<monster_hp4>2500</monster_hp4>
+	<monster_times4>60</monster_times4>
+	
+	<monster_bg5>monster_data/monster_bg1.png</monster_bg5>
+	<monster_images5>monster_data/monster_images5.png</monster_images5>
+	<monster_hp5>3500</monster_hp5>
+	<monster_times5>90</monster_times5>
+	
+	<monster_bg6>monster_data/monster_bg1.png</monster_bg6>
+	<monster_images6>monster_data/monster_images6.png</monster_images6>
+	<monster_hp6>5000</monster_hp6>
+	<monster_times6>90</monster_times6>
+	
+	<monster_bg7>monster_data/monster_bg9.png</monster_bg7>
+	<monster_images7>monster_data/monster_images7.png</monster_images7>
+	<monster_hp7>1500</monster_hp7>
+	<monster_times7>30</monster_times7>
+	
+	<monster_bg8>monster_data/monster_bg7.png</monster_bg8>
+	<monster_images8>monster_data/monster_images8.png</monster_images8>
+	<monster_hp8>2000</monster_hp8>
+	<monster_times8>35</monster_times8>
+	
+	<monster_bg9>monster_data/monster_bg7.png</monster_bg9>
+	<monster_images9>monster_data/monster_images9.png</monster_images9>
+	<monster_hp9>2500</monster_hp9>
+	<monster_times9>40</monster_times9>
+	
+	<monster_bg10>monster_data/monster_bg8.png</monster_bg10>
+	<monster_images10>monster_data/monster_images10.png</monster_images10>
+	<monster_hp10>3000</monster_hp10>
+	<monster_times10>45</monster_times10>
+	
+	<monster_bg11>monster_data/monster_bg0.png</monster_bg11>
+	<monster_images11>monster_data/monster_images11.png</monster_images11>
+	<monster_hp11>3500</monster_hp11>
+	<monster_times11>50</monster_times11>
+	
+	<monster_bg12>monster_data/monster_bg0.png</monster_bg12>
+	<monster_images12>monster_data/monster_images12.png</monster_images12>
+	<monster_hp12>5000</monster_hp12>
+	<monster_times12>70</monster_times12>
+	
+	<monster_bg13>monster_data/monster_bg5.png</monster_bg13>
+	<monster_images13>monster_data/monster_images13.png</monster_images13>
+	<monster_hp13>8000</monster_hp13>
+	<monster_times13>90</monster_times13>
+	
+	<monster_bg14>monster_data/monster_bg5.png</monster_bg14>
+	<monster_images14>monster_data/monster_images14.png</monster_images14>
+	<monster_hp14>9000</monster_hp14>
+	<monster_times14>100</monster_times14>
+	
+	<monster_bg15>monster_data/monster_bg5.png</monster_bg15>
+	<monster_images15>monster_data/monster_images15.png</monster_images15>
+	<monster_hp15>10000</monster_hp15>
+	<monster_times15>110</monster_times15>
+	
+	<monster_bg16>monster_data/monster_bg0.png</monster_bg16>
+	<monster_images16>monster_data/monster_images16.png</monster_images16>
+	<monster_hp16>1000</monster_hp16>
+	<monster_times16>10</monster_times16>
+	
+	<monster_bg17>monster_data/monster_bg0.png</monster_bg17>
+	<monster_images17>monster_data/monster_images17.png</monster_images17>
+	<monster_hp17>1200</monster_hp17>
+	<monster_times17>12</monster_times17>
+	
+	<monster_bg18>monster_data/monster_bg0.png</monster_bg18>
+	<monster_images18>monster_data/monster_images18.png</monster_images18>
+	<monster_hp18>1300</monster_hp18>
+	<monster_times18>14</monster_times18>
+	
+	<monster_bg19>monster_data/monster_bg0.png</monster_bg19>
+	<monster_images19>monster_data/monster_images19.png</monster_images19>
+	<monster_hp19>1400</monster_hp19>
+	<monster_times19>15</monster_times19>
+	
+	<monster_bg20>monster_data/monster_bg2.png</monster_bg20>
+	<monster_images20>monster_data/monster_images20.png</monster_images20>
+	<monster_hp20>500</monster_hp20>
+	<monster_times20>5</monster_times20>
+	
+	<monster_bg21>monster_data/monster_bg2.png</monster_bg21>
+	<monster_images21>monster_data/monster_images21.png</monster_images21>
+	<monster_hp21>550</monster_hp21>
+	<monster_times21>6</monster_times21>
+	
+	<monster_bg22>monster_data/monster_bg2.png</monster_bg22>
+	<monster_images22>monster_data/monster_images22.png</monster_images22>
+	<monster_hp22>600</monster_hp22>
+	<monster_times22>7</monster_times22>
+	
+	<monster_bg23>monster_data/monster_bg2.png</monster_bg23>
+	<monster_images23>monster_data/monster_images23.png</monster_images23>
+	<monster_hp23>650</monster_hp23>
+	<monster_times23>8</monster_times23>
+	
+	<monster_bg24>monster_data/monster_bg3.png</monster_bg24>
+	<monster_images24>monster_data/monster_images24.png</monster_images24>
+	<monster_hp24>2000</monster_hp24>
+	<monster_times24>20</monster_times24>
+	
+	<monster_bg25>monster_data/monster_bg3.png</monster_bg25>
+	<monster_images25>monster_data/monster_images25.png</monster_images25>
+	<monster_hp25>2300</monster_hp25>
+	<monster_times25>22</monster_times25>
+	
+	<monster_bg26>monster_data/monster_bg3.png</monster_bg26>
+	<monster_images26>monster_data/monster_images26.png</monster_images26>
+	<monster_hp26>2600</monster_hp26>
+	<monster_times26>24</monster_times26>
+	
+	<monster_bg27>monster_data/monster_bg4.png</monster_bg27>
+	<monster_images27>monster_data/monster_images27.png</monster_images27>
+	<monster_hp27>5000</monster_hp27>
+	<monster_times27>40</monster_times27>
+	
+	<monster_bg28>monster_data/monster_bg9.png</monster_bg28>
+	<monster_images28>monster_data/monster_images28.png</monster_images28>
+	<monster_hp28>10000</monster_hp28>
+	<monster_times28>100</monster_times28>
+	
+	<monster_bg29>monster_data/monster_bg9.png</monster_bg29>
+	<monster_images29>monster_data/monster_images29.png</monster_images29>
+	<monster_hp29>15000</monster_hp29>
+	<monster_times29>120</monster_times29>
+	
+	<monster_bg30>monster_data/monster_bg9.png</monster_bg30>
+	<monster_images30>monster_data/monster_images30.png</monster_images30>
+	<monster_hp30>2000</monster_hp30>
+	<monster_times30>30</monster_times30>
+	
+	<monster_bg31>monster_data/monster_bg6.png</monster_bg31>
+	<monster_images31>monster_data/monster_images31.png</monster_images31>
+	<monster_hp31>3000</monster_hp31>
+	<monster_times31>40</monster_times31>
+	
+	<monster_bg32>monster_data/monster_bg5.png</monster_bg32>
+	<monster_images32>monster_data/monster_images32.png</monster_images32>
+	<monster_hp32>4000</monster_hp32>
+	<monster_times32>50</monster_times32>
+	
+	<monster_bg33>monster_data/monster_bg8.png</monster_bg33>
+	<monster_images33>monster_data/monster_images33.png</monster_images33>
+	<monster_hp33>5000</monster_hp33>
+	<monster_times33>50</monster_times33>
+	
+	<monster_bg34>monster_data/monster_bg9.png</monster_bg34>
+	<monster_images34>monster_data/monster_images34.png</monster_images34>
+	<monster_hp34>6000</monster_hp34>
+	<monster_times34>50</monster_times34>
+	
+	<monster_bg35>monster_data/monster_bg5.png</monster_bg35>
+	<monster_images35>monster_data/monster_images35.png</monster_images35>
+	<monster_hp35>2000</monster_hp35>
+	<monster_times35>5</monster_times35>
+	
+	<monster_bg36>monster_data/monster_bg1.png</monster_bg36>
+	<monster_images36>monster_data/monster_images36.png</monster_images36>
+	<monster_hp36>2200</monster_hp36>
+	<monster_times36>6</monster_times36>
+	
+	<monster_bg37>monster_data/monster_bg9.png</monster_bg37>
+	<monster_images37>monster_data/monster_images37.png</monster_images37>
+	<monster_hp37>2300</monster_hp37>
+	<monster_times37>7</monster_times37>
+	
+	<monster_bg38>monster_data/monster_bg0.png</monster_bg38>
+	<monster_images38>monster_data/monster_images38.png</monster_images38>
+	<monster_hp38>2400</monster_hp38>
+	<monster_times38>8</monster_times38>
+	
+	<monster_bg39>monster_data/monster_bg4.png</monster_bg39>
+	<monster_images39>monster_data/monster_images39.png</monster_images39>
+	<monster_hp39>2500</monster_hp39>
+	<monster_times39>9</monster_times39>
+	
+	<monster_bg40>monster_data/monster_bg5.png</monster_bg40>
+	<monster_images40>monster_data/monster_images40.png</monster_images40>
+	<monster_hp40>2600</monster_hp40>
+	<monster_times40>10</monster_times40>
+	
+	<monster_bg41>monster_data/monster_bg9.png</monster_bg41>
+	<monster_images41>monster_data/monster_images41.png</monster_images41>
+	<monster_hp41>2700</monster_hp41>
+	<monster_times41>11</monster_times41>
+	
+	<monster_bg42>monster_data/monster_bg7.png</monster_bg42>
+	<monster_images42>monster_data/monster_images42.png</monster_images42>
+	<monster_hp42>2800</monster_hp42>
+	<monster_times42>12</monster_times42>
+	
+	<monster_bg43>monster_data/monster_bg0.png</monster_bg43>
+	<monster_images43>monster_data/monster_images43.png</monster_images43>
+	<monster_hp43>3000</monster_hp43>
+	<monster_times43>40</monster_times43>
+	
+	<monster_bg44>monster_data/monster_bg3.png</monster_bg44>
+	<monster_images44>monster_data/monster_images44.png</monster_images44>
+	<monster_hp44>4500</monster_hp44>
+	<monster_times44>50</monster_times44>
+	
+	<monster_bg45>monster_data/monster_bg7.png</monster_bg45>
+	<monster_images45>monster_data/monster_images45.png</monster_images45>
+	<monster_hp45>6000</monster_hp45>
+	<monster_times45>60</monster_times45>
+	
+	<monster_bg46>monster_data/monster_bg8.png</monster_bg46>
+	<monster_images46>monster_data/monster_images46.png</monster_images46>
+	<monster_hp46>4000</monster_hp46>
+	<monster_times46>20</monster_times46>
+	
+	<monster_bg47>monster_data/monster_bg3.png</monster_bg47>
+	<monster_images47>monster_data/monster_images47.png</monster_images47>
+	<monster_hp47>5000</monster_hp47>
+	<monster_times47>20</monster_times47>
+	
+	<monster_bg48>monster_data/monster_bg6.png</monster_bg48>
+	<monster_images48>monster_data/monster_images48.png</monster_images48>
+	<monster_hp48>10000</monster_hp48>
+	<monster_times48>30</monster_times48>
+</config>
+
+	<!-- ||| congratulations, completed your config |||-->

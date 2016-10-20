@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" renderorder="right-down" width="20" height="15" tilewidth="32" tileheight="32" nextobjectid="158">
+ <tileset firstgid="1" name="metatiles" tilewidth="32" tileheight="32" tilecount="20" columns="5">
+  <image source="../img/map/32/metatiles.png" width="160" height="128"/>
+  <tile id="0">
+   <properties>
+    <property name="direction" value="1110"/>
+   </properties>
+  </tile>
+  <tile id="1">
+   <properties>
+    <property name="direction" value="0111"/>
+   </properties>
+  </tile>
+  <tile id="2">
+   <properties>
+    <property name="direction" value="1011"/>
+   </properties>
+  </tile>
+  <tile id="3">
+   <properties>
+    <property name="direction" value="1101"/>
+   </properties>
+  </tile>
+  <tile id="4">
+   <properties>
+    <property name="direction" value="1111"/>
+   </properties>
+  </tile>
+  <tile id="5">
+   <properties>
+    <property name="direction" value="1100"/>
+   </properties>
+  </tile>
+  <tile id="6">
+   <properties>
+    <property name="direction" value="0110"/>
+   </properties>
+  </tile>
+  <tile id="7">
+   <properties>
+    <property name="direction" value="0011"/>
+   </properties>
+  </tile>
+  <tile id="8">
+   <properties>
+    <property name="direction" value="1001"/>
+   </properties>
+  </tile>
+  <tile id="9">
+   <properties>
+    <property name="direction" value="1010"/>
+   </properties>
+  </tile>
+  <tile id="10">
+   <properties>
+    <property name="direction" value="1000"/>
+   </properties>
+  </tile>
+  <tile id="11">
+   <properties>
+    <property name="direction" value="0100"/>
+   </properties>
+  </tile>
+  <tile id="12">
+   <properties>
+    <property name="direction" value="0010"/>
+   </properties>
+  </tile>
+  <tile id="13">
+   <properties>
+    <property name="direction" value="0001"/>
+   </properties>
+  </tile>
+  <tile id="14">
+   <properties>
+    <property name="direction" value="0101"/>
+   </properties>
+  </tile>
+  <tile id="15">
+   <properties>
+    <property name="direction" value="0000"/>
+    <property name="type" value="solid"/>
+   </properties>
+  </tile>
+ </tileset>
+ <tileset firstgid="21" name="tiles" tilewidth="32" tileheight="32" tilecount="32" columns="4">
+  <image source="../img/map/32/tiles.png" width="128" height="256"/>
+ </tileset>
+ <layer name="Background" width="20" height="15">
+  <properties>
+   <property name="preRender" value="false"/>
+  </properties>
+  <data encoding="base64">
+   GAAAABgAAAAYAAAALQAAAC4AAAAvAAAAMAAAABgAAAAYAAAAGAAAABgAAAAYAAAAGAAAAC0AAAAuAAAALwAAADAAAAAYAAAAGAAAABgAAAAYAAAAHwAAAB4AAAAxAAAAMgAAADMAAAA0AAAAHwAAABUAAAAVAAAAFQAAABUAAAAeAAAAMQAAADIAAAAzAAAANAAAAB8AAAAeAAAAGAAAABgAAAAWAAAAIAAAABsAAAAVAAAAFQAAABsAAAAdAAAAGAAAABgAAAAYAAAAGAAAACAAAAAoAAAAFQAAABUAAAAbAAAAHQAAABYAAAAYAAAAGAAAABYAAAAYAAAAFgAAABgAAAAYAAAAFgAAABgAAAAtAAAALgAAAC8AAAAwAAAAGAAAACYAAAAYAAAAGAAAABYAAAAYAAAAFgAAABgAAAAYAAAAFgAAABgAAAAWAAAAGAAAABgAAAAWAAAAGAAAADEAAAAyAAAAMwAAADQAAAAYAAAAFgAAABgAAAAYAAAAFgAAABgAAAAWAAAAGAAAABgAAAAWAAAAGAAAABwAAAAVAAAAFQAAABoAAAAYAAAAGAAAABgAAAAYAAAAGAAAABgAAAAcAAAAFQAAABUAAAAaAAAAGAAAABYAAAAYAAAAHwAAABoAAAAYAAAAFgAAABgAAAAYAAAAHAAAABUAAAAVAAAAFQAAABUAAAAVAAAAFQAAABoAAAAYAAAAGAAAABwAAAAVAAAAFwAAAB4AAAAgAAAAFwAAABUAAAAaAAAAGAAAABgAAAAcAAAAFQAAAB4AAAAYAAAAGAAAAB8AAAAVAAAAGgAAABgAAAAYAAAAFgAAABgAAAAcAAAAHQAAABgAAAAWAAAAGAAAABwAAAAVAAAAFQAAABoAAAAYAAAAFgAAABgAAAAYAAAAFgAAABgAAAAcAAAAFQAAABUAAAAaAAAAGAAAABYAAAAYAAAAGAAAABYAAAAYAAAAFgAAABgAAAAYAAAAFgAAABgAAAAWAAAAGAAAABgAAAAWAAAAGAAAABYAAAAYAAAAGAAAABYAAAAYAAAAFgAAABgAAAAYAAAAFgAAABgAAAAWAAAAGAAAABgAAAAWAAAAGAAAACUAAAAYAAAAGAAAABYAAAAYAAAAFgAAABgAAAAYAAAAFgAAABgAAAAWAAAAGAAAAB8AAAAZAAAAFQAAABcAAAAVAAAAFQAAABcAAAAVAAAAJwAAABUAAAAVAAAAGQAAABUAAAAXAAAAFQAAABUAAAAXAAAAFQAAABkAAAAeAAAAFgAAABgAAAAYAAAAFgAAABgAAAAYAAAAFgAAABgAAAAtAAAALgAAAC8AAAAwAAAAGAAAABYAAAAYAAAAGAAAABYAAAAYAAAAGAAAABYAAAAWAAAAGAAAABgAAAAWAAAAGAAAABgAAAAWAAAAGAAAADEAAAAyAAAAMwAAADQAAAAYAAAAFgAAABgAAAAYAAAAFgAAABgAAAAYAAAAFgAAACAAAAAVAAAAFQAAAB0AAAAYAAAAGAAAACAAAAAVAAAAFQAAABUAAAAVAAAAFQAAABUAAAAdAAAAGAAAABgAAAAgAAAAFQAAABUAAAAdAAAA
+  </data>
+ </layer>
+ <layer name="Path" width="20" height="15">
+  <data encoding="base64">
+   AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABwAAAAgAAAAAAAAAAAAAAAAAAAAAAAAABwAAAA8AAAAPAAAADwAAAA8AAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAcAAAAIAAAAAAAAAAAAAAAKAAAABgAAAAIAAAAPAAAADwAAAAIAAAAJAAAAAAAAAAAAAAAAAAAAAAAAAAYAAAAPAAAADwAAAA8AAAACAAAACQAAAAoAAAAAAAAAAAAAAAoAAAAAAAAACgAAAAAAAAAAAAAACgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAAoAAAAAAAAACgAAAAAAAAAAAAAACgAAAAAAAAAKAAAAAAAAAAAAAAAKAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACgAAAAAAAAAAAAAACgAAAAAAAAAKAAAAAAAAAAAAAAAKAAAAAAAAAAEAAAAPAAAADwAAAAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAADwAAAA8AAAADAAAAAAAAAAoAAAAAAAAABwAAAAMAAAAAAAAACgAAAAsAAAALAAAAAQAAAA8AAAAPAAAADwAAAA8AAAAPAAAADwAAAAMAAAALAAAACwAAAAEAAAAPAAAABQAAAAgAAAAGAAAABQAAAA8AAAADAAAADQAAAA0AAAABAAAADwAAAAgAAAAAAAAAAAAAAAcAAAAPAAAAAwAAAA0AAAANAAAACgAAAAAAAAABAAAACQAAAAAAAAAKAAAAAAAAAAEAAAAPAAAADwAAAAMAAAAAAAAACgAAAAAAAAAAAAAACgAAAAAAAAABAAAADwAAAA8AAAADAAAAAAAAAAoAAAAAAAAAAAAAAAoAAAAAAAAACgAAAAAAAAAAAAAACgAAAAAAAAAKAAAAAAAAAAAAAAAKAAAAAAAAAAoAAAAAAAAAAAAAAAoAAAAAAAAACgAAAAAAAAAAAAAACgAAAAAAAAAKAAAAAAAAAAAAAAAKAAAAAAAAAAoAAAAAAAAAAAAAAAoAAAAAAAAACgAAAAAAAAAAAAAACgAAAAAAAAAKAAAAAAAAAAcAAAAEAAAADwAAAAUAAAAPAAAADwAAAAUAAAAPAAAADwAAAA8AAAAPAAAABAAAAA8AAAAFAAAADwAAAA8AAAAFAAAADwAAAAQAAAAIAAAACgAAAAAAAAAAAAAACgAAAAAAAAAAAAAACgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAAoAAAAKAAAAAAAAAAAAAAAKAAAAAAAAAAAAAAAKAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACgAAAAAAAAAAAAAACgAAAAAAAAAAAAAACgAAAAYAAAAPAAAADwAAAAkAAAAAAAAAAAAAAAYAAAAPAAAADwAAAA8AAAAPAAAADwAAAA8AAAAJAAAAAAAAAAAAAAAGAAAADwAAAA8AAAAJAAAA
+  </data>
+ </layer>
+ <objectgroup name="Entities">
+  <object id="1" name="player" gid="19" x="288" y="384" width="32" height="32"/>
+ </objectgroup>
+ <objectgroup name="Dots">
+  <object id="2" name="dot" type="coins" gid="16" x="192" y="384" width="32" height="32"/>
+  <object id="3" name="dot" type="coins" gid="16" x="224" y="384" width="32" height="32"/>
+  <object id="4" name="dot" type="coins" gid="16" x="448" y="384" width="32" height="32"/>
+  <object id="5" name="dot" type="coins" gid="16" x="256" y="384" width="32" height="32"/>
+  <object id="6" name="dot" type="coins" gid="16" x="288" y="480" width="32" height="32"/>
+  <object id="7" name="dot" type="coins" gid="16" x="256" y="480" width="32" height="32"/>
+  <object id="8" name="dot" type="coins" gid="16" x="192" y="416" width="32" height="32"/>
+  <object id="9" name="dot" type="coins" gid="16" x="192" y="448" width="32" height="32"/>
+  <object id="10" name="dot" type="coins" gid="16" x="224" y="480" width="32" height="32"/>
+  <object id="11" name="dot" type="coins" gid="16" x="192" y="480" width="32" height="32"/>
+  <object id="12" name="dot" type="coins" gid="16" x="96" y="480" width="32" height="32"/>
+  <object id="13" name="dot" type="coins" gid="16" x="96" y="448" width="32" height="32"/>
+  <object id="14" name="dot" type="coins" gid="16" x="96" y="416" width="32" height="32"/>
+  <object id="15" name="dot" type="coins" gid="16" x="96" y="352" width="32" height="32"/>
+  <object id="16" name="dot" type="coins" gid="16" x="96" y="384" width="32" height="32"/>
+  <object id="17" name="dot" type="coins" gid="16" x="160" y="384" width="32" height="32"/>
+  <object id="18" name="dot" type="coins" gid="16" x="64" y="384" width="32" height="32"/>
+  <object id="19" name="dot" type="coins" gid="16" x="32" y="384" width="32" height="32"/>
+  <object id="20" name="dot" type="coins" gid="16" x="0" y="384" width="32" height="32"/>
+  <object id="21" name="dot" type="coins" gid="16" x="0" y="416" width="32" height="32"/>
+  <object id="22" name="dot" type="coins" gid="16" x="32" y="480" width="32" height="32"/>
+  <object id="23" name="dot" type="coins" gid="16" x="0" y="480" width="32" height="32"/>
+  <object id="24" name="dot" type="coins" gid="16" x="32" y="320" width="32" height="32"/>
+  <object id="25" name="dot" type="coins" gid="16" x="32" y="352" width="32" height="32"/>
+  <object id="26" name="dot" type="coins" gid="16" x="32" y="256" width="32" height="32"/>
+  <object id="27" name="dot" type="coins" gid="16" x="32" y="288" width="32" height="32"/>
+  <object id="28" name="dot" type="coins" gid="16" x="96" y="288" width="32" height="32"/>
+  <object id="29" name="dot" type="coins" gid="16" x="96" y="320" width="32" height="32"/>
+  <object id="30" name="dot" type="coins" gid="16" x="128" y="288" width="32" height="32"/>
+  <object id="31" name="dot" type="coins" gid="16" x="160" y="288" width="32" height="32"/>
+  <object id="32" name="dot" type="coins" gid="16" x="192" y="288" width="32" height="32"/>
+  <object id="33" name="dot" type="coins" gid="16" x="192" y="320" width="32" height="32"/>
+  <object id="34" name="dot" type="coins" gid="16" x="192" y="352" width="32" height="32"/>
+  <object id="35" name="dot" type="coins" gid="16" x="256" y="352" width="32" height="32"/>
+  <object id="36" name="dot" type="coins" gid="16" x="256" y="320" width="32" height="32"/>
+  <object id="37" name="dot" type="coins" gid="16" x="256" y="288" width="32" height="32"/>
+  <object id="38" name="dot" type="coins" gid="16" x="256" y="256" width="32" height="32"/>
+  <object id="39" name="dot" type="coins" gid="16" x="224" y="256" width="32" height="32"/>
+  <object id="40" name="dot" type="coins" gid="16" x="288" y="224" width="32" height="32"/>
+  <object id="41" name="dot" type="coins" gid="16" x="256" y="224" width="32" height="32"/>
+  <object id="42" name="dot" type="coins" gid="16" x="224" y="224" width="32" height="32"/>
+  <object id="43" name="dot" type="coins" gid="16" x="192" y="256" width="32" height="32"/>
+  <object id="44" name="dot" type="coins" gid="16" x="192" y="224" width="32" height="32"/>
+  <object id="45" name="dot" type="coins" gid="16" x="192" y="192" width="32" height="32"/>
+  <object id="46" name="dot" type="coins" gid="16" x="192" y="96" width="32" height="32"/>
+  <object id="47" name="dot" type="coins" gid="16" x="192" y="128" width="32" height="32"/>
+  <object id="48" name="dot" type="coins" gid="16" x="192" y="160" width="32" height="32"/>
+  <object id="49" name="dot" type="coins" gid="16" x="160" y="192" width="32" height="32"/>
+  <object id="50" name="dot" type="coins" gid="16" x="128" y="192" width="32" height="32"/>
+  <object id="51" name="dot" type="coins" gid="16" x="96" y="192" width="32" height="32"/>
+  <object id="52" name="dot" type="coins" gid="16" x="96" y="224" width="32" height="32"/>
+  <object id="53" name="dot" type="coins" gid="16" x="96" y="256" width="32" height="32"/>
+  <object id="54" name="dot" type="coins" gid="16" x="64" y="256" width="32" height="32"/>
+  <object id="55" name="dot" type="coins" gid="16" x="0" y="256" width="32" height="32"/>
+  <object id="56" name="dot" type="coins" gid="16" x="0" y="224" width="32" height="32"/>
+  <object id="57" name="dot" type="coins" gid="16" x="32" y="224" width="32" height="32"/>
+  <object id="58" name="dot" type="coins" gid="16" x="32" y="160" width="32" height="32"/>
+  <object id="59" name="dot" type="coins" gid="16" x="32" y="192" width="32" height="32"/>
+  <object id="60" name="dot" type="coins" gid="16" x="32" y="96" width="32" height="32"/>
+  <object id="61" name="dot" type="coins" gid="16" x="32" y="128" width="32" height="32"/>
+  <object id="62" name="dot" type="coins" gid="16" x="64" y="64" width="32" height="32"/>
+  <object id="63" name="dot" type="coins" gid="16" x="64" y="96" width="32" height="32"/>
+  <object id="64" name="dot" type="coins" gid="16" x="96" y="96" width="32" height="32"/>
+  <object id="65" name="dot" type="coins" gid="16" x="96" y="128" width="32" height="32"/>
+  <object id="66" name="dot" type="coins" gid="16" x="128" y="96" width="32" height="32"/>
+  <object id="67" name="dot" type="coins" gid="16" x="160" y="96" width="32" height="32"/>
+  <object id="68" name="dot" type="coins" gid="16" x="224" y="96" width="32" height="32"/>
+  <object id="69" name="dot" type="coins" gid="16" x="96" y="160" width="32" height="32"/>
+  <object id="70" name="dot" type="coins" gid="16" x="224" y="64" width="32" height="32"/>
+  <object id="71" name="dot" type="coins" gid="16" x="288" y="64" width="32" height="32"/>
+  <object id="72" name="dot" type="coins" gid="16" x="256" y="64" width="32" height="32"/>
+  <object id="73" name="dot" type="coins" gid="16" x="64" y="480" width="32" height="32"/>
+  <object id="74" name="dot" type="coins" gid="16" x="384" y="224" width="32" height="32"/>
+  <object id="75" name="dot" type="coins" gid="16" x="544" y="64" width="32" height="32"/>
+  <object id="76" name="dot" type="coins" gid="16" x="416" y="320" width="32" height="32"/>
+  <object id="77" name="dot" type="coins" gid="16" x="608" y="416" width="32" height="32"/>
+  <object id="78" name="dot" type="coins" gid="16" x="384" y="256" width="32" height="32"/>
+  <object id="79" name="dot" type="coins" gid="16" x="512" y="320" width="32" height="32"/>
+  <object id="80" name="dot" type="coins" gid="16" x="416" y="160" width="32" height="32"/>
+  <object id="81" name="dot" type="coins" gid="16" x="416" y="288" width="32" height="32"/>
+  <object id="82" name="dot" type="coins" gid="16" x="544" y="224" width="32" height="32"/>
+  <object id="83" name="dot" type="coins" gid="16" x="352" y="320" width="32" height="32"/>
+  <object id="84" name="dot" type="coins" gid="16" x="512" y="128" width="32" height="32"/>
+  <object id="85" name="dot" type="coins" gid="16" x="608" y="480" width="32" height="32"/>
+  <object id="86" name="dot" type="coins" gid="16" x="512" y="224" width="32" height="32"/>
+  <object id="87" name="dot" type="coins" gid="16" x="448" y="288" width="32" height="32"/>
+  <object id="88" name="dot" type="coins" gid="16" x="480" y="288" width="32" height="32"/>
+  <object id="89" name="dot" type="coins" gid="16" x="512" y="480" width="32" height="32"/>
+  <object id="90" name="dot" type="coins" gid="16" x="608" y="384" width="32" height="32"/>
+  <object id="91" name="dot" type="coins" gid="16" x="576" y="320" width="32" height="32"/>
+  <object id="92" name="dot" type="coins" gid="16" x="512" y="192" width="32" height="32"/>
+  <object id="93" name="dot" type="coins" gid="16" x="384" y="64" width="32" height="32"/>
+  <object id="94" name="dot" type="coins" gid="16" x="576" y="288" width="32" height="32"/>
+  <object id="95" name="dot" type="coins" gid="16" x="512" y="288" width="32" height="32"/>
+  <object id="96" name="dot" type="coins" gid="16" x="416" y="384" width="32" height="32"/>
+  <object id="97" name="dot" type="coins" gid="16" x="416" y="96" width="32" height="32"/>
+  <object id="98" name="dot" type="coins" gid="16" x="320" y="480" width="32" height="32"/>
+  <object id="99" name="dot" type="coins" gid="16" x="416" y="352" width="32" height="32"/>
+  <object id="100" name="dot" type="coins" gid="16" x="608" y="256" width="32" height="32"/>
+  <object id="101" name="dot" type="coins" gid="16" x="576" y="96" width="32" height="32"/>
+  <object id="102" name="dot" type="coins" gid="16" x="416" y="224" width="32" height="32"/>
+  <object id="103" name="dot" type="coins" gid="16" x="352" y="288" width="32" height="32"/>
+  <object id="104" name="dot" type="coins" gid="16" x="576" y="256" width="32" height="32"/>
+  <object id="105" name="dot" type="coins" gid="16" x="480" y="192" width="32" height="32"/>
+  <object id="106" name="dot" type="coins" gid="16" x="448" y="96" width="32" height="32"/>
+  <object id="107" name="dot" type="coins" gid="16" x="512" y="352" width="32" height="32"/>
+  <object id="108" name="dot" type="coins" gid="16" x="480" y="384" width="32" height="32"/>
+  <object id="109" name="dot" type="coins" gid="16" x="512" y="160" width="32" height="32"/>
+  <object id="110" name="dot" type="coins" gid="16" x="576" y="128" width="32" height="32"/>
+  <object id="111" name="dot" type="coins" gid="16" x="384" y="480" width="32" height="32"/>
+  <object id="112" name="dot" type="coins" gid="16" x="576" y="160" width="32" height="32"/>
+  <object id="113" name="dot" type="coins" gid="16" x="544" y="96" width="32" height="32"/>
+  <object id="114" name="dot" type="coins" gid="16" x="512" y="448" width="32" height="32"/>
+  <object id="115" name="dot" type="coins" gid="16" x="320" y="64" width="32" height="32"/>
+  <object id="116" name="dot" type="coins" gid="16" x="512" y="416" width="32" height="32"/>
+  <object id="117" name="dot" type="coins" gid="16" x="352" y="480" width="32" height="32"/>
+  <object id="118" name="dot" type="coins" gid="16" x="416" y="128" width="32" height="32"/>
+  <object id="119" name="dot" type="coins" gid="16" x="576" y="352" width="32" height="32"/>
+  <object id="120" name="dot" type="coins" gid="16" x="416" y="480" width="32" height="32"/>
+  <object id="121" name="dot" type="coins" gid="16" x="352" y="224" width="32" height="32"/>
+  <object id="122" name="dot" type="coins" gid="16" x="352" y="352" width="32" height="32"/>
+  <object id="123" name="dot" type="coins" gid="16" x="576" y="192" width="32" height="32"/>
+  <object id="124" name="dot" type="coins" gid="16" x="608" y="224" width="32" height="32"/>
+  <object id="125" name="dot" type="coins" gid="16" x="512" y="384" width="32" height="32"/>
+  <object id="126" name="dot" type="coins" gid="16" x="512" y="96" width="32" height="32"/>
+  <object id="127" name="dot" type="coins" gid="16" x="416" y="416" width="32" height="32"/>
+  <object id="128" name="dot" type="coins" gid="16" x="480" y="96" width="32" height="32"/>
+  <object id="129" name="dot" type="coins" gid="16" x="544" y="480" width="32" height="32"/>
+  <object id="130" name="dot" type="coins" gid="16" x="512" y="256" width="32" height="32"/>
+  <object id="131" name="dot" type="coins" gid="16" x="320" y="224" width="32" height="32"/>
+  <object id="132" name="dot" type="coins" gid="16" x="416" y="448" width="32" height="32"/>
+  <object id="133" name="dot" type="coins" gid="16" x="544" y="384" width="32" height="32"/>
+  <object id="134" name="dot" type="coins" gid="16" x="416" y="192" width="32" height="32"/>
+  <object id="135" name="dot" type="coins" gid="16" x="352" y="256" width="32" height="32"/>
+  <object id="136" name="dot" type="coins" gid="16" x="576" y="384" width="32" height="32"/>
+  <object id="137" name="dot" type="coins" gid="16" x="576" y="480" width="32" height="32"/>
+  <object id="138" name="dot" type="coins" gid="16" x="416" y="256" width="32" height="32"/>
+  <object id="139" name="dot" type="coins" gid="16" x="384" y="384" width="32" height="32"/>
+  <object id="140" name="dot" type="coins" gid="16" x="352" y="384" width="32" height="32"/>
+  <object id="141" name="dot" type="coins" gid="16" x="320" y="384" width="32" height="32"/>
+  <object id="142" name="dot" type="coins" gid="16" x="576" y="224" width="32" height="32"/>
+  <object id="143" name="dot" type="coins" gid="16" x="448" y="192" width="32" height="32"/>
+  <object id="144" name="dot" type="coins" gid="16" x="352" y="64" width="32" height="32"/>
+  <object id="145" name="pill" gid="17" x="32" y="64" width="32" height="32"/>
+  <object id="146" name="pill" gid="17" x="0" y="448" width="32" height="32"/>
+  <object id="147" name="pill" gid="17" x="608" y="448" width="32" height="32"/>
+  <object id="148" name="pill" gid="17" x="576" y="64" width="32" height="32"/>
+  <object id="149" name="dot" type="coins" gid="16" x="128" y="384" width="32" height="32"/>
+ </objectgroup>
+ <objectgroup name="Enemies">
+  <object id="150" name="enemy" type="red_enemy" gid="18" x="128" y="224" width="32" height="32">
+   <properties>
+    <property name="behavior" value="random"/>
+   </properties>
+  </object>
+  <object id="151" name="enemy" type="magenta_enemy" gid="18" x="128" y="256" width="32" height="32">
+   <properties>
+    <property name="behavior" value="random"/>
+   </properties>
+  </object>
+  <object id="152" name="enemy" type="green_enemy" gid="18" x="160" y="256" width="32" height="32">
+   <properties>
+    <property name="behavior" value="random"/>
+   </properties>
+  </object>
+  <object id="153" name="enemy" type="yellow_enemy" gid="18" x="160" y="224" width="32" height="32">
+   <properties>
+    <property name="behavior" value="random"/>
+   </properties>
+  </object>
+  <object id="154" name="enemy" type="red_enemy" gid="18" x="448" y="224" width="32" height="32">
+   <properties>
+    <property name="behavior" value="random"/>
+   </properties>
+  </object>
+  <object id="155" name="enemy" type="magenta_enemy" gid="18" x="448" y="256" width="32" height="32">
+   <properties>
+    <property name="behavior" value="random"/>
+   </properties>
+  </object>
+  <object id="156" name="enemy" type="green_enemy" gid="18" x="480" y="256" width="32" height="32">
+   <properties>
+    <property name="behavior" value="random"/>
+   </properties>
+  </object>
+  <object id="157" name="enemy" type="yellow_enemy" gid="18" x="480" y="224" width="32" height="32">
+   <properties>
+    <property name="behavior" value="random"/>
+   </properties>
+  </object>
+ </objectgroup>
+</map>

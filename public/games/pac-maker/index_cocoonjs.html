@@ -1,0 +1,51 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Pac-Maker</title>
+		<link rel="stylesheet" type="text/css" media="screen" href="index.css">
+		<meta id="viewport" name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	</head>
+	<body>
+
+		<!-- Canvas placeholder -->
+		<div id="screen"></div>
+
+		<!-- cocoon Library -->
+		<script type="text/javascript" src="lib/cocoon.js"></script>
+		<script type="text/javascript" src="js/cocoonAds.js"></script>
+		
+		<!-- melonJS Library -->
+		<script type="text/javascript" src="lib/melonJS.js"></script>
+
+		<!-- md5 Library -->
+		<script type="text/javascript" src="lib/md5.js"></script>
+
+		<!-- Game -->
+		<script type="text/javascript" src="js/game.js"></script>
+		
+		<!-- Bootstrap & Mobile optimization tricks -->
+		<script type="text/javascript">
+			var PREFS;
+			var SID = false;
+			window.onReady(function onReady() {
+				me.loader.load({name: "prefs",  type:"json",  src: "data/prefs.json"}, function () {
+					PREFS = me.loader.getJSON('prefs');
+					for (var key in PREFS) {
+						if (PREFS.hasOwnProperty(key)) {
+							if(PREFS[key]["type"]=="bool"){
+								PREFS[key]["value"] = (PREFS[key]["value"]=="true");
+							}
+							if(PREFS[key]["type"]=="number" || PREFS[key]["type"]=="range"){
+								PREFS[key]["value"] = parseInt(PREFS[key]["value"]);
+							}
+						}
+					}
+					game.onload();
+				});
+			});
+		</script>
+	</body>
+</html>

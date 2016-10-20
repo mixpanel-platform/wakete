@@ -1,0 +1,70 @@
+{
+	"play"					: "GIOCA",
+	"how_to_play"			: "COME GIOCARE",
+	"facebook_connect"		: "CONNETTI A FACEBOOK",
+	"play_more_games"		: "ALTRI GIOCHI",
+	"buy_more_credits"		: "COMPRA PIU CREDITI",
+	"rate_this_game"		: "VOTA QUESTO GIOCO",
+	"facebook_share"		: "Penso che vi possa piacere questo gioco. Provatelo anche voi e mostratemi quanto siete bravi!",
+	"facebook_score"		: "Ho totalizzato #i punti giocando a #s!!! Prova a battere questo punteggio se ci riesci",
+	"back"					: "INDIETRO",
+	"next"					: "AVANTI",
+	"choose_level"			: "SCEGLI UN LIVELLO",
+	"you_did_it"			: "CE L'HAI FATTA!",
+	"input_nickname"		: "INSERISCI IL TUO NICKNAME",
+	"game_over"				: "GAME OVER",
+	"level"					: "LIVELLO",
+	"start_desktop"			: "PER INIZIARE\nPREMI UN TASTO FRECCIA",	
+	"start_mobile"			: "FAI SWIPE PER INIZIARE",
+	"add_to_home"			: "Aggiungi il gioco alla Home e potrai tornare a giocare a schermo pieno.",
+	"final_score"			: "Punteggio finale: ",
+	"main_menu"				: "MENU PRINCIPALE",
+	"submit_score"			: "INVIA PUNTEGGIO",
+	"share_score"			: "CONDIVIDI",
+	"pause"					: "PAUSA",
+
+	"howToPlay_desktop": {
+		"p1"					: "Controlla il personaggio usando i tasti freccia.\n\nPremi in tasto P per mettere in pausa il gioco.",
+		"p2"					: "Fai attenzione, non farti prendere dai fantasmi.",
+		"p3"					: "Raccogli tutte le monete per finire il livello.",
+		"p4"					: "Usa le pillole per acquisire temporaneamente l'abilità di sconfiggere i nemici.",
+		"p5"					: "",
+		"p6"					: "",
+		"p7"					: "",
+		"p8"					: "",
+		"p9"					: ""
+	},
+
+	"howToPlay_mobile": {
+		"p1"					: "Controlla il personaggio strisciando il dito sullo schermo nelle quattro direzioni",
+		"p2"					: "Fai attenzione, non farti prendere dai fantasmi.",
+		"p3"					: "Raccogli tutte le monete per finire il livello.",
+		"p4"					: "Usa le pillole per acquisire l temporanea abilità di sconfiggere i nemici.",
+		"p5"					: "",
+		"p6"					: "",
+		"p7"					: "",
+		"p8"					: "",
+		"p9"					: ""
+	},
+
+	"info":{
+		"title1"				: "UN GIOCO DI",
+		"text1"					: "OFFICINE PIXEL SNC (FFX.IT)",
+		"title2"				: "SOFTWARE",
+		"text2"					: "Lamberto Tedaldi",
+		"title3"				: "GRAFICA",
+		"text3"					: "Davide Romboli",
+		"title4"				: "MARKETING",
+		"text4"					: "ALESSANDRA TOMBACCINI (SICOMUNICA.NET)",
+		"title5"				: "MUSICA",
+		"text5"					: "Pubic Domain Music",
+		"title6"				: "SVILUPPATO CON",
+		"text6"					: "MELONJS GIMP INKSCAPE TILED"
+	},
+
+	"score":{
+		"done"					: "FATTO",
+		"hi_score"				: "RECORD DI OGGI",
+		"no_score_yet"			: "ANCORA NESSUN RECORD"
+	}
+}
