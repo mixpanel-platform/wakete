@@ -208,13 +208,13 @@ class FrontController extends Controller
     {
         $key = md5($_SERVER['SERVER_NAME']."-".$_SERVER['REMOTE_ADDR']);
         
-        $clientRequest = Cache::get($key); //$request->session()->get($key);
+        $clientRequest[] = Cache::get($key); //$request->session()->get($key);
         if (empty($clientRequest)) {
-            $clientRequest = $request->cookie('client');
+            $clientRequest[] = $request->cookie('client');
         }
         echo "<pre>";
-        // print_r(Cache::get($key));
-        // print_r($request->cookie('client'));
+        print_r(Cache::get($key));
+        print_r($request->cookie('client'));
         print_r($clientRequest);
         die();
 
