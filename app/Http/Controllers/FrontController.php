@@ -210,6 +210,10 @@ class FrontController extends Controller
         
         $clientRequest = (Cache::get($key))?Cache::get($key):$request->cookie('client'); //$request->session()->get($key);
 
+        echo "<pre>";
+        print_r($clientRequest);
+        die();
+
         /* Si no esta en la cache lo enviamos a logearse */
         if ( empty($clientRequest) ) {
             return redirect('/dbo/login');
@@ -270,7 +274,7 @@ class FrontController extends Controller
             /**/
             $response = new \Illuminate\Http\Response();
             $response->withCookie('client', $clientRequest, $diff);
-            
+
             return redirect('/catalog');
         }else{
             return view('frontend/login', ['error' => 'No existe ningun usuario con ese número']);
