@@ -28,6 +28,14 @@ Route::post('/log', 'FrontController@log');
 Route::get('/dbo/login', 'FrontController@login');
 Route::get('/dbo/register', 'FrontController@register');
 
+
+//Landings routes
+//
+Route::get('/landing/{operator}/{num_landing}', 'LandingsController@view');
+
+
+
+
 // Football routes
 Route::get('/catalog/football', 'FootballController@index');
 Route::get('/catalog/leagues', 'FootballController@leagues');

@@ -5,26 +5,28 @@
 @section('content')
 	<section id="content">
 		<div class="content-wrap">
-			<div class="col-xs-12">
+			<div class="container">
 				<div class="col-xs-12">
-					<div class="heading-block">
-						<h2>Pokemon GO</h2>
-						<span>Encuentra todo lo relacionado con Pokemon GO</span>
-					</div>
-				</div>
-				<div class="col-xs-12">
-					<?php foreach ($categories as $key => $category): ?>
-						<div class="col-md-3 col-xs-12">
-							<a href="{{ url('/catalog/news') }}/{{ $category['uri'] }}" class="bordered" style="margin-bottom: 30px;">
-							
-								<div class="col-xs-12" style="min-height: 280px; background-image: url('<?php echo asset('/posts/categories/'.strtolower($category['name']).'.jpg') ?>'); background-size: cover; background-repeat: no-repeat;">
-									<p class="text-left text-white font-s32">
-										{{ $category['name'] }}
-									</p>
-								</div>
-							</a>
+					<div class="col-xs-12">
+						<div class="heading-block">
+							<h2>Pokemon GO</h2>
+							<span>Encuentra todo lo relacionado con Pokemon GO</span>
 						</div>
-					<?php endforeach ?>
+					</div>
+					<div class="col-xs-12">
+						<?php foreach ($categories as $key => $category): ?>
+							<div class="col-md-3 col-xs-12">
+								<a href="{{ url('/catalog/news') }}/{{ $category['uri'] }}" class="bordered" style="margin-bottom: 30px;">
+								
+									<div class="col-xs-12" style="min-height: 280px; background-image: url('<?php echo asset('/posts/categories/'.strtolower($category['name']).'.jpg') ?>'); background-size: cover; background-repeat: no-repeat;">
+										<p class="text-left text-white font-s32">
+											{{ $category['name'] }}
+										</p>
+									</div>
+								</a>
+							</div>
+						<?php endforeach ?>
+					</div>
 				</div>
 			</div>
 		</div>
