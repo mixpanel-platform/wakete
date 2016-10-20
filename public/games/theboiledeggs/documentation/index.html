@@ -1,0 +1,347 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<head lang="en">
+	<meta http-equiv="content-type" content="text/html;charset=utf-8">
+	<title>The Boiled Eggs Documentation</title>
+	<!-- Framework CSS -->
+	<link rel="stylesheet" href="assets/blueprint-css/screen.css" type="text/css" media="screen, projection">
+	<link rel="stylesheet" href="assets/blueprint-css/print.css" type="text/css" media="print">
+	<!--[if lt IE 8]><link rel="stylesheet" href="assets/blueprint-css/ie.css" type="text/css" media="screen, projection"><![endif]-->
+	<link rel="stylesheet" href="assets/blueprint-css/plugins/fancy-type/screen.css" type="text/css" media="screen, projection">
+	<style type="text/css" media="screen">
+		p, table, hr, .box { margin-bottom:25px; }
+		.box p { margin-bottom:10px; }
+	</style>
+</head>
+
+
+<body>
+	<div class="container">
+	
+		<h3 class="center alt">&ldquo;The Boiled Eggs&rdquo; Documentation by &ldquo;demonisblack&rdquo; v1.2</h3>
+		
+		<hr>
+		
+		<h1 class="center">&ldquo;The Boiled Eggs&rdquo;</h1>
+		
+		<div class="borderTop">
+			<div class="span-6 colborder info prepend-1">
+				<p class="prepend-top">
+					<strong>
+					Created: 11/01/2015<br>
+					By: demonisblack<br>
+					Email: <a href="mailto:demonisblack@gmail.com">demonisblack@gmail.com</a>
+					</strong>
+				</p>
+			</div><!-- end div .span-6 -->		
+	
+			<div class="span-12 last">
+				<p class="prepend-top append-0">Thank you for purchasing my game. If you have any questions that are beyond the scope of this help file, please feel free to email via my user page contact form <a href="http://codecanyon.net/user/demonisblack">here</a>. Thanks so much!</p>
+			</div>
+		</div><!-- end div .borderTop -->
+		
+		<hr>
+		
+		<h2 id="toc" class="alt">Table of Contents</h2>
+		<ol class="alpha">
+        	<li><a href="#introduction">Introduction</a></li>
+            <li><a href="#gettingStarted">Getting Started</a></li>
+            <li><a href="#htmlStructure">HTML Structure</a></li>
+			<li><a href="#cssFiles">CSS Files and Structure</a></li>
+			<li><a href="#javascript">JavaScript</a></li>
+            <li><a href="#gameFunctions">Game Functions</a></li>
+            <li><a href="#gameAssets">Game Assets</a></li>
+            <li><a href="#compatibility">Compatibility</a></li>
+			<li><a href="#credits">Sources and Credits</a></li>
+            <li><a href="#changelog">Changelog</a></li>
+		</ol>
+		
+		<hr>
+        
+        <h3 id="introduction"><strong>A) Introduction</strong> - <a href="#toc">top</a></h3>
+        <p>The Boiled Eggs is a HTML5 game where you have to boiled different types of eggs with simple steps and controls!.</p>
+        
+        <p>The ZIP package contains the game with 1024x768 resolution that scales proportionally to fit current screen device.</p>
+        
+        <p>
+        <strong>How To Play:</strong><br/>
+        1. Use finger or mouse to tap to start cooking<br/>
+        2. Pressing the burn button to maintain the heat meter in greenzone<br/>
+        3. Successfully maintain the heat meter in time will score
+        </p>
+        
+        <hr>
+        
+        <h3 id="gettingStarted"><strong>B) Getting Started</strong> - <a href="#toc">top</a></h3>
+		<p>To install the game just upload folder 'game' to your server. The game won't run locally with some browser like Chrome due to some security mode.</p>        
+        <p>You need a website that runs PHP to make facebook share button work, and make sure to change Facebook Open Graph meta and Twitter meta in index.html, just replace [GAME_URL] to your game URL.</p>
+        <pre>
+        &lt;!-- for Facebook --&gt;
+        &lt;meta property=&quot;og:image&quot; content=&quot;[GAME_URL]/share.jpg&quot; /&gt;
+        &lt;meta property=&quot;og:url&quot; content=&quot;[GAME_URL]&quot; /&gt;
+        
+        &lt;!-- for Twitter --&gt;
+        &lt;meta name=&quot;twitter:image&quot; content=&quot;[GAME_URL]/share.jpg&quot; /&gt;
+        </pre>
+        
+        <p>You can easily customize game text and settings in game.js file
+        <pre>
+        //Game Text
+        var bgColour = '#f4eee0';
+        var playBackgroundMusic = true; //toggle background music
+        
+        var cookButtonText = 'COOK'; //gameplay cook text button
+        var heatButtonText = 'BURN'; //gameplay burn text button
+        var mistakeText = 'MISTAKE :'; //text for gameplay mistake, [NUMBER] will replace with value
+        var scoreText = 'SCORE : [NUMBER]'; //text for gameplay score, [NUMBER] will replace with value
+        var resultTitleText = 'GAME OVER!'; //text for result page title
+        var resultScoreText = 'Your best score is [NUMBER]'; //text for result page score
+        
+        var totalMistake = 3; //total mistakes
+        var gameScore = 100; //game score
+        var targetScore = 100; //score target to increase game speed, it will multiplied for next speed eg.(100, 200, 400, 800...)
+        var burnerIncreaseSpeed = .005; //burn meter speed to increase game speed
+        var burnerButtonSpeed = .8; //burn meter button speed
+        
+        var startCookCountdown = 5; //countdown for auto start cook
+        var waterBoilTime = 6000; //total boil time 6 sec
+        var waterStartBoilTime = 5000; //water start boil animation time 5 sec (note timer must set lower than waterBoilTime);
+        var potWidth = 150; //pot width
+        var potWaterHeight = 40; //pot water height
+        var eggDropHeight = 60; //total height for egg drop aniamtion
+        
+        //types of eggs name and cook time
+        var eggTypes_arr = [{name:'Soft Boiled Eggs', time:60000},
+                            {name:'Half Boiled Eggs', time:120000},
+                            {name:'Boiled Eggs', time:180000}];
+        var eggAdditionalRandomTimer = 6000; //total random timer to plus
+        var boilingText = 'Boiling water...'; //boiling water text
+        var gameScoreText = 'Good!'; //score text
+        var failedScoreText = 'Overcooked!'; //fail text
+        
+        //Social share, [SCORE] will replace with game score
+        var shareOption = true; //toggle share option
+        var shareText ='SHARE NOW...'; //text for share instruction
+        var shareTitle = 'Highscore on The Boiled Eggs is [SCORE]';//social share score title
+        var shareMessage = '[SCORE] is mine new highscore on The Boiled Eggs! Try it now!'; //social share score message
+        </pre>
+        </p>
+        
+        <p>
+        The sound can be easily disabled to avoid compatibility issues in sound.js file:
+        <pre>
+        var enableMobileSound = true;
+        </pre>
+        </p>
+        <hr>
+		
+		<h3 id="htmlStructure"><strong>C) HTML Structure</strong> - <a href="#toc">top</a></h3>
+        <p>The page start with the loader wrapper that covering the whole screen in the body. It shows loader progress when calls the function <strong>initPreload()</strong></p>
+        <pre>
+        &lt;!-- PERCENT LOADER START--&gt;
+        &lt;div id=&quot;mainLoader&quot;&gt;0&lt;/div&gt;
+        &lt;!-- PERCENT LOADER END--&gt;
+        </pre>
+        
+        <p>This section is for browser not support page when calls the function <strong>checkBrowser()</strong>. It shows error message when detect the browser does not support canvas.</p>
+        <pre>
+        &lt;!-- BROWSER NOT SUPPORT START--&gt;
+        &lt;div id=&quot;notSupportHolder&quot;&gt;
+            &lt;div class=&quot;notSupport&quot;&gt;YOUR BROWSER ISN&#39;T SUPPORTED.&lt;br/&gt;PLEASE UPDATE YOUR BROWSER IN ORDER TO RUN THE GAME&lt;/div&gt;
+        &lt;/div&gt;
+        &lt;!-- BROWSER NOT SUPPORT END--&gt;
+        </pre>
+        
+        <p>Device rotate instruction page when calls the function <strong>checkMobileOrientation()</strong>. It shows rotate instruction when device is in portrait view.</p>
+        <pre>
+        &lt;!-- ROTATE INSTRUCTION START--&gt;
+        &lt;div id=&quot;rotateHolder&quot;&gt;
+            &lt;div class=&quot;mobileRotate&quot;&gt;
+                    &lt;div class=&quot;rotateDesc&quot;&gt;Rotate your device &lt;br/&gt;to landscape&lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;!-- ROTATE INSTRUCTION END--&gt;
+        </pre>
+        
+        <p>Follow by one canvas tag in the body. The game start initiatie by calls the main function of the game <strong>initMain()</strong>.</p>
+        <pre>
+        &lt;!-- CANVAS START--&gt;
+        &lt;div id=&quot;canvasHolder&quot;&gt;
+            &lt;canvas id=&quot;gameCanvas&quot; width=&quot;1024&quot; height=&quot;768&quot;&gt;&lt;/canvas&gt;
+        &lt;/div&gt;
+        &lt;!-- CANVAS END--&gt;
+        </pre>
+		<hr>
+
+		<h3 id="cssFiles"><strong>D) CSS Files and Structure</strong> - <a href="#toc">top</a></h3>
+		<p>I'm using two CSS files in this game. The first one is a generic reset file. Many browser interpret the default behavior of html elements differently. By using a general reset CSS file, we can work round this. This file also contains some general styling, such as anchor tag colors, font-sizes, etc. Keep in mind, that these values might be overridden somewhere else in the file.</p>
+		<p>The second file contains all of the specific stylings for the page.</p>
+        <hr>
+		
+        
+		<h3 id="javascript"><strong>E) JavaScript</strong> - <a href="#toc">top</a></h3>
+		
+		<p>This game using Javascript files below.</p>
+		
+		<ol>
+			<li>
+                <strong>jQuery</strong> is a cross-platform JavaScript library designed to simplify the client-side scripting of HTML.<br/><br/>
+            </li>
+            
+            <li>
+                <strong>Detect Mobile Browser</strong> is a open source scripts to detect mobile browsers and phones.<br/><br/>
+            </li>
+            
+            <li>
+                <strong>CreateJs plugin</strong> is a suite of modular libraries and tools which work together to create interactive content on open web technologies via HTML5.<br/><br/>
+            </li>
+            
+            <li>
+                <strong>TweenMax</strong> is an extremely fast, lightweight, and flexible animation tool that serves as the foundation of the GreenSock Animation Platform (GSAP).<br/><br/>
+            </li>
+            
+            <li>
+                <strong>The game have the following js files</strong>
+                <ul>
+                    <li><strong>init.js :</strong> check if browser or device support <br/><br/></li>
+                    <li><strong>loader.js :</strong> loader to load all game images<br/><br/></li>
+                    <li><strong>main.js :</strong> initiate game setup and browser resize function<br/><br/></li>
+                    <li><strong>mobile.js :</strong> mobile orientation change<br/><br/></li>
+                    <li><strong>canvas.js :</strong> canvas setup and resize<br/><br/></li>
+                    <li><strong>sound.js :</strong> sound event<br/><br/></li>
+                    <li><strong>game.js :</strong> game play and logics<br/><br/></li>
+                    <li><strong>plugins.js :</strong> additonal useful plugins<br/><br/></li>
+                </ul>
+            </li>
+		</ol>
+        
+        <p>Complete game flow:</p>
+		<ol>
+        	<li>The index.html file start init.js for browser detection</li>
+            <li>If browser is supported, init loader.js to start load asserts with loading progress</li>
+            <li>For mobile the rotate instruction shows when device is in portrait view, detect by mobile.js</li>
+            <li>When all asserts contained in "/assets" folder are loaded, the game start construct canvas.js from main.js thats shows game menu</li>
+            <li>If user click begin button in game menu, the tutorial will shows with game.js</li>
+            <li>If user click got it button in tutorial page, the game will start</li>
+            <li>The game will start only 1 pot with 5 sec coutndown timer</li>
+            <li>If user click the cook button will start boiling water, else it will auto start when countdown is over</li>
+            <li>After water is boiled, the eggs and will added and heat meter will shows</li>
+            <li>If user click the burn button, the heat meter will increase</li>
+            <li>Successfully maintain the heat meter in time will score</li>
+            <li>If heat meter reached redzone the cook will fail, and mistake count as 1</li>
+            <li>Making 3 mistakes the game result will shows</li>
+            <li>If user click replay button in game result, it will restart the game</li>
+        </ol>
+		
+		<hr>
+        
+        <h3 id="gameFunctions"><strong>F) Game Functions</strong> - <a href="#toc">top</a></h3>
+		
+		<p>The most important functions used for page.</p>
+        <ul>
+        	<li>
+                <strong>checkBrowser()</strong><br/>
+                This function is runs for browser detection<br/><br/>
+            </li>
+            
+            <li>
+                <strong>checkMobileEvent()</strong><br/>
+                This function runs for mobile event<br/><br/>
+            </li>
+        </ul>
+        
+        <p>The most important functions used for game.</p>
+        <ul>
+        	<li>
+                <strong>initMain()</strong><br/>
+                This function build canvas<br/><br/>
+            </li>
+            
+            <li>
+                <strong>startGame()</strong><br/>
+                This function start gameplay<br/><br/>
+            </li>
+            
+            <li>
+                <strong>stopGame()</strong><br/>
+                This function stop gameplay<br/><br/>
+            </li>
+        </ul>
+		<hr>
+        
+        <h3 id="gameAssets"><strong>G) Game Assets</strong> - <a href="#toc">top</a></h3>
+        <p>The game contain 'design' folder which include following:
+        <ol>
+        	<li>theboiledeggs_1024x768.psd - with layer folders below
+                <ul>
+                <li>Result</li>
+                <li>Gameplay</li>
+                <li>Tutorial</li>
+                <li>Landing</li>
+                </ul>
+        	</li>
+        </ol>
+        <p>And 'animations' folder which include following:
+        <ol>
+        	<li>egg_half.fla</li>
+            <li>egg_hard.fla</li>
+            <li>egg_soft.fla</li>
+            <li>fire.fla</li>
+            <li>water.fla</li>
+        </ol>
+        </p>
+        
+        <p>You can generate PNG spritesheet file from a SWF using <a target="_blank" href="https://fermmm.wordpress.com/2011/02/04/swf-spritesheet-creator/">SwfSpriteSheet 1.7</a></p>
+        
+        </p>
+        <p>The folder 'assets' in 'game' folder contains all the images of the game that can be replaced. Is better to have the same size of the old ones if you want to reskin the game graphic without coding.</p>
+        <hr>
+		
+        <h3 id="compatibility"><strong>H) Compatibility</strong> - <a href="#top">top</a></h3>
+		
+		<p>This game is build for Desktop browsers that support HTML5 canvas. Any mobile/tablet should work in landscape view, but they are not officially supported.</p>
+		<hr>
+		
+		<h3 id="credits"><strong>I) Sources and Credits</strong> - <a href="#toc">top</a></h3>
+		
+		<p>I've used the following font and sound files as listed.</p>
+		
+		<ul>
+			<li><a href="http://www.dafont.com/gargle.font" target="_blank">Gargle</a> from file Typodermic Fonts</li>
+            <li><a href="http://www.freesfx.co.uk" target="_blank">Toy Plastic Collender Drop Into Shallow Bath Water</a> from file freesfx</li>
+            <li><a href="http://www.freesfx.co.uk" target="_blank">Water Poured From Cup Into Bathroom Sink</a> from file freesfx</li>
+            <li><a href="http://www.freesfx.co.uk" target="_blank">Egg Crack</a> from file freesfx</li>
+            <li><a href="http://www.freesfx.co.uk" target="_blank">Small Propane Blowtorch, Ignite, Burn and Shut Off</a> from file freesfx</li>
+            <li><a href="http://www.freesfx.co.uk" target="_blank">Oven Door Close</a> from file freesfx</li>
+            <li><a href="http://www.freesfx.co.uk" target="_blank">Large fire burning</a> from file freesfx</li>
+            <li><a href="http://www.flashkit.com/loops/Easy_Listening/With_a_b-Bob_Finc-5578/index.php" target="_blank">With a brain
+</a> from file Bob Finch</li>
+            <li><a href="http://www.flashkit.com/loops/Easy_Listening/Shes_go-Si_Liste-3655/index.php" target="_blank"> She's gone
+</a> from file Si Lister</li>
+			<li><a href="http://www.freepik.com/free-vector/fire-icons-collection_802176.htm#term=fire&page=2&position=33" target="_blank">Fire icons collection</a> from file freepik</li>
+		</ul>
+		
+		<hr>
+        
+        <h3 id="changelog"><strong>J) Changelog</strong> - <a href="#toc">top</a></h3>
+        
+        Version 1.2
+		<ul>
+			<li>Updated CreateJS</li>
+		</ul>
+        
+		Version 1.1
+		<ul>
+			<li>Fixed iOS Safari share button</li>
+		</ul>
+		
+		<hr>
+		
+		<p>Once again, thank you so much for purchasing this game. As I said at the beginning, I'd be glad to help you if you have any questions relating to this game. No guarantees, but I'll do my best to assist. If you have a more general question relating to the games on CodeCanyon, you might consider visiting the forums and asking your question in the "Item Discussion" section.</p> 		<p>If you like my game, please take a moment to rate it. Thanks!   <img src="<?php echo url($path) ?>/assets/images/rate.png" /><img src="<?php echo url($path) ?>/assets/images/rate.png" /><img src="<?php echo url($path) ?>/assets/images/rate.png" /><img src="<?php echo url($path) ?>/assets/images/rate.png" /><img src="<?php echo url($path) ?>/assets/images/rate.png" /></p>
+		
+		<p class="append-bottom alt large"><strong>demonisblack</strong></p>
+		<p><a href="#toc">Go To Table of Contents</a></p>
+		
+		<hr class="space">
+	</div><!-- end div .container -->
+</body>
+</html>
