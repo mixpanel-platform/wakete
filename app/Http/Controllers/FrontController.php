@@ -116,7 +116,7 @@ class FrontController extends Controller
                     $diff = $now->diffInSeconds($expiresAt);
                     /**/
                     $response = new \Illuminate\Http\Response();
-                    $response->withCookie('client', $clientRequest['client'], $diff);
+                    $response->withCookie('client', $clientRequest, $diff);
                     //$phone = $request->cookie('client');
                     // echo "<pre>";
                     // print_r( $phone );
@@ -265,6 +265,12 @@ class FrontController extends Controller
             $expiresAt = Carbon::now()->addDays(7);
             $cachedData = Cache::put($key, $clientRequest, $expiresAt);
 
+            $now = Carbon::now();
+            $diff = $now->diffInSeconds($expiresAt);
+            /**/
+            $response = new \Illuminate\Http\Response();
+            $response->withCookie('client', $clientRequest, $diff);
+            
             return redirect('/catalog');
         }else{
             return view('frontend/login', ['error' => 'No existe ningun usuario con ese número']);
