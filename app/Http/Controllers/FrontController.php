@@ -211,8 +211,8 @@ class FrontController extends Controller
         $clientRequest = (Cache::get($key))?Cache::get($key):$request->cookie('client'); //$request->session()->get($key);
 
         echo "<pre>";
-        print_r(Cache::get($key));
-        print_r($request->cookie('client'));
+        // print_r(Cache::get($key));
+        // print_r($request->cookie('client'));
         print_r($clientRequest);
         die();
 
